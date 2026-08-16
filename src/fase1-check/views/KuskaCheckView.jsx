@@ -6,6 +6,7 @@ import { SwipeCard } from '../components/SwipeCard/SwipeCard'
 import { DiagnosticCard } from '../components/DiagnosticCard/DiagnosticCard'
 import { OnboardingFlow } from '../components/Onboarding/OnboardingFlow'
 import { SectionTransition } from '../components/SectionTransition'
+import { TutorialCard } from '../components/TutorialCard'
 import { MOCK_QUESTIONS } from '../data/mock_questions'
 import { LupaCard } from '../components/LupaCard/LupaCard'
 import { MatrixCard } from '../components/MatrixCard/MatrixCard'
@@ -20,7 +21,8 @@ export function KuskaCheckView() {
   
   // Nivel actual derivado del índice, e inicio de transición
   const currentLevel = MOCK_QUESTIONS[currentIndex]?.level || 1
-  const [showTransition, setShowTransition] = useState(true) // Al salir del onboarding, muestra transición del Nivel 1
+  const [showTransition, setShowTransition] = useState(true)
+  const [showLevelTutorial, setShowLevelTutorial] = useState(false)
 
   const updateProfile = (key, value) => {
     setUserProfile(prev => ({ ...prev, [key]: value }))
@@ -33,9 +35,10 @@ export function KuskaCheckView() {
       const nextIndex = currentIndex + 1
       const nextLevel = MOCK_QUESTIONS[nextIndex].level
       
-      // Si el nivel cambia, mostramos la pantalla de transición
+      // Si el nivel cambia, mostramos la pantalla de transición y el tutorial de nivel
       if (nextLevel > currentLevel) {
         setShowTransition(true)
+        setShowLevelTutorial(true)
       }
       
       setCurrentIndex(nextIndex)
@@ -46,7 +49,8 @@ export function KuskaCheckView() {
 
   const handleOnboardingComplete = () => {
     setShowOnboarding(false)
-    setShowTransition(true) // Lanza la primera transición (Nivel 1)
+    setShowTransition(true)
+    setShowLevelTutorial(true)
   }
 
   const handleClaimRecipe = () => {
@@ -98,6 +102,12 @@ export function KuskaCheckView() {
               key={`trans-${currentLevel}`} 
               level={currentLevel} 
               onStart={() => setShowTransition(false)} 
+            />
+          ) : showLevelTutorial ? (
+            <TutorialCard 
+              key={`tut-${currentLevel}`}
+              level={currentLevel}
+              onComplete={() => setShowLevelTutorial(false)}
             />
           ) : !completed ? (
             <React.Fragment key={MOCK_QUESTIONS[currentIndex].id}>
