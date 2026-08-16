@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import { KuskaCheckView } from './fase1-check/views/KuskaCheckView'
+import { KuskaCheckView } from './features/fase1-check/views/KuskaCheckView'
 
 function LandingPlaceholder() {
   return (
