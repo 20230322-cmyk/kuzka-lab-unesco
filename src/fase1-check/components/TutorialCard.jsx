@@ -78,7 +78,7 @@ export function TutorialCard({ level, onComplete, progress }) {
         </div>
 
         {/* Área interactiva (Derecha en Desktop) */}
-        <div className="relative w-full lg:w-auto max-w-[280px] lg:max-w-[360px] flex flex-col items-center justify-center shrink-0">
+        <div className="relative w-full lg:w-auto max-w-[320px] lg:max-w-[420px] flex flex-col items-center justify-center shrink-0">
           
           {/* Indicadores Laterales Fantasmas */}
           <div className="absolute inset-0 flex items-center justify-between px-[-20px] lg:px-[-30px] pointer-events-none z-0">
