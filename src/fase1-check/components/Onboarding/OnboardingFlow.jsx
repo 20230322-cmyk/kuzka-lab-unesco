@@ -8,25 +8,36 @@ import { Bug, Smartphone, Tv, MessageCircle, ShieldAlert, ShieldCheck, Search, G
 const StepHook = ({ onNext }) => (
   <div className="flex-1 flex flex-col items-center justify-center text-center gap-8 w-full h-full">
     <motion.div
-      initial={{ scale: 0.8, opacity: 0 }}
+      initial={{ scale: 0.8, opacity: 0, rotate: 0 }}
       animate={{ 
-        scale: [1, 1.06, 1],
-        rotate: [0, -3, 3, -1, 0],
-        y: [0, -4, 0],
+        rotate: [0, 0, -360, -360],
+        scale: [1, 1.03, 1],
         opacity: 1
       }}
       transition={{ 
-        scale: { duration: 3.5, repeat: Infinity, ease: "easeInOut" },
-        rotate: { duration: 4, repeat: Infinity, ease: "easeInOut" },
-        y: { duration: 3, repeat: Infinity, ease: "easeInOut" },
+        rotate: { duration: 12, repeat: Infinity, ease: "easeInOut", times: [0, 0.2, 0.6, 1] },
+        scale: { duration: 4, repeat: Infinity, ease: "easeInOut" },
         opacity: { duration: 0.4 }
       }}
-      className="text-[var(--color-rojo-alerta)] mb-4"
+      className="flex items-center justify-center w-32 h-32 mb-2"
     >
-      <Bug size={68} strokeWidth={1.5} />
+      <div style={{ transform: 'translateY(30px)' }}>
+        <motion.div 
+          animate={{ rotate: [0, 0, 90, 90, 45, 15, 75, 15, 75, 45, 0, 0] }}
+          transition={{ 
+            duration: 12, 
+            repeat: Infinity, 
+            ease: "easeInOut",
+            times: [0, 0.1, 0.2, 0.6, 0.65, 0.68, 0.71, 0.74, 0.77, 0.8, 0.9, 1] 
+          }}
+          className="text-[var(--color-rojo-alerta)] drop-shadow-md origin-center"
+        >
+          <Bug size={84} strokeWidth={1.5} />
+        </motion.div>
+      </div>
     </motion.div>
     <div className="flex flex-col gap-5 items-center mt-2">
-      <h2 className="font-logo text-6xl lg:text-7xl tracking-tight text-[var(--text-main)] leading-[0.95]">
+      <h2 className="font-logo font-bold text-6xl lg:text-7xl tracking-tight text-[var(--text-main)] leading-[0.95]">
         Pandem<span className="text-[var(--color-rojo-alerta)]">IA</span>
       </h2>
       <p className="text-base font-main font-medium leading-relaxed text-[var(--text-main)]/80 max-w-[300px]">
