@@ -5,7 +5,7 @@ export function KuskaCheckLayout({ children, header, footer }) {
     <div className="min-h-[100dvh] w-full bg-[var(--bg-crema)] flex justify-center items-center">
       <main className="flex flex-col h-[100dvh] w-full overflow-hidden text-[var(--text-main)] font-sans bg-[var(--bg-crema)] relative">
         {header && (
-          <header className="h-[12%] min-h-[72px] w-full bg-[var(--bg-crema)] text-[var(--text-main)] flex items-center px-6 border-b-2 border-[var(--text-main)] z-20 shrink-0">
+          <header className="h-[12%] min-h-[72px] w-full bg-[var(--color-amarillo-radar)] text-[var(--text-main)] flex items-center px-6 border-b-2 border-[var(--text-main)] z-20 shrink-0">
             {header}
           </header>
         )}
