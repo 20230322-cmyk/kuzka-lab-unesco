@@ -6,10 +6,10 @@ export const GlobalOverlays = () => {
   return (
     <>
       {/* Top Marquee, slightly below the header */}
-      <div className="fixed top-[68px] lg:top-[76px] left-0 w-full bg-[var(--color-naranja-kuska)] text-[#FBF9F5] font-logo text-sm tracking-widest uppercase overflow-hidden z-40 border-b border-[rgba(0,0,0,0.1)] py-1 shadow-md">
+      <div className="fixed top-[68px] lg:top-[76px] left-0 w-full bg-[var(--color-naranja-kuska)] text-[#FBF9F5] font-playful text-[15px] tracking-wide overflow-hidden z-40 border-b border-[rgba(0,0,0,0.1)] py-1 shadow-md">
         <div className="flex whitespace-nowrap animate-marquee">
           {Array.from({ length: 15 }).map((_, i) => (
-            <span key={i} className="mx-4">★ ESTA PÁGINA FUE HECHA PARA LA HACKATHON UNESCO ★</span>
+            <span key={i} className="mx-4">★ Esta página fue hecha para la Hackathon UNESCO ★</span>
           ))}
         </div>
       </div>
