@@ -4,7 +4,6 @@
 > **Última actualización:** 16 de Agosto, 2026  
 > **Proyecto:** KUZKA LAB — UNESCO Youth Hackathon 2026  
 > **Rama de trabajo activa:** `feature/shared-design-system`  
-> **Último Commit:** `746dacf` (*fix(fase1): corregir visibilidad continua del bichito y animar botón CTA con pulso/glow*)
 
 ---
 
@@ -18,72 +17,55 @@
 
 ---
 
-## 2. HISTORIAL COMPLETO DE LO REALIZADO EN LA SESIÓN ANTERIOR
+## 2. HISTORIAL DE LO REALIZADO EN ESTA SESIÓN
 
-### A. Manual Psicométrico y Diseño de Preguntas
-- Se estructuró y redactó el documento completo [`docs/manual_psicometrico_kuska.md`](file:///home/laptop/Documentos/kuzka-lab-unesco/docs/manual_psicometrico_kuska.md) que contiene el test diagnóstico de **15 reactivos/preguntas** distribuidos en 3 mecánicas:
-  1. **Mecánica Swipe (Radar)**: 7 preguntas de clasificación binaria rápida (Peligro / Seguro).
-  2. **Mecánica Lab Forense (Lupa)**: 5 preguntas con análisis de metadatos, inspección táctil profunda y pistas ocultas.
-  3. **Mecánica Cuarentena Ética (Matrix)**: 3 dilemas sobre sesgo y comportamiento ético digital.
-- Se definieron 4 arquetipos de diagnóstico final: *Inmune Digital*, *Verificador Metódico*, *Navegante Intuitivo* y *Vector Vulnerable*.
+### A. Creación de la Estación Central (Home Hub)
+- Se desarrolló [`src/features/hub/views/HomeHubView.jsx`](file:///home/laptop/Documentos/kuzka-lab-unesco/src/features/hub/views/HomeHubView.jsx) como el portal unificado de bienvenida para visitantes, estudiantes, docentes y familias.
+- Incluye:
+  - Hero institucional con gancho socrático (*"Inmunidad Cognitiva contra la PandemIA"*).
+  - Selector matricial de arquetipos de usuario en la coyuntura peruana (Estudiante Sofía, Universitario Mateo, Adulta Mayor Doña Rosa).
+  - Bento Grid con accesos directos a las 3 Fases del Ecosistema (*Kuska Check*, *Kuska Kit*, *Kuzk! Pet*).
+  - Vitrina de módulos de extensión (Cursos STEAM, Blog e Investigaciones, Foro Comunitario).
 
-### B. Generación de Assets y Recursos Gráficos
-- Se generaron y ubicaron en `public/` los recursos visuales y assets para los reactivos (ej. `q5_sneakers`, `q6_arrest`, `q7_press`, `q9_influencer`, `q11_bias`, `q12_autopilot`, `q13_crossroad`, `q14_echo`, `q15_ethics`).
+### B. Navbar Global Sólido y Permanente (`Navbar.jsx`)
+- Se implementó [`src/shared/components/Navbar.jsx`](file:///home/laptop/Documentos/kuzka-lab-unesco/src/shared/components/Navbar.jsx) y [`src/shared/components/MainLayout.jsx`](file:///home/laptop/Documentos/kuzka-lab-unesco/src/shared/components/MainLayout.jsx).
+- Proporciona navegación fija con efecto `backdrop-blur-md`, badges de fase, indicador de ruta activa, botón CTA *"Test de Instinto"* y menú móvil deslizable.
 
-### C. Rediseño de Arquitectura de Interfaz UI/UX
-- **Estructura en 3 tercios verticales:**
-  - Tercio Superior: Header con logotipo escalable `cuzca check`, indicador de perfil y barra de progreso.
-  - Tercio Medio: Lienzo interactivo principal (Onboarding / Cartas de juego).
-  - Tercio Inferior: Controles de acción, botones de auditoría y feedback visual.
-- **Identidad de Marca y Tokens:**
-  - Fondo Crema Canvas: `#FBF9F5` (`var(--bg-crema)`)
-  - Texto Negro Carbón Neutro: `#111111` (`var(--text-main)`)
-  - Línea divisoria y bordes de acento: Rojo Alerta `#CA3606`
-  - Botones y acciones primarias: Naranja Kuska `#DE711E`
+### C. Módulo de Cursos / Academia STEAM (`CoursesView.jsx`)
+- 4 módulos estructurados en [`src/features/courses/data/coursesData.js`](file:///home/laptop/Documentos/kuzka-lab-unesco/src/features/courses/data/coursesData.js) y [`src/features/courses/views/CoursesView.jsx`](file:///home/laptop/Documentos/kuzka-lab-unesco/src/features/courses/views/CoursesView.jsx):
+  1. *Prompting Socrático & Modelos Generativos*.
+  2. *Detección Forense de Deepfakes & Procedencia C2PA*.
+  3. *Ciberseguridad Familiar & Protocolo Zero-Data*.
+  4. *Ética Digital, Convivencia Escolar & Unidad DPCC*.
+- Visor modal de lecciones con seguimiento de progreso y tips socráticos.
 
-### D. Rediseño Total del Flujo de Onboarding (`OnboardingFlow.jsx`)
-- **Paso 1 (Hook / PandemIA):**
-  - Icono del bichito (`<Bug />`) con animación suave continua (respiración, sutil balanceo e inclinación en bucle).
-  - Titular: *PandemIA*.
-  - Copy descriptivo: *"¿SOBREVIVIRÁS? Tus defensas cognitivas están a prueba."*
-  - Botón CTA: *"EVALUAR MIS DEFENSAS"* con animación de pulso y resplandor continuo (*glow* naranja).
-- **Paso 2 (Hábitos):** Selección de fuente de consumo de noticias (Redes, Mensajería, Tradicional).
-- **Paso 3 (Confianza):** Autoevaluación de detección de estafas (Experto, Promedio, Vulnerable).
-- **Paso 4 (Calibrando):** Radar circular rotatorio con efecto visual de escaneo.
-- **Paso 5 (StepTutorial / "Entrena tu Instinto"):**
-  - Implementado como **Bento Grid** responsivo de alta gama:
-    - Bloque 1: *Radar (Swipe)* con escudo de alerta.
-    - Bloque 2: *Lab Forense (Lupa)* con lupa azul tech.
-    - Bloque 3: *Cuarentena Ética* con matriz amarilla.
-  - Botón fijo *"INICIAR AUDITORÍA"* en negro carbón institucional.
+### D. Módulo de Blog / Bitácora & Investigaciones (`BlogView.jsx`)
+- Artículos educativos en [`src/features/blog/data/blogData.js`](file:///home/laptop/Documentos/kuzka-lab-unesco/src/features/blog/data/blogData.js) y [`src/features/blog/views/BlogView.jsx`](file:///home/laptop/Documentos/kuzka-lab-unesco/src/features/blog/views/BlogView.jsx):
+  - Extorsión por clonación de voz en Lima.
+  - Comprobantes de pago falsos (Yape/Plin) en Gamarra.
+  - La paradoja de la dependencia de la IA.
+  - Combate al olvido y Booster Shots (Oxford / Nature Communications).
+- Lector modal optimizado y filtrado por categorías/búsqueda.
 
----
+### E. Módulo de Foro Comunitario (`ForumView.jsx`)
+- Espacio cívico en [`src/features/forum/data/forumData.js`](file:///home/laptop/Documentos/kuzka-lab-unesco/src/features/forum/data/forumData.js) y [`src/features/forum/views/ForumView.jsx`](file:///home/laptop/Documentos/kuzka-lab-unesco/src/features/forum/views/ForumView.jsx):
+  - Publicación interactiva de alertas ciudadanas.
+  - Sistema de votos *"Inmunidad +1"*, respuestas anidadas y etiquetas.
 
-## 3. ESTADO ACTUAL DEL CÓDIGO
-
-- **Archivos Clave Modificados y Verificados:**
-  - [`src/fase1-check/components/Onboarding/OnboardingFlow.jsx`](file:///home/laptop/Documentos/kuzka-lab-unesco/src/fase1-check/components/Onboarding/OnboardingFlow.jsx)
-  - [`src/fase1-check/views/KuskaCheckView.jsx`](file:///home/laptop/Documentos/kuzka-lab-unesco/src/fase1-check/views/KuskaCheckView.jsx)
-  - [`src/fase1-check/layouts/KuskaCheckLayout.jsx`](file:///home/laptop/Documentos/kuzka-lab-unesco/src/fase1-check/layouts/KuskaCheckLayout.jsx)
-  - [`src/shared/design-system.css`](file:///home/laptop/Documentos/kuzka-lab-unesco/src/shared/design-system.css)
-  - [`docs/manual_psicometrico_kuska.md`](file:///home/laptop/Documentos/kuzka-lab-unesco/docs/manual_psicometrico_kuska.md)
-  - [`docs/design.md`](file:///home/laptop/Documentos/kuzka-lab-unesco/docs/design.md)
-- **Estado de Git:**
-  - Rama: `feature/shared-design-system`
-  - Estado del árbol: Limpio (*working tree clean*).
+### F. Vistas Interactivas para Fase 2 (Kit) y Fase 3 (Pet)
+- **Kuska Kit (`KuskaKitView.jsx`):** Simulador de encaje de la Cripto-Retícula (*Crypto-Grid*) conectando Síntomas, Herramientas y Acciones, y visualizador del Blueprint de los 4 Laboratorios con fondo azul técnico.
+- **Kuzk! Pet (`KuzkPetView.jsx`):** Dashboard interactivo con avatar humanoide/geométrico, perillas de dieta informativa algorítmica (Sensacionalismo, Lectura Lateral, Filtros Burbuja, Indignación) y simulador de Booster Shot de 30 segundos.
 
 ---
 
-## 4. GUÍA PARA EL AGENTE: CÓMO PROCEDER A CONTINUACIÓN
+## 3. ENRUTAMIENTO INTEGRAL ACTUAL (`App.jsx`)
 
-Cualquier agente que retome el trabajo debe seguir estos pasos en orden:
-
-1. **Transición Onboarding ➔ Juego Activo:**
-   - El botón `INICIAR AUDITORÍA` en `OnboardingFlow.jsx` invoca `onComplete`.
-   - Asegurar que `KuskaCheckView.jsx` maneje el cambio de estado de `onboarding` a `playing` sin parpadeos.
-2. **Carga y Ejecución de las 15 Preguntas:**
-   - Cargar las 15 preguntas psicométricas desde [`docs/manual_psicometrico_kuska.md`](file:///home/laptop/Documentos/kuzka-lab-unesco/docs/manual_psicometrico_kuska.md) en el archivo de datos [`src/fase1-check/data/mock_questions.js`](file:///home/laptop/Documentos/kuzka-lab-unesco/src/fase1-check/data/mock_questions.js).
-   - Renderizar el componente correspondiente según el tipo de carta (`SwipeCard`, `LupaCard`, `MatrixCard`).
-3. **Puntuación y Diagnóstico:**
-   - Acumular las respuestas del usuario y calcular los puntajes en los 3 ejes (Verificación, Sesgo, Seguridad).
-   - Renderizar la pantalla de resultados con el arquetipo asignado y el botón para exportar o pasar a la siguiente fase (Kuzka Kit).
+| Ruta | Componente | Descripción |
+| :--- | :--- | :--- |
+| `/` | `<HomeHubView />` | Estación Central / Home |
+| `/check` & `/test` | `<KuskaCheckView />` | Fase 1: Kuska Check (Evaluación de Instinto) |
+| `/kit` | `<KuskaKitView />` | Fase 2: Kuska Kit (Botiquín Figital & Crypto-Grid) |
+| `/pet` | `<KuzkPetView />` | Fase 3: Kuzk! Pet (Simulador Algorítmico) |
+| `/cursos` | `<CoursesView />` | Academia STEAM & Módulos |
+| `/blog` | `<BlogView />` | Bitácora & Investigaciones |
+| `/foro` | `<ForumView />` | Foro Comunitario & Alertas |

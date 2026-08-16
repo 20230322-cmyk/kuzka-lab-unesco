@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { KuskaCheckLayout } from '../layouts/KuskaCheckLayout'
 import { RadarTimer } from '../components/RadarTimer/RadarTimer'
@@ -53,26 +54,35 @@ export function KuskaCheckView() {
     setShowLevelTutorial(true)
   }
 
+  const navigate = useNavigate()
+
   const handleClaimRecipe = () => {
-    console.log("Transición a Fase 2 (Crypto-Grid)")
+    navigate('/kit')
   }
 
   return (
     <KuskaCheckLayout 
       header={
-        <div className="w-full flex flex-col gap-2">
+        <div className="w-full flex items-center justify-between relative px-2">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-[var(--text-main)]/10 text-[var(--text-main)] hover:bg-[var(--text-main)] hover:text-white font-mono text-[10px] font-bold uppercase transition-all z-30"
+          >
+            ← Estación Central
+          </Link>
           <motion.div 
             initial={{ opacity: 0, y: -10 }} 
             animate={{ opacity: 1, y: 0 }} 
             transition={{ duration: 0.15, ease: "easeOut" }}
-            className="flex w-full justify-center items-center"
+            className="absolute inset-0 flex justify-center items-center pointer-events-none"
           >
             <img 
               src="/LOGOTIPO KUZKA CHECK.png" 
               alt="Kuzka Check Logo" 
-              className="h-10 lg:h-12 object-contain"
+              className="h-9 lg:h-11 object-contain pointer-events-auto"
             />
           </motion.div>
+          <div className="w-20 hidden sm:block" />
         </div>
       }
       footer={

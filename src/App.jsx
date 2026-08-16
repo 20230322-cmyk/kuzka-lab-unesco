@@ -1,35 +1,42 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import React from 'react'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HomeHubView } from './features/hub/views/HomeHubView'
 import { KuskaCheckView } from './features/fase1-check/views/KuskaCheckView'
-
-function LandingPlaceholder() {
-  return (
-    <div className="w-full min-h-[100dvh] flex flex-col items-center justify-center p-6 text-center">
-      <img src="/LOGOTIPO KUZKA CHECK.png" alt="Kuzka Check Logo" className="h-12 lg:h-16 mb-8 object-contain" />
-      <h1 className="font-logo text-5xl lg:text-7xl font-bold tracking-tighter text-[var(--text-main)] mb-4 leading-none">
-        KUZKA LAB<br/>UNESCO 2026
-      </h1>
-      <p className="font-main text-sm lg:text-lg font-medium text-[var(--text-main)]/60 mb-10 max-w-lg">
-        La plataforma oficial se encuentra en desarrollo. Puedes acceder al entorno de pruebas técnicas desde la ruta temporal.
-      </p>
-      <Link 
-        to="/test" 
-        className="px-8 py-4 bg-[var(--text-main)] text-white font-mono text-[10px] lg:text-xs font-bold tracking-[0.2em] uppercase rounded-full hover:bg-[var(--color-naranja-kuska)] active:scale-95 transition-all"
-      >
-        Ir al Área de Testing
-      </Link>
-    </div>
-  )
-}
+import { KuskaKitView } from './features/fase2-kit/views/KuskaKitView'
+import { KuzkPetView } from './features/fase3-pet/views/KuzkPetView'
+import { CoursesView } from './features/courses/views/CoursesView'
+import { BlogView } from './features/blog/views/BlogView'
+import { ForumView } from './features/forum/views/ForumView'
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-[100dvh] w-full max-w-[1400px] mx-auto bg-[var(--bg-crema)] bg-noise overflow-hidden relative">
-        <Routes>
-          <Route path="/" element={<LandingPlaceholder />} />
-          <Route path="/test" element={<KuskaCheckView />} />
-        </Routes>
-      </div>
+      <Routes>
+        {/* ESTACIÓN CENTRAL / HOME HUB */}
+        <Route path="/" element={<HomeHubView />} />
+
+        {/* FASE 1: KUSKA CHECK (TEST DE INSTINTO) */}
+        <Route path="/check" element={<KuskaCheckView />} />
+        <Route path="/test" element={<KuskaCheckView />} />
+
+        {/* FASE 2: KUSKA KIT (EL BOTIQUÍN FIGITAL & CRYPTO-GRID) */}
+        <Route path="/kit" element={<KuskaKitView />} />
+
+        {/* FASE 3: KUZK! PET (EL SIMULADOR ALGORÍTMICO & DASHBOARD) */}
+        <Route path="/pet" element={<KuzkPetView />} />
+
+        {/* MÓDULO DE CURSOS / ACADEMIA STEAM */}
+        <Route path="/cursos" element={<CoursesView />} />
+
+        {/* MÓDULO DE BLOG / BITÁCORA & GUÍAS */}
+        <Route path="/blog" element={<BlogView />} />
+
+        {/* MÓDULO DE FORO COMUNITARIO / SABIDURÍA COLECTIVA */}
+        <Route path="/foro" element={<ForumView />} />
+
+        {/* FALLBACK REDIRECT */}
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
     </BrowserRouter>
   )
 }
