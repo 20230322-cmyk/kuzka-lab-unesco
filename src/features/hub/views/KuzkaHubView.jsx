@@ -21,7 +21,7 @@ export function KuzkaHubView() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             
             {/* DOCUMENTACIÓN */}
             <Link 
@@ -79,29 +79,29 @@ export function KuzkaHubView() {
               </div>
             </Link>
 
-            {/* ASESORÍA */}
+            {/* ASESORÍA (HORIZONTAL) */}
             <Link 
               to="/hub/asesoria" 
-              className="group relative bg-white rounded-[2rem] p-8 border border-[var(--text-main)]/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden min-h-[350px]"
+              className="group relative lg:col-span-2 bg-white rounded-[2rem] p-8 lg:p-10 border border-[var(--text-main)]/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col lg:flex-row lg:items-center justify-between overflow-hidden min-h-[350px] lg:min-h-[250px] gap-8"
             >
-              <div className="absolute top-0 left-0 w-full h-2 bg-[var(--color-amarillo-radar)]" />
-              <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-[var(--color-amarillo-radar)]/10 rounded-full blur-3xl group-hover:bg-[var(--color-amarillo-radar)]/20 transition-colors" />
+              <div className="absolute top-0 left-0 w-full lg:w-2 lg:h-full h-2 bg-[var(--color-amarillo-radar)]" />
+              <div className="absolute -bottom-20 -right-20 lg:-top-20 lg:-left-20 w-64 h-64 bg-[var(--color-amarillo-radar)]/10 rounded-full blur-3xl group-hover:bg-[var(--color-amarillo-radar)]/20 transition-colors" />
               
-              <div className="relative z-10 space-y-6">
-                <div className="w-16 h-16 rounded-2xl bg-[var(--color-amarillo-radar)]/20 text-[var(--text-main)] flex items-center justify-center">
+              <div className="relative z-10 flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8 lg:max-w-2xl">
+                <div className="w-16 h-16 shrink-0 rounded-2xl bg-[var(--color-amarillo-radar)]/20 text-[var(--text-main)] flex items-center justify-center">
                   <Briefcase className="w-8 h-8" />
                 </div>
                 <div>
                   <h2 className="font-logo text-4xl sm:text-5xl font-bold uppercase text-[var(--text-main)] leading-none">
-                    Asesoría
+                    Asesoría Institucional
                   </h2>
-                  <p className="mt-4 text-sm text-[var(--text-main)]/70 font-sans leading-relaxed">
-                    Solicita implementación de los módulos KUZKA en tu escuela, universidad u organización comunitaria.
+                  <p className="mt-4 text-sm sm:text-base text-[var(--text-main)]/70 font-sans leading-relaxed">
+                    Solicita la implementación presencial o remota de los módulos y talleres de KUZKA en tu escuela, universidad u organización comunitaria.
                   </p>
                 </div>
               </div>
               
-              <div className="relative z-10 flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-[var(--text-main)] mt-8">
+              <div className="relative z-10 flex shrink-0 items-center gap-2 px-6 py-4 rounded-xl border border-[var(--text-main)]/10 text-xs font-mono font-bold uppercase tracking-wider text-[var(--text-main)] group-hover:bg-[var(--color-amarillo-radar)] group-hover:border-[var(--color-amarillo-radar)] group-hover:text-white transition-all shadow-sm">
                 <span>Contactar Expertos</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
