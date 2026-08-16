@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { GlobalOverlays } from './shared/components/GlobalOverlays'
 import { HomeHubView } from './features/hub/views/HomeHubView'
 import { KuzkaHubView } from './features/hub/views/KuzkaHubView'
 import { UnderConstructionView } from './shared/views/UnderConstructionView'
@@ -13,6 +14,7 @@ import { ForumView } from './features/forum/views/ForumView'
 function App() {
   return (
     <BrowserRouter>
+      <GlobalOverlays />
       <Routes>
         {/* ESTACIÓN CENTRAL / HOME HUB */}
         <Route path="/" element={<HomeHubView />} />
