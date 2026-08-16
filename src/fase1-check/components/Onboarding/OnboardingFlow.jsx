@@ -17,7 +17,7 @@ const StepHook = ({ onNext }) => (
     </motion.div>
     <div className="flex flex-col gap-6 items-center mt-4">
       <h2 className="font-logo text-6xl tracking-tight text-[var(--text-main)] leading-[0.95]">
-        PandemIA
+        Pandem<span className="text-[var(--color-rojo-alerta)]">IA</span>
       </h2>
       <p className="text-base font-main font-medium leading-relaxed text-[var(--color-text-muted)] max-w-[280px]">
         El virus impulsado por IA está infectando la red. Tus defensas cognitivas están a prueba.
@@ -31,15 +31,15 @@ const StepHook = ({ onNext }) => (
 
 const StepHabits = ({ onSelect }) => {
   const options = [
-    { id: 'social', label: 'Redes Sociales', desc: 'TikTok, X, Instagram', icon: <Smartphone size={20}/> },
-    { id: 'messaging', label: 'Mensajería', desc: 'WhatsApp, Telegram', icon: <MessageCircle size={20}/> },
-    { id: 'traditional', label: 'Tradicional', desc: 'TV, Web, Periódicos', icon: <Tv size={20}/> }
+    { id: 'social', label: 'Redes Sociales', desc: 'TikTok, X, Instagram', icon: <Smartphone size={20} className="text-[var(--color-azul-tech)]"/>, bg: 'bg-[#EBF2FF]' },
+    { id: 'messaging', label: 'Mensajería', desc: 'WhatsApp, Telegram', icon: <MessageCircle size={20} className="text-[var(--color-naranja-kuska)]"/>, bg: 'bg-[#FCEADE]' },
+    { id: 'traditional', label: 'Tradicional', desc: 'TV, Web, Periódicos', icon: <Tv size={20} className="text-[var(--color-rojo-alerta)]"/>, bg: 'bg-[#FAE1D9]' }
   ]
 
   return (
     <div className="flex-1 flex flex-col items-center justify-center text-center gap-8 w-full h-full">
       <h3 className="font-logo text-4xl tracking-tight text-[var(--text-main)] leading-[1.1]">
-        ¿Dónde consumes<br/>más noticias?
+        ¿Dónde consumes<br/><span className="text-[var(--color-azul-tech)]">más noticias?</span>
       </h3>
       <div className="flex flex-col gap-3 w-full mt-4">
         {options.map((opt) => (
@@ -48,7 +48,7 @@ const StepHabits = ({ onSelect }) => {
             onClick={() => onSelect('source', opt.id)}
             className="w-full bg-white border-minimal outline-fondo p-4 rounded-xl flex items-center gap-4 hover:bg-[#FDF6E3] hover:border-[var(--color-amarillo-radar)] transition-colors text-left"
           >
-            <div className="p-3 bg-[var(--bg-crema)] rounded-lg text-[var(--text-main)]">
+            <div className={`p-3 rounded-lg ${opt.bg}`}>
               {opt.icon}
             </div>
             <div className="flex flex-col">
@@ -72,7 +72,7 @@ const StepConfidence = ({ onSelect }) => {
   return (
     <div className="flex-1 flex flex-col items-center justify-center text-center gap-8 w-full h-full">
       <h3 className="font-logo text-4xl tracking-tight text-[var(--text-main)] leading-[1.1]">
-        ¿Qué tan bueno eres<br/>detectando estafas?
+        ¿Qué tan bueno eres<br/><span className="text-[var(--color-naranja-kuska)]">detectando estafas?</span>
       </h3>
       <div className="flex flex-col gap-3 w-full mt-4">
         {options.map((opt) => (
@@ -132,7 +132,7 @@ const StepTutorial = ({ onNext }) => {
   return (
     <div className="flex-1 flex flex-col items-center justify-center text-center w-full h-full relative">
       <h3 className="font-logo text-4xl tracking-tight text-[var(--text-main)] leading-[1.1] mb-8">
-        Entrena tu<br/>instinto
+        Entrena tu<br/><span className="text-[var(--color-naranja-kuska)]">instinto</span>
       </h3>
       
       <div className="relative w-full aspect-square max-w-[260px]">

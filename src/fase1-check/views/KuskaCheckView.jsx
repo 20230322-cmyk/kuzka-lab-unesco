@@ -5,14 +5,10 @@ import { RadarTimer } from '../components/RadarTimer/RadarTimer'
 import { SwipeCard } from '../components/SwipeCard/SwipeCard'
 import { DiagnosticCard } from '../components/DiagnosticCard/DiagnosticCard'
 import { OnboardingFlow } from '../components/Onboarding/OnboardingFlow'
-
-const MOCK_QUESTIONS = [
-  { id: 1, type: "IA_PRIVACY", content: "Redacta un contrato de servicios formal para mi cliente Juan Pérez, DNI 09876543, residente en Av. Larco 123..." },
-  { id: 2, type: "FRAUD", content: "Comprobante de transferencia bancaria por Yape por S/. 150 enviado por un cliente en Gamarra." },
-  { id: 3, type: "PHISHING", content: "Urgente: Tu matrícula universitaria ha sido desactivada por inconsistencias. Ingresa aquí: bit.ly/Matricula2026" },
-  { id: 4, type: "C2PA", content: "Fotografía de prensa legítima documentando asamblea vecinal. Incluye isotipo criptográfico (CR)." },
-  { id: 5, type: "PANIC", content: "¡Vecinos de Lima! EsSalud confirma contaminación del río. Se cortará el agua 5 días. Compartan ya." }
-]
+import { SectionTransition } from '../components/SectionTransition'
+import { MOCK_QUESTIONS } from '../data/mock_questions'
+import { LupaCard } from '../components/LupaCard/LupaCard'
+import { MatrixCard } from '../components/MatrixCard/MatrixCard'
 
 export function KuskaCheckView() {
   const [showOnboarding, setShowOnboarding] = useState(true)
@@ -21,17 +17,36 @@ export function KuskaCheckView() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [completed, setCompleted] = useState(false)
   const [score, setScore] = useState(0)
+  
+  // Nivel actual derivado del índice, e inicio de transición
+  const currentLevel = MOCK_QUESTIONS[currentIndex]?.level || 1
+  const [showTransition, setShowTransition] = useState(true) // Al salir del onboarding, muestra transición del Nivel 1
 
   const updateProfile = (key, value) => {
     setUserProfile(prev => ({ ...prev, [key]: value }))
   }
 
-  const handleSwipe = (direction) => {
+  const handleComplete = (isCorrect) => {
+    if (isCorrect) setScore(prev => prev + 1)
+    
     if (currentIndex < MOCK_QUESTIONS.length - 1) {
-      setCurrentIndex(prev => prev + 1)
+      const nextIndex = currentIndex + 1
+      const nextLevel = MOCK_QUESTIONS[nextIndex].level
+      
+      // Si el nivel cambia, mostramos la pantalla de transición
+      if (nextLevel > currentLevel) {
+        setShowTransition(true)
+      }
+      
+      setCurrentIndex(nextIndex)
     } else {
       setCompleted(true)
     }
+  }
+
+  const handleOnboardingComplete = () => {
+    setShowOnboarding(false)
+    setShowTransition(true) // Lanza la primera transición (Nivel 1)
   }
 
   const handleClaimRecipe = () => {
@@ -51,15 +66,15 @@ export function KuskaCheckView() {
             alt="Kuzka Check Logo" 
             className="h-10 object-contain"
           />
-          {!completed && !showOnboarding && (
+          {!completed && !showOnboarding && !showTransition && (
             <div className="flex gap-1 text-[11px] font-mono font-bold tracking-[0.2em] text-[#787774] items-center">
-              <span className="text-[var(--text-main)]">{currentIndex + 1}</span> / <span>5</span>
+              <span className="text-[var(--text-main)]">{currentIndex + 1}</span> / <span>15</span>
             </div>
           )}
         </motion.div>
       }
       footer={
-        !completed && !showOnboarding && <RadarTimer />
+        !completed && !showOnboarding && !showTransition && <RadarTimer />
       }
     >
       <div className="relative w-full max-w-sm aspect-[3/4] flex items-center justify-center">
@@ -67,15 +82,36 @@ export function KuskaCheckView() {
           {showOnboarding ? (
             <OnboardingFlow 
               key="onboarding" 
-              onComplete={() => setShowOnboarding(false)} 
+              onComplete={handleOnboardingComplete} 
               updateProfile={updateProfile}
             />
-          ) : !completed ? (
-            <SwipeCard 
-              key={MOCK_QUESTIONS[currentIndex].id} 
-              data={MOCK_QUESTIONS[currentIndex]}
-              onSwipe={handleSwipe}
+          ) : showTransition ? (
+            <SectionTransition 
+              key={`trans-${currentLevel}`} 
+              level={currentLevel} 
+              onStart={() => setShowTransition(false)} 
             />
+          ) : !completed ? (
+            <React.Fragment key={MOCK_QUESTIONS[currentIndex].id}>
+              {MOCK_QUESTIONS[currentIndex].mechanic === 'SWIPE' && (
+                <SwipeCard 
+                  data={MOCK_QUESTIONS[currentIndex]}
+                  onComplete={handleComplete}
+                />
+              )}
+              {MOCK_QUESTIONS[currentIndex].mechanic === 'LUPA' && (
+                <LupaCard 
+                  data={MOCK_QUESTIONS[currentIndex]}
+                  onComplete={handleComplete}
+                />
+              )}
+              {MOCK_QUESTIONS[currentIndex].mechanic === 'MATRIX' && (
+                <MatrixCard 
+                  data={MOCK_QUESTIONS[currentIndex]}
+                  onComplete={handleComplete}
+                />
+              )}
+            </React.Fragment>
           ) : (
             <DiagnosticCard key="diagnostic" score={score} onClaim={handleClaimRecipe} />
           )}
