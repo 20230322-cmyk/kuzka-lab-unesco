@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { MainLayout } from '../../../shared/components/MainLayout'
-import Velaris from '../../../shared/components/ui/velaris'
 import { 
   Sparkles, 
   ShieldCheck, 
@@ -59,35 +58,46 @@ export function HomeHubView() {
     <MainLayout>
       <div className="w-full">
         
-        {/* HERO SECTION - VELARIS BACKGROUND */}
-        <section className="relative w-full min-h-[85vh] flex items-center justify-center border-b border-[var(--text-main)]/10 p-4 lg:p-8 pt-24 lg:pt-32 bg-[var(--bg-crema)]">
-          <Velaris height="100%" className="rounded-[2.5rem] shadow-sm min-h-[75vh] border border-[var(--text-main)]/10">
-            <div className="flex h-full w-full flex-col items-center justify-center gap-6 px-6 py-12 text-center relative z-20">
-              
-              <span className="rounded-full border border-[var(--text-main)]/10 bg-white/40 px-5 py-2 text-[10px] sm:text-xs font-mono font-bold uppercase tracking-widest text-[var(--color-naranja-kuska)] backdrop-blur-md shadow-sm">
-                Powered by KUZKA LAB & UNESCO
+        {/* HERO SECTION - TIPOGRAFÍA INFERIOR IZQUIERDA CON DEGRADADO */}
+        <section className="relative w-full min-h-[75vh] sm:min-h-[85vh] flex flex-col justify-end border-b border-[var(--text-main)]/10 overflow-hidden">
+          
+          {/* BACKGROUND GRADIENT */}
+          <div className="absolute inset-0 z-0 bg-gradient-to-br from-[var(--bg-crema)] via-[var(--bg-crema)] to-[var(--color-amarillo-radar)]/20" />
+          
+          {/* DECORATIVE GRAIN/NOISE */}
+          <div className="absolute inset-0 z-0 opacity-10 pointer-events-none mix-blend-overlay" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }} />
+
+          {/* MAIN CONTENT (BOTTOM LEFT ALIGNED) */}
+          <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-20 lg:pb-24">
+            
+            <div className="max-w-5xl space-y-6">
+              <span className="inline-block rounded-full border border-[var(--text-main)]/20 bg-white/50 px-4 py-1.5 text-xs font-mono font-bold uppercase tracking-widest text-[var(--color-naranja-kuska)] backdrop-blur-md">
+                UNESCO Youth Hackathon 2026
               </span>
               
-              <h1 className="font-logo max-w-5xl mx-auto text-[4.5rem] sm:text-[6rem] lg:text-[8rem] font-black tracking-tighter text-[var(--text-main)] uppercase leading-[0.85] drop-shadow-sm mix-blend-color-burn">
-                INMUNIDAD <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-main)] to-[var(--color-naranja-kuska)]">COGNITIVA</span><br/>CONTRA LA PANDEMIA
+              <h1 className="font-logo text-[4.5rem] sm:text-[7rem] lg:text-[10rem] font-black tracking-tighter text-[var(--text-main)] uppercase leading-[0.80] drop-shadow-sm">
+                INMUNIDAD<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-main)] to-[var(--color-naranja-kuska)]">
+                  COGNITIVA
+                </span>
               </h1>
               
-              <p className="max-w-2xl mx-auto mt-2 text-sm sm:text-base lg:text-lg text-[var(--text-main)]/80 font-sans leading-relaxed">
-                Ecosistema figital de <strong>inoculación psicológica preventiva (Prebunking)</strong> y alfabetización socrática con Inteligencia Artificial. Explora la profundidad de la IA y construye resiliencia ética.
-              </p>
-              
-              <div className="flex flex-wrap items-center justify-center gap-4 mt-6">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-12 pt-4">
                 <Link
                   to="/check"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--text-main)] text-white text-xs sm:text-sm font-mono font-bold uppercase tracking-widest rounded-full hover:bg-[var(--color-naranja-kuska)] transition-colors shadow-2xl hover:scale-105 active:scale-95 duration-200"
+                  className="inline-flex items-center justify-center gap-3 px-8 py-4 sm:py-5 bg-[var(--text-main)] text-white text-xs sm:text-sm font-mono font-bold uppercase tracking-widest rounded-full hover:bg-[var(--color-naranja-kuska)] transition-colors shadow-xl hover:scale-105 active:scale-95 duration-200"
                 >
-                  <ShieldCheck className="w-4 h-4" />
+                  <ShieldCheck className="w-5 h-5" />
                   <span>Iniciar Inoculación ↗</span>
                 </Link>
+                
+                <p className="max-w-sm text-sm sm:text-base text-[var(--text-main)]/80 font-sans leading-relaxed border-l-2 border-[var(--color-naranja-kuska)]/30 pl-4">
+                  Ecosistema figital de <strong>Prebunking</strong> y alfabetización socrática para construir resiliencia ética frente a la IA.
+                </p>
               </div>
-
             </div>
-          </Velaris>
+
+          </div>
         </section>
 
         {/* INTERACTIVE PERSONA MATRICIAL (MOVED FROM HERO) */}
