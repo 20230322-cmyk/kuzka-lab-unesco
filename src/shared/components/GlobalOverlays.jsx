@@ -3,6 +3,12 @@ import React, { useState } from 'react';
 export const GlobalOverlays = () => {
   const [showPopup, setShowPopup] = useState(true);
 
+  const handleTranslate = () => {
+    // Usamos la URL de producción de Vercel porque Google Translate no puede traducir localhost
+    const prodUrl = `https://kuzka-lab-unesco.vercel.app${window.location.pathname}`;
+    window.open(`https://translate.google.com/translate?sl=es&tl=en&u=${encodeURIComponent(prodUrl)}`, '_blank');
+  };
+
   return (
     <>
       {/* Top Marquee, slightly below the header */}
@@ -27,7 +33,13 @@ export const GlobalOverlays = () => {
           </div>
           <div className="flex-1">
             <h4 className="font-bold text-sm mb-1 leading-tight text-[var(--color-azul-oscuro)]">Translation Available</h4>
-            <p className="text-xs opacity-75 leading-relaxed">This page can also be automatically translated to English from your browser.</p>
+            <p className="text-xs opacity-75 leading-relaxed mb-3">This page can also be automatically translated to English from your browser.</p>
+            <button 
+              onClick={handleTranslate}
+              className="bg-[var(--color-azul-oscuro)] text-white text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full hover:scale-105 active:scale-95 transition-all shadow-sm"
+            >
+              Translate Now
+            </button>
           </div>
           <button 
             onClick={() => setShowPopup(false)}
