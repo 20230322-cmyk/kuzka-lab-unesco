@@ -141,24 +141,78 @@ const StepConfidence = ({ onSelect }) => {
 
 const StepCalibrating = ({ onNext }) => {
   useEffect(() => {
-    const timer = setTimeout(onNext, 2000)
+    const timer = setTimeout(onNext, 3000)
     return () => clearTimeout(timer)
   }, [onNext])
 
   return (
-    <div className="flex-1 flex flex-col items-center justify-center text-center gap-8 w-full h-full">
-       <div className="relative w-20 h-20 rounded-full outline-fondo flex items-center justify-center bg-white overflow-hidden">
+    <div className="w-full h-full flex flex-col items-center justify-center pb-6">
+      <div className="my-auto flex flex-col items-center justify-center w-full max-w-[320px] lg:max-w-md">
+        
         <motion.div 
-          className="absolute w-[50%] h-full bg-[var(--color-amarillo-radar)] opacity-40 origin-right"
-          animate={{ rotate: 360 }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
-          style={{ right: '50%' }}
-        />
-        <div className="absolute w-[56px] h-[56px] rounded-full bg-[var(--bg-crema)] z-10 border-minimal" />
-      </div>
-      <div className="flex flex-col gap-2">
-        <span className="font-mono text-xs tracking-[0.2em] font-bold text-[var(--text-main)] uppercase">Calibrando</span>
-        <span className="text-sm text-[#787774]">Ajustando radar a tu perfil...</span>
+          initial={{ scale: 0.95, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ type: "spring", stiffness: 100, damping: 20 }}
+          className="bg-white w-full border-minimal outline-fondo p-8 lg:p-10 rounded-[2.5rem] flex flex-col items-center justify-center gap-10 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] relative overflow-hidden"
+        >
+          {/* Shimmer Effect */}
+          <motion.div 
+            className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#FBF9F5]/60 to-transparent w-[200%]"
+            animate={{ x: ['-100%', '50%'] }}
+            transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}
+          />
+
+          {/* Premium Radar */}
+          <div className="relative w-32 h-32 flex items-center justify-center z-10">
+            <motion.div 
+              animate={{ rotate: -360 }}
+              transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
+              className="absolute inset-0 rounded-full border-[1.5px] border-dashed border-[var(--text-main)]/20"
+            />
+            
+            <div className="absolute inset-3 rounded-full overflow-hidden border border-[var(--text-main)]/10 bg-[var(--bg-crema)]">
+              <motion.div 
+                className="absolute top-0 right-1/2 bottom-0 left-0 bg-gradient-to-r from-transparent to-[var(--color-amarillo-radar)] opacity-60 origin-right"
+                animate={{ rotate: 360 }}
+                transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+              />
+            </div>
+
+            <div className="absolute w-4 h-4 rounded-full bg-[var(--color-amarillo-radar)] shadow-[0_0_15px_rgba(231,206,123,0.8)]" />
+            
+            {/* Concentric Rings */}
+            <div className="absolute inset-8 rounded-full border border-[var(--text-main)]/5" />
+            <div className="absolute inset-14 rounded-full border border-[var(--text-main)]/5" />
+          </div>
+
+          {/* Texts and Hardware-Accelerated Progress Bar */}
+          <div className="flex flex-col items-center gap-4 z-10 w-full">
+            <h3 className="font-main font-semibold text-xl text-[var(--text-main)]">
+              Calibrando Radar
+            </h3>
+            
+            <div className="flex flex-col items-center w-full gap-3">
+              <span className="font-mono text-[10px] tracking-[0.2em] font-bold text-[var(--color-naranja-kuska)] uppercase flex gap-2">
+                <motion.span 
+                  animate={{ opacity: [1, 0.4, 1] }} 
+                  transition={{ duration: 1.5, repeat: Infinity }}
+                >
+                  Analizando Perfil
+                </motion.span>
+              </span>
+              
+              <div className="w-full max-w-[200px] h-1.5 bg-[#E5E5E5] rounded-full overflow-hidden">
+                <motion.div 
+                  className="h-full bg-[var(--text-main)] rounded-full origin-left"
+                  initial={{ scaleX: 0 }}
+                  animate={{ scaleX: 1 }}
+                  transition={{ duration: 3, ease: "easeInOut" }}
+                />
+              </div>
+            </div>
+          </div>
+        </motion.div>
+        
       </div>
     </div>
   )
@@ -166,69 +220,118 @@ const StepCalibrating = ({ onNext }) => {
 
 const StepTutorial = ({ onNext }) => {
   return (
-    <div className="flex-1 flex flex-col lg:flex-row items-center justify-center lg:justify-evenly gap-8 lg:gap-16 w-full h-full overflow-y-auto pb-8 lg:pb-0">
+    <div className="flex-1 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-6 lg:gap-10 w-full h-full pb-2 lg:pb-0">
       
       {/* Columna Izquierda: Header */}
-      <div className="w-full lg:w-[40%] flex flex-col items-center lg:items-start text-center lg:text-left gap-6">
-        <h3 className="font-logo text-5xl lg:text-7xl tracking-tight text-[var(--text-main)] leading-[0.95]">
+      <div className="w-full lg:w-[45%] flex flex-col items-center lg:items-start text-center lg:text-left gap-3 lg:gap-5 max-w-[340px] lg:max-w-[440px]">
+        <motion.h3 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="font-logo font-bold text-5xl lg:text-[5.5rem] tracking-tighter text-[var(--text-main)] leading-[0.85] pb-1"
+        >
           ENTRENA TU<br/><span className="text-[var(--color-naranja-kuska)]">INSTINTO</span>
-        </h3>
-        <p className="font-mono text-sm lg:text-base text-[var(--text-main)] max-w-[320px] lg:max-w-none leading-relaxed">
+        </motion.h3>
+        <motion.p 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.1 }}
+          className="font-mono text-xs lg:text-sm text-[var(--text-main)]/80 leading-relaxed"
+        >
           El virus usa tres tácticas principales. Conoce tus herramientas de defensa antes de entrar a la zona de cuarentena.
-        </p>
-        <div className="hidden lg:block mt-8 w-full max-w-[300px]">
-          <button onClick={onNext} className="w-full py-4 bg-[var(--text-main)] text-[var(--bg-crema)] font-mono uppercase tracking-widest text-sm font-bold rounded-xl shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all">
+        </motion.p>
+        <motion.div 
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="hidden lg:flex w-full max-w-[240px] mt-4"
+        >
+          <button onClick={onNext} className="w-full h-12 flex items-center justify-center bg-[var(--text-main)] text-[var(--bg-crema)] font-mono uppercase tracking-widest text-[11px] font-bold rounded-xl shadow-[0_8px_20px_-8px_rgba(0,0,0,0.5)] hover:shadow-[0_12px_25px_-8px_rgba(0,0,0,0.6)] hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] transition-all duration-300">
             INICIAR AUDITORÍA
           </button>
-        </div>
+        </motion.div>
       </div>
 
-      {/* Columna Derecha: Bento Grid */}
-      <div className="w-full lg:w-[50%] flex flex-col gap-4 max-w-[400px] lg:max-w-none">
+      {/* Columna Derecha: Bento Grid con Micro-Animaciones */}
+      <div className="w-full lg:w-[45%] flex flex-col gap-3 lg:gap-4 max-w-[340px] lg:max-w-none">
         
-        {/* Radar */}
-        <div className="bg-white border-minimal shadow-minimal rounded-[20px] p-5 lg:p-6 flex items-start gap-4 lg:gap-5 relative overflow-hidden group">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-amarillo-radar)]/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl" />
-          <div className="shrink-0 w-12 h-12 rounded-full bg-[var(--color-rojo-alerta)]/10 flex items-center justify-center border-minimal">
-             <ShieldAlert size={20} className="text-[var(--color-rojo-alerta)]" />
+        {/* Radar (Swipe) */}
+        <motion.div 
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="bg-white border-minimal shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_-8px_rgba(0,0,0,0.06)] transition-all rounded-2xl p-3.5 lg:p-6 flex items-center gap-3 lg:gap-5 relative overflow-hidden group"
+        >
+          <div className="absolute top-0 right-0 w-24 h-24 lg:w-32 lg:h-32 bg-[var(--color-amarillo-radar)]/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-xl" />
+          <div className="shrink-0 w-10 h-10 lg:w-14 lg:h-14 rounded-lg lg:rounded-[14px] bg-[#FBF9F5] flex items-center justify-center border-minimal relative overflow-hidden">
+            <motion.div 
+               className="absolute w-5 h-6 lg:w-7 lg:h-9 bg-white border border-dashed border-[var(--text-main)]/30 rounded-sm shadow-sm flex items-center justify-center"
+               animate={{ x: [-8, 8, -8], rotate: [-6, 6, -6] }}
+               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            >
+               <div className="w-1.5 h-1.5 lg:w-2 lg:h-2 rounded-full bg-[var(--color-amarillo-radar)]/60" />
+            </motion.div>
           </div>
-          <div className="flex flex-col relative z-10 pt-1">
-            <span className="font-bold text-[var(--text-main)] font-mono uppercase tracking-widest text-[11px] lg:text-xs">Radar (Swipe)</span>
-            <span className="text-xs lg:text-sm text-[var(--text-main)]/70 mt-1 leading-relaxed">Arrastra la evidencia para clasificarla como Peligro (Izquierda) o Segura (Derecha).</span>
+          <div className="flex flex-col relative z-10 flex-1">
+            <span className="font-bold text-[var(--text-main)] font-mono uppercase tracking-widest text-[10px] lg:text-xs">Radar (Swipe)</span>
+            <span className="text-[11px] lg:text-[13px] text-[var(--text-main)]/70 mt-0.5 leading-snug">Arrastra la evidencia para clasificarla como Peligro o Segura.</span>
           </div>
-        </div>
+        </motion.div>
 
         {/* Laboratorio */}
-        <div className="bg-white border-minimal shadow-minimal rounded-[20px] p-5 lg:p-6 flex items-start gap-4 lg:gap-5 relative overflow-hidden group">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-azul-tech)]/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl" />
-          <div className="shrink-0 w-12 h-12 rounded-full bg-[var(--color-azul-tech)]/10 flex items-center justify-center border-minimal">
-             <Search size={20} className="text-[var(--color-azul-tech)]" />
+        <motion.div 
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="bg-white border-minimal shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_-8px_rgba(0,0,0,0.06)] transition-all rounded-2xl p-3.5 lg:p-6 flex items-center gap-3 lg:gap-5 relative overflow-hidden group"
+        >
+          <div className="absolute top-0 right-0 w-24 h-24 lg:w-32 lg:h-32 bg-[var(--color-azul-tech)]/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-xl" />
+          <div className="shrink-0 w-10 h-10 lg:w-14 lg:h-14 rounded-lg lg:rounded-[14px] bg-[#FBF9F5] flex items-center justify-center border-minimal relative overflow-hidden">
+             <div className="absolute w-5 h-5 lg:w-7 lg:h-7 rounded-sm border border-[var(--color-azul-tech)]/20 bg-white" />
+             <motion.div 
+               className="absolute w-full h-[1.5px] bg-[var(--color-azul-tech)] shadow-[0_0_6px_rgba(29,108,255,0.8)]"
+               animate={{ y: [-10, 10, -10] }}
+               transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+             />
           </div>
-          <div className="flex flex-col relative z-10 pt-1">
-            <span className="font-bold text-[var(--text-main)] font-mono uppercase tracking-widest text-[11px] lg:text-xs">Lab. Forense (Lupa)</span>
-            <span className="text-xs lg:text-sm text-[var(--text-main)]/70 mt-1 leading-relaxed">Mantén presionado sobre la imagen para auditar sus metadatos y revelar pistas ocultas.</span>
+          <div className="flex flex-col relative z-10 flex-1">
+            <span className="font-bold text-[var(--text-main)] font-mono uppercase tracking-widest text-[10px] lg:text-xs">Lab. Forense</span>
+            <span className="text-[11px] lg:text-[13px] text-[var(--text-main)]/70 mt-0.5 leading-snug">Mantén presionado para auditar metadatos y revelar pistas.</span>
           </div>
-        </div>
+        </motion.div>
 
         {/* Matrix */}
-        <div className="bg-white border-minimal shadow-minimal rounded-[20px] p-5 lg:p-6 flex items-start gap-4 lg:gap-5 relative overflow-hidden group">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-[#956400]/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl" />
-          <div className="shrink-0 w-12 h-12 rounded-full bg-[var(--color-amarillo-radar)]/20 flex items-center justify-center border-minimal">
-             <Grid size={20} className="text-[#956400]" />
+        <motion.div 
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="bg-white border-minimal shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_-8px_rgba(0,0,0,0.06)] transition-all rounded-2xl p-3.5 lg:p-6 flex items-center gap-3 lg:gap-5 relative overflow-hidden group"
+        >
+          <div className="absolute top-0 right-0 w-24 h-24 lg:w-32 lg:h-32 bg-[#956400]/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-xl" />
+          <div className="shrink-0 w-10 h-10 lg:w-14 lg:h-14 rounded-lg lg:rounded-[14px] bg-[#111111] flex items-center justify-center border-minimal relative overflow-hidden">
+            <motion.div 
+              className="w-1.5 h-2.5 lg:w-2.5 lg:h-3.5 bg-[var(--color-amarillo-radar)]"
+              animate={{ opacity: [1, 0, 1] }}
+              transition={{ duration: 0.8, repeat: Infinity, ease: "steps(2)" }}
+            />
           </div>
-          <div className="flex flex-col relative z-10 pt-1">
-            <span className="font-bold text-[var(--text-main)] font-mono uppercase tracking-widest text-[11px] lg:text-xs">Cuarentena Ética</span>
-            <span className="text-xs lg:text-sm text-[var(--text-main)]/70 mt-1 leading-relaxed">Analiza la situación descrita y clasifícala estrictamente como buena o mala práctica digital.</span>
+          <div className="flex flex-col relative z-10 flex-1">
+            <span className="font-bold text-[var(--text-main)] font-mono uppercase tracking-widest text-[10px] lg:text-xs">Cuarentena Ética</span>
+            <span className="text-[11px] lg:text-[13px] text-[var(--text-main)]/70 mt-0.5 leading-snug">Clasifica el caso estrictamente como buena o mala práctica.</span>
           </div>
-        </div>
+        </motion.div>
 
       </div>
 
-      <div className="w-full mt-6 flex justify-center lg:hidden max-w-[320px]">
-        <button onClick={onNext} className="w-full py-4 bg-[var(--text-main)] text-[var(--bg-crema)] font-mono uppercase tracking-widest text-xs font-bold rounded-xl shadow-lg active:scale-[0.98] transition-all">
+      <motion.div 
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4 }}
+        className="w-full mt-4 flex justify-center lg:hidden max-w-[340px]"
+      >
+        <button onClick={onNext} className="w-full h-12 flex items-center justify-center bg-[var(--text-main)] text-[var(--bg-crema)] font-mono uppercase tracking-widest text-[10px] font-bold rounded-xl shadow-[0_8px_20px_-8px_rgba(0,0,0,0.5)] hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] transition-all duration-300">
           INICIAR AUDITORÍA
         </button>
-      </div>
+      </motion.div>
 
     </div>
   )
