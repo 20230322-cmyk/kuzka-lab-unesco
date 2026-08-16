@@ -58,109 +58,95 @@ export function HomeHubView() {
     <MainLayout>
       <div className="w-full">
         
-        {/* HERO SECTION */}
-        <section className="relative overflow-hidden pt-6 pb-16 lg:pt-12 lg:pb-24 border-b border-[var(--text-main)]/10">
-          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        {/* HERO SECTION - REFERENCIA PSYCHOWELL ADAPTADO */}
+        <section className="relative w-full min-h-[85vh] flex items-center justify-center overflow-hidden border-b border-[var(--text-main)]/10">
+          <div className="max-w-[1400px] w-full mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center justify-between">
             
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            {/* LEFT: 3D BRAIN MESH IMAGE */}
+            <div className="w-full lg:w-1/2 flex justify-center lg:justify-start relative z-20">
+              <img 
+                src="/hero-brain.png" 
+                alt="Cognitive Immunity Mesh" 
+                className="w-full max-w-[400px] lg:max-w-[700px] object-contain drop-shadow-2xl mix-blend-multiply scale-110 -translate-y-4 lg:translate-y-0"
+              />
               
-              {/* HERO COPY (COL 7) */}
-              <div className="lg:col-span-7 space-y-6">
-                
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--color-naranja-kuska)]/10 text-[var(--color-naranja-kuska)] text-xs font-mono font-bold uppercase tracking-wider">
-                  <Award className="w-4 h-4" />
-                  <span>UNESCO Youth Hackathon 2026</span>
-                </div>
-
-                <h1 className="font-logo text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight text-[var(--text-main)] uppercase leading-[0.95]">
-                  INMUNIDAD COGNITIVA<br />
-                  <span className="text-[var(--color-naranja-kuska)]">CONTRA LA PANDEMIA</span>
-                </h1>
-
-                <p className="text-base sm:text-lg text-[var(--text-main)]/80 font-sans leading-relaxed max-w-2xl">
-                  Ecosistema figital de <strong>inoculación psicológica preventiva (Prebunking)</strong> y alfabetización socrática con Inteligencia Artificial. Transformamos a estudiantes, emprendedores y familias en creadores digitales reflexivos, éticos y resilientes.
-                </p>
-
-                {/* CTAs */}
-                <div className="flex flex-wrap items-center gap-4 pt-2">
-                  <Link
-                    to="/check"
-                    className="inline-flex items-center gap-2.5 px-8 py-4 bg-[var(--color-naranja-kuska)] text-white text-xs sm:text-sm font-mono font-bold uppercase tracking-widest rounded-full hover:bg-[var(--color-naranja-kuska)]/90 active:scale-95 transition-all shadow-lg hover:shadow-xl"
-                  >
-                    <ShieldCheck className="w-4 h-4" />
-                    <span>Iniciar Test de Instinto (Fase 1)</span>
-                  </Link>
-
-                  <Link
-                    to="/kit"
-                    className="inline-flex items-center gap-2 px-6 py-4 bg-white border-2 border-[var(--text-main)] text-[var(--text-main)] text-xs sm:text-sm font-mono font-bold uppercase tracking-wider rounded-full hover:bg-[var(--text-main)] hover:text-white transition-all shadow-sm"
-                  >
-                    <Layers className="w-4 h-4" />
-                    <span>Explorar Kuska Kit</span>
-                  </Link>
-                </div>
-
-                {/* TRUST BADGES */}
-                <div className="pt-6 flex flex-wrap items-center gap-6 text-xs font-mono text-[var(--text-main)]/60">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[var(--color-naranja-kuska)]" />
-                    <span>Zero-Data Privacy</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[var(--color-naranja-kuska)]" />
-                    <span>Código Abierto Print-and-Play</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[var(--color-naranja-kuska)]" />
-                    <span>Enfoque Intergeneracional</span>
-                  </div>
-                </div>
-
+              {/* BUTTON FLOATING NEAR IMAGE */}
+              <div className="absolute bottom-10 lg:bottom-20 left-1/2 lg:left-24 -translate-x-1/2 lg:translate-x-0 z-30">
+                <Link
+                  to="/check"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--text-main)] text-white text-xs sm:text-sm font-mono font-bold uppercase tracking-widest rounded-full hover:bg-[var(--color-naranja-kuska)] transition-colors shadow-2xl"
+                >
+                  <ShieldCheck className="w-4 h-4" />
+                  <span>Iniciar Inoculación ↗</span>
+                </Link>
               </div>
+            </div>
 
-              {/* INTERACTIVE PERSONA MATRICIAL (COL 5) */}
-              <div className="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-8 border border-[var(--text-main)]/10 shadow-lg space-y-6">
+            {/* RIGHT: MASSIVE OVERLAPPING TYPOGRAPHY */}
+            <div className="w-full lg:w-[60%] flex flex-col items-center lg:items-end text-center lg:text-right relative z-10 -mt-24 lg:mt-0 lg:-ml-32">
+              <h1 className="font-logo text-[4rem] sm:text-[6rem] lg:text-[9rem] font-black tracking-tighter text-[var(--text-main)] uppercase leading-[0.85] drop-shadow-sm">
+                INMUNIDAD<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-main)] to-[var(--text-main)]/40">COGNITIVA</span><br />
+                PANDEMIA
+              </h1>
+              
+              <p className="mt-8 text-sm sm:text-base text-[var(--text-main)]/80 font-sans leading-relaxed max-w-md lg:mr-4">
+                Ecosistema figital de <strong>inoculación psicológica preventiva (Prebunking)</strong> y alfabetización socrática. Explora la profundidad de la IA y construye resiliencia ética.
+              </p>
+            </div>
+
+          </div>
+          
+          {/* DECORATIVE NOISE/GRADIENT OVERLAY FOR BLENDING */}
+          <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-transparent to-[var(--bg-crema)]/40 z-0" />
+        </section>
+
+        {/* INTERACTIVE PERSONA MATRICIAL (MOVED FROM HERO) */}
+        <section className="py-16 bg-white border-b border-[var(--text-main)]/10">
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-[#FBF9F5] rounded-3xl p-6 sm:p-10 border border-[var(--text-main)]/10 shadow-sm space-y-8">
                 
-                <div className="flex items-center justify-between pb-4 border-b border-[var(--text-main)]/10">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-[var(--text-main)]/10 gap-4">
                   <div>
-                    <span className="text-[10px] font-mono font-bold uppercase text-[var(--color-naranja-kuska)]">
+                    <span className="text-xs font-mono font-bold uppercase text-[var(--color-naranja-kuska)] tracking-widest">
                       Impacto en la Coyuntura Peruana
                     </span>
-                    <h3 className="font-logo text-2xl font-bold uppercase text-[var(--text-main)]">
+                    <h3 className="font-logo text-4xl font-bold uppercase text-[var(--text-main)] mt-2">
                       Rutas de Resiliencia
                     </h3>
                   </div>
-                  <Users className="w-5 h-5 text-[var(--text-main)]/40" />
+                  <Users className="w-8 h-8 text-[var(--text-main)]/20" />
                 </div>
 
                 {/* PERSONA TABS */}
-                <div className="grid grid-cols-3 gap-2 p-1 bg-[var(--bg-crema)] rounded-xl border border-[var(--text-main)]/5">
+                <div className="grid grid-cols-3 gap-3 p-1.5 bg-white rounded-2xl border border-[var(--text-main)]/5 shadow-sm">
                   <button
                     onClick={() => setSelectedPersona('estudiante')}
-                    className={`py-2 text-[11px] font-mono font-bold rounded-lg transition-all ${
+                    className={`py-3 text-xs sm:text-sm font-mono font-bold rounded-xl transition-all ${
                       selectedPersona === 'estudiante' 
-                        ? 'bg-[var(--text-main)] text-white shadow-xs' 
-                        : 'text-[var(--text-main)]/70 hover:text-[var(--text-main)]'
+                        ? 'bg-[var(--text-main)] text-white shadow-md' 
+                        : 'text-[var(--text-main)]/60 hover:text-[var(--text-main)] hover:bg-[var(--text-main)]/5'
                     }`}
                   >
                     Estudiante
                   </button>
                   <button
                     onClick={() => setSelectedPersona('emprendedor')}
-                    className={`py-2 text-[11px] font-mono font-bold rounded-lg transition-all ${
+                    className={`py-3 text-xs sm:text-sm font-mono font-bold rounded-xl transition-all ${
                       selectedPersona === 'emprendedor' 
-                        ? 'bg-[var(--text-main)] text-white shadow-xs' 
-                        : 'text-[var(--text-main)]/70 hover:text-[var(--text-main)]'
+                        ? 'bg-[var(--text-main)] text-white shadow-md' 
+                        : 'text-[var(--text-main)]/60 hover:text-[var(--text-main)] hover:bg-[var(--text-main)]/5'
                     }`}
                   >
                     Emprendedor
                   </button>
                   <button
                     onClick={() => setSelectedPersona('adulto_mayor')}
-                    className={`py-2 text-[11px] font-mono font-bold rounded-lg transition-all ${
+                    className={`py-3 text-xs sm:text-sm font-mono font-bold rounded-xl transition-all ${
                       selectedPersona === 'adulto_mayor' 
-                        ? 'bg-[var(--text-main)] text-white shadow-xs' 
-                        : 'text-[var(--text-main)]/70 hover:text-[var(--text-main)]'
+                        ? 'bg-[var(--text-main)] text-white shadow-md' 
+                        : 'text-[var(--text-main)]/60 hover:text-[var(--text-main)] hover:bg-[var(--text-main)]/5'
                     }`}
                   >
                     Adulto Mayor
@@ -168,49 +154,49 @@ export function HomeHubView() {
                 </div>
 
                 {/* ACTIVE PERSONA CARD */}
-                <div className="space-y-4 animate-in fade-in duration-200">
-                  <div>
-                    <div className="flex items-center justify-between">
-                      <h4 className="font-bold text-base text-[var(--text-main)] font-sans">
-                        {activePersonaData.name}
-                      </h4>
-                      <span 
-                        className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full text-white"
-                        style={{ backgroundColor: activePersonaData.badgeColor }}
-                      >
-                        {activePersonaData.role}
+                <div className="space-y-6 animate-in fade-in duration-300 pt-2">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <h4 className="font-bold text-2xl text-[var(--text-main)] font-sans">
+                      {activePersonaData.name}
+                    </h4>
+                    <span 
+                      className="text-[11px] font-mono font-bold px-3 py-1 rounded-full text-white tracking-wider"
+                      style={{ backgroundColor: activePersonaData.badgeColor }}
+                    >
+                      {activePersonaData.role}
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="p-6 rounded-2xl bg-white border border-[var(--text-main)]/10 shadow-sm space-y-3">
+                      <span className="text-xs font-mono font-bold uppercase tracking-widest text-[var(--color-rojo-alerta)] flex items-center gap-2">
+                        <div className="w-2 h-2 rounded-full bg-[var(--color-rojo-alerta)] animate-pulse" />
+                        Vulnerabilidad:
                       </span>
+                      <p className="text-sm font-sans text-[var(--text-main)]/80 leading-relaxed">
+                        {activePersonaData.pain}
+                      </p>
+                    </div>
+
+                    <div className="p-6 rounded-2xl bg-amber-50/50 border border-[var(--color-naranja-kuska)]/20 shadow-sm space-y-3">
+                      <span className="text-xs font-mono font-bold uppercase tracking-widest text-[var(--color-naranja-kuska)] flex items-center gap-2">
+                        <ShieldCheck className="w-4 h-4" />
+                        Transformación:
+                      </span>
+                      <p className="text-sm font-sans text-[var(--text-main)]/90 leading-relaxed">
+                        {activePersonaData.pathway}
+                      </p>
                     </div>
                   </div>
 
-                  <div className="p-4 rounded-2xl bg-[var(--bg-crema)] border border-[var(--text-main)]/5 space-y-1.5">
-                    <span className="text-[10px] font-mono font-bold uppercase text-[var(--color-rojo-alerta)]">
-                      Vulnerabilidad Inicial:
-                    </span>
-                    <p className="text-xs font-sans text-[var(--text-main)]/80 leading-relaxed">
-                      {activePersonaData.pain}
-                    </p>
-                  </div>
-
-                  <div className="p-4 rounded-2xl bg-amber-50/70 border border-amber-200/60 space-y-1.5">
-                    <span className="text-[10px] font-mono font-bold uppercase text-[var(--color-naranja-kuska)]">
-                      Transformación con KUZKA:
-                    </span>
-                    <p className="text-xs font-sans text-[var(--text-main)]/90 leading-relaxed">
-                      {activePersonaData.pathway}
-                    </p>
-                  </div>
-
-                  <div className="pt-2 flex items-center justify-between text-xs font-mono text-[var(--text-main)]/60">
-                    <span>Arquetipo:</span>
+                  <div className="pt-4 flex items-center justify-between text-sm font-mono text-[var(--text-main)]/60 border-t border-[var(--text-main)]/10 mt-6">
+                    <span className="tracking-widest uppercase">Arquetipo Asignado:</span>
                     <span className="font-bold text-[var(--text-main)]">{activePersonaData.archetype}</span>
                   </div>
                 </div>
 
               </div>
-
             </div>
-
           </div>
         </section>
 
