@@ -98,24 +98,13 @@ export function Navbar() {
         {/* LOGO & BRAND */}
         <Link 
           to="/" 
-          className="flex items-center gap-3 group focus:outline-none"
+          className="flex items-center group focus:outline-none"
         >
-          <div className="w-10 h-10 rounded-xl bg-[var(--text-main)] flex items-center justify-center text-white font-logo text-2xl font-bold tracking-tighter shadow-sm group-hover:bg-[var(--color-naranja-kuska)] transition-colors">
-            K
-          </div>
-          <div className="flex flex-col">
-            <div className="flex items-center gap-1.5">
-              <span className="font-logo text-2xl font-bold tracking-tight text-[var(--text-main)] leading-none">
-                KUZKA LAB
-              </span>
-              <span className="px-1.5 py-0.5 text-[9px] font-mono font-bold uppercase tracking-widest bg-[var(--color-naranja-kuska)]/10 text-[var(--color-naranja-kuska)] rounded">
-                UNESCO '26
-              </span>
-            </div>
-            <span className="text-[10px] font-mono tracking-wider text-[var(--text-main)]/50 uppercase leading-tight mt-0.5">
-              Inmunidad Cognitiva
-            </span>
-          </div>
+          <img 
+            src="/LOGOTIPO PRINCIPAL.png" 
+            alt="Kuzka Lab UNESCO" 
+            className="h-10 lg:h-12 object-contain group-hover:scale-[1.02] transition-transform"
+          />
         </Link>
 
         {/* DESKTOP NAVIGATION */}
