@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence, useMotionValue, useTransform } from 'framer-motion'
 import { Button } from '../ui/Button'
-import { Bug, Smartphone, Tv, MessageCircle, ShieldAlert, ShieldCheck } from 'lucide-react'
+import { Bug, Smartphone, Tv, MessageCircle, ShieldAlert, ShieldCheck, Search, Grid } from 'lucide-react'
 
 // --- Sub-componentes para pasos interactivos ---
 
@@ -119,61 +119,71 @@ const StepCalibrating = ({ onNext }) => {
 }
 
 const StepTutorial = ({ onNext }) => {
-  const x = useMotionValue(0)
-  const rotate = useTransform(x, [-150, 150], [-10, 10])
-  const opacity = useTransform(x, [-150, -100, 0, 100, 150], [0, 1, 1, 1, 0])
-  
-  const handleDragEnd = (e, { offset }) => {
-    if (Math.abs(offset.x) > 50) {
-      onNext()
-    }
-  }
-
   return (
-    <div className="flex-1 flex flex-col items-center justify-center text-center w-full h-full relative">
-      <h3 className="font-logo text-4xl tracking-tight text-[var(--text-main)] leading-[1.1] mb-8">
-        Entrena tu<br/><span className="text-[var(--color-naranja-kuska)]">instinto</span>
-      </h3>
+    <div className="flex-1 flex flex-col lg:flex-row items-center justify-center lg:justify-evenly gap-8 lg:gap-16 w-full h-full overflow-y-auto pb-8 lg:pb-0">
       
-      <div className="relative w-full aspect-square max-w-[260px]">
-        <motion.div
-          className="absolute inset-0 bg-white border-minimal outline-fondo rounded-2xl flex flex-col items-center justify-center p-6 touch-none cursor-grab active:cursor-grabbing z-20"
-          style={{ x, rotate, opacity }}
-          drag="x"
-          dragConstraints={{ left: 0, right: 0 }}
-          dragElastic={0.7}
-          onDragEnd={handleDragEnd}
-        >
-          <div className="w-16 h-16 bg-[var(--bg-crema)] rounded-xl border-minimal mb-4 flex items-center justify-center">
-            <span className="text-xl">🐱</span>
-          </div>
-          <p className="font-medium text-sm">Gatito en monopatín. No parece peligroso.</p>
-        </motion.div>
-        
-        {/* Background Hint */}
-        <div className="absolute inset-0 flex items-center justify-between px-4 z-10 text-[var(--color-muted-border)]">
-           <div className="flex flex-col items-center gap-1 text-[var(--color-rojo-alerta)] opacity-50">
-             <ShieldAlert size={24} />
-             <span className="text-[9px] font-bold tracking-widest uppercase">Peligro</span>
-           </div>
-           <div className="flex flex-col items-center gap-1 text-[var(--color-azul-tech)] opacity-50">
-             <ShieldCheck size={24} />
-             <span className="text-[9px] font-bold tracking-widest uppercase">Seguro</span>
-           </div>
+      {/* Columna Izquierda: Header */}
+      <div className="w-full lg:w-[40%] flex flex-col items-center lg:items-start text-center lg:text-left gap-6">
+        <h3 className="font-logo text-5xl lg:text-7xl tracking-tight text-[var(--text-main)] leading-[0.95]">
+          ENTRENA TU<br/><span className="text-[var(--color-naranja-kuska)]">INSTINTO</span>
+        </h3>
+        <p className="font-mono text-sm lg:text-base text-[var(--text-main)] max-w-[320px] lg:max-w-none leading-relaxed">
+          El virus usa tres tácticas principales. Conoce tus herramientas de defensa antes de entrar a la zona de cuarentena.
+        </p>
+        <div className="hidden lg:block mt-8 w-full max-w-[300px]">
+          <button onClick={onNext} className="w-full py-4 bg-[var(--text-main)] text-[var(--bg-crema)] font-mono uppercase tracking-widest text-sm font-bold rounded-xl shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all">
+            INICIAR AUDITORÍA
+          </button>
         </div>
       </div>
 
-      <div className="mt-8 flex flex-col items-center gap-2">
-        <p className="text-xs text-[#787774] tracking-wide font-medium">
-          DESLIZA PARA EMPEZAR EL TEST
-        </p>
-        <button 
-          onClick={onNext}
-          className="text-[10px] font-bold text-[var(--color-naranja-kuska)] uppercase tracking-widest hover:underline"
-        >
-          O toca aquí para empezar
+      {/* Columna Derecha: Bento Grid */}
+      <div className="w-full lg:w-[50%] flex flex-col gap-4 max-w-[400px] lg:max-w-none">
+        
+        {/* Radar */}
+        <div className="bg-white border-minimal shadow-minimal rounded-[20px] p-5 lg:p-6 flex items-start gap-4 lg:gap-5 relative overflow-hidden group">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-amarillo-radar)]/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl" />
+          <div className="shrink-0 w-12 h-12 rounded-full bg-[var(--color-rojo-alerta)]/10 flex items-center justify-center border-minimal">
+             <ShieldAlert size={20} className="text-[var(--color-rojo-alerta)]" />
+          </div>
+          <div className="flex flex-col relative z-10 pt-1">
+            <span className="font-bold text-[var(--text-main)] font-mono uppercase tracking-widest text-[11px] lg:text-xs">Radar (Swipe)</span>
+            <span className="text-xs lg:text-sm text-[var(--text-main)]/70 mt-1 leading-relaxed">Arrastra la evidencia para clasificarla como Peligro (Izquierda) o Segura (Derecha).</span>
+          </div>
+        </div>
+
+        {/* Laboratorio */}
+        <div className="bg-white border-minimal shadow-minimal rounded-[20px] p-5 lg:p-6 flex items-start gap-4 lg:gap-5 relative overflow-hidden group">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-azul-tech)]/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl" />
+          <div className="shrink-0 w-12 h-12 rounded-full bg-[var(--color-azul-tech)]/10 flex items-center justify-center border-minimal">
+             <Search size={20} className="text-[var(--color-azul-tech)]" />
+          </div>
+          <div className="flex flex-col relative z-10 pt-1">
+            <span className="font-bold text-[var(--text-main)] font-mono uppercase tracking-widest text-[11px] lg:text-xs">Lab. Forense (Lupa)</span>
+            <span className="text-xs lg:text-sm text-[var(--text-main)]/70 mt-1 leading-relaxed">Mantén presionado sobre la imagen para auditar sus metadatos y revelar pistas ocultas.</span>
+          </div>
+        </div>
+
+        {/* Matrix */}
+        <div className="bg-white border-minimal shadow-minimal rounded-[20px] p-5 lg:p-6 flex items-start gap-4 lg:gap-5 relative overflow-hidden group">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-[#956400]/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl" />
+          <div className="shrink-0 w-12 h-12 rounded-full bg-[var(--color-amarillo-radar)]/20 flex items-center justify-center border-minimal">
+             <Grid size={20} className="text-[#956400]" />
+          </div>
+          <div className="flex flex-col relative z-10 pt-1">
+            <span className="font-bold text-[var(--text-main)] font-mono uppercase tracking-widest text-[11px] lg:text-xs">Cuarentena Ética</span>
+            <span className="text-xs lg:text-sm text-[var(--text-main)]/70 mt-1 leading-relaxed">Analiza la situación descrita y clasifícala estrictamente como buena o mala práctica digital.</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="w-full mt-6 flex justify-center lg:hidden max-w-[320px]">
+        <button onClick={onNext} className="w-full py-4 bg-[var(--text-main)] text-[var(--bg-crema)] font-mono uppercase tracking-widest text-xs font-bold rounded-xl shadow-lg active:scale-[0.98] transition-all">
+          INICIAR AUDITORÍA
         </button>
       </div>
+
     </div>
   )
 }
@@ -203,7 +213,7 @@ export function OnboardingFlow({ onComplete, updateProfile }) {
 
   return (
     <motion.div 
-      className="absolute inset-0 w-full h-full bg-[var(--bg-crema)] rounded-2xl flex flex-col p-8 z-20 overflow-hidden"
+      className="absolute inset-0 w-full h-full bg-[var(--bg-crema)] flex flex-col p-6 lg:p-12 z-20 overflow-hidden"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.95, filter: 'blur(10px)' }}
