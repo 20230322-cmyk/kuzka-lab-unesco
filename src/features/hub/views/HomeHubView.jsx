@@ -76,10 +76,7 @@ export function HomeHubView() {
               </span>
               
               <h1 className="font-logo text-[4.5rem] sm:text-[7rem] lg:text-[10rem] font-black tracking-tighter text-[var(--text-main)] uppercase leading-[0.80] drop-shadow-sm">
-                INMUNIDAD<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-main)] to-[var(--color-naranja-kuska)]">
-                  COGNITIVA
-                </span>
+                IA <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-main)] to-[var(--color-naranja-kuska)]">vs</span> IA
               </h1>
               
               <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-12 pt-4">
