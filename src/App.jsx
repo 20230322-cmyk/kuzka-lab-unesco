@@ -5,7 +5,7 @@ import { KuzkaHubView } from './features/hub/views/KuzkaHubView'
 import { UnderConstructionView } from './shared/views/UnderConstructionView'
 import { KuskaCheckView } from './features/fase1-check/views/KuskaCheckView'
 import { KuskaKitView } from './features/fase2-kit/views/KuskaKitView'
-import { KuzkPetView } from './features/fase3-pet/views/KuzkPetView'
+import { KuskiPetView } from './features/fase3-pet/views/KuskiPetView'
 import { CoursesView } from './features/courses/views/CoursesView'
 import { BlogView } from './features/blog/views/BlogView'
 import { ForumView } from './features/forum/views/ForumView'
@@ -31,7 +31,7 @@ function App() {
         <Route path="/kit" element={<KuskaKitView />} />
 
         {/* FASE 3: KUZK! PET (EL SIMULADOR ALGORÍTMICO & DASHBOARD) */}
-        <Route path="/pet" element={<KuzkPetView />} />
+        <Route path="/pet" element={<KuskiPetView />} />
 
         {/* MÓDULO DE CURSOS / ACADEMIA STEAM (Legacy route) */}
         <Route path="/cursos" element={<CoursesView />} />
