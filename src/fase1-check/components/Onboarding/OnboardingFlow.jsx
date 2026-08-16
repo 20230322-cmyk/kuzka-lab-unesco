@@ -73,32 +73,34 @@ const StepHook = ({ onNext }) => (
 
 const StepHabits = ({ onSelect }) => {
   const options = [
-    { id: 'social', label: 'Redes Sociales', desc: 'TikTok, X, Instagram', icon: <Smartphone size={20} className="text-[var(--color-azul-tech)]"/>, bg: 'bg-[#EBF2FF]' },
-    { id: 'messaging', label: 'Mensajería', desc: 'WhatsApp, Telegram', icon: <MessageCircle size={20} className="text-[var(--color-naranja-kuska)]"/>, bg: 'bg-[#FCEADE]' },
-    { id: 'traditional', label: 'Tradicional', desc: 'TV, Web, Periódicos', icon: <Tv size={20} className="text-[var(--color-rojo-alerta)]"/>, bg: 'bg-[#FAE1D9]' }
+    { id: 'social', label: 'Redes Sociales', desc: 'TikTok, X, Instagram', icon: <Smartphone size={24} className="text-[var(--color-azul-tech)]"/>, bg: 'bg-[#EBF2FF]' },
+    { id: 'messaging', label: 'Mensajería', desc: 'WhatsApp, Telegram', icon: <MessageCircle size={24} className="text-[var(--color-naranja-kuska)]"/>, bg: 'bg-[#FCEADE]' },
+    { id: 'traditional', label: 'Tradicional', desc: 'TV, Web, Periódicos', icon: <Tv size={24} className="text-[var(--color-rojo-alerta)]"/>, bg: 'bg-[#FAE1D9]' }
   ]
 
   return (
-    <div className="flex-1 flex flex-col items-center justify-center text-center gap-8 w-full h-full">
-      <h3 className="font-logo text-4xl tracking-tight text-[var(--text-main)] leading-[1.1]">
-        ¿Dónde consumes<br/><span className="text-[var(--color-azul-tech)]">más noticias?</span>
-      </h3>
-      <div className="flex flex-col gap-3 w-full mt-4">
-        {options.map((opt) => (
-          <button 
-            key={opt.id}
-            onClick={() => onSelect('source', opt.id)}
-            className="w-full bg-white border-minimal outline-fondo p-4 rounded-xl flex items-center gap-4 hover:bg-[#FDF6E3] hover:border-[var(--color-amarillo-radar)] transition-colors text-left"
-          >
-            <div className={`p-3 rounded-lg ${opt.bg}`}>
-              {opt.icon}
-            </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-sm text-[var(--text-main)]">{opt.label}</span>
-              <span className="text-xs text-[#787774]">{opt.desc}</span>
-            </div>
-          </button>
-        ))}
+    <div className="w-full h-full overflow-y-auto flex flex-col pb-6">
+      <div className="my-auto flex flex-col items-center text-center gap-8 w-full pt-4">
+        <h3 className="font-main font-semibold text-2xl lg:text-3xl tracking-tight text-[var(--text-main)] leading-snug px-4">
+          ¿Dónde consumes<br/><span className="text-[var(--color-azul-tech)]">más noticias?</span>
+        </h3>
+        <div className="flex flex-col lg:flex-row justify-center gap-4 w-full max-w-[320px] lg:max-w-4xl mt-2 px-4 lg:px-0">
+          {options.map((opt) => (
+            <button 
+              key={opt.id}
+              onClick={() => onSelect('source', opt.id)}
+              className="flex-1 w-full bg-white border-minimal outline-fondo p-5 lg:p-6 rounded-xl flex flex-col items-center justify-center gap-3 lg:gap-4 hover:bg-[#FDF6E3] hover:border-[var(--color-amarillo-radar)] transition-all hover:-translate-y-1 text-center"
+            >
+              <div className={`p-4 rounded-full ${opt.bg}`}>
+                {opt.icon}
+              </div>
+              <div className="flex flex-col items-center">
+                <span className="font-bold text-base text-[var(--text-main)]">{opt.label}</span>
+                <span className="text-xs text-[#787774] mt-1">{opt.desc}</span>
+              </div>
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   )
@@ -250,8 +252,8 @@ export function OnboardingFlow({ onComplete, updateProfile }) {
     <StepTutorial key="tutorial" onNext={onComplete} />
   ]
 
-  // Barra superior de progreso visible solo en pasos de recolección de datos
-  const showProgress = currentStep === 1 || currentStep === 2
+  // Barra de progreso visible desde el paso 1 en adelante
+  const showProgress = currentStep > 0
 
   return (
     <motion.div 
@@ -267,19 +269,23 @@ export function OnboardingFlow({ onComplete, updateProfile }) {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="flex justify-between items-center w-full mb-4 absolute top-8 left-0 px-8 z-30"
+            className="flex flex-col items-center justify-center w-full mb-4 absolute top-6 lg:top-8 left-0 px-8 z-30 gap-2"
           >
-            <span className="font-mono text-[10px] tracking-[0.2em] font-bold text-[#787774] uppercase">
-              Perfil
-            </span>
-            <div className="flex gap-1.5">
-              {[1, 2].map((stepIdx) => (
+            <div className="flex gap-2">
+              {[1, 2, 3, 4].map((stepIdx) => (
                 <div 
                   key={stepIdx} 
-                  className={`h-1 rounded-full transition-all duration-300 ${stepIdx === currentStep ? 'w-6 bg-[var(--text-main)]' : 'w-2 bg-[var(--color-muted-border)]'}`}
+                  className={`h-1.5 rounded-full transition-all duration-500 ${
+                    currentStep >= stepIdx 
+                      ? 'w-8 bg-[var(--color-naranja-kuska)]' 
+                      : 'w-8 bg-[var(--text-main)]/10'
+                  }`}
                 />
               ))}
             </div>
+            <span className="font-mono text-[10px] tracking-[0.2em] font-bold text-[#787774] uppercase">
+              Evaluación de Perfil
+            </span>
           </motion.div>
         )}
       </AnimatePresence>
@@ -291,7 +297,7 @@ export function OnboardingFlow({ onComplete, updateProfile }) {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -40 }}
           transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          className="flex-1 flex flex-col w-full h-full pt-6"
+          className={`flex-1 flex flex-col w-full h-full ${showProgress ? 'pt-20 lg:pt-16' : 'pt-2'}`}
         >
           {steps[currentStep]}
         </motion.div>
