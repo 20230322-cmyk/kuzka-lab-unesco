@@ -73,7 +73,7 @@ export function Navbar() {
     },
     {
       name: 'Kuzka Hub',
-      path: '/cursos',
+      path: '/hub',
       icon: BookOpen,
       highlight: false
     },

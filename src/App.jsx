@@ -1,6 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { HomeHubView } from './features/hub/views/HomeHubView'
+import { KuzkaHubView } from './features/hub/views/KuzkaHubView'
+import { UnderConstructionView } from './shared/views/UnderConstructionView'
 import { KuskaCheckView } from './features/fase1-check/views/KuskaCheckView'
 import { KuskaKitView } from './features/fase2-kit/views/KuskaKitView'
 import { KuzkPetView } from './features/fase3-pet/views/KuzkPetView'
@@ -15,6 +17,12 @@ function App() {
         {/* ESTACIÓN CENTRAL / HOME HUB */}
         <Route path="/" element={<HomeHubView />} />
 
+        {/* HUB DE CONOCIMIENTO (NUEVO) */}
+        <Route path="/hub" element={<KuzkaHubView />} />
+        <Route path="/hub/documentacion" element={<UnderConstructionView />} />
+        <Route path="/hub/cursos" element={<UnderConstructionView />} />
+        <Route path="/hub/asesoria" element={<UnderConstructionView />} />
+
         {/* FASE 1: KUSKA CHECK (TEST DE INSTINTO) */}
         <Route path="/check" element={<KuskaCheckView />} />
         <Route path="/test" element={<KuskaCheckView />} />
@@ -25,7 +33,7 @@ function App() {
         {/* FASE 3: KUZK! PET (EL SIMULADOR ALGORÍTMICO & DASHBOARD) */}
         <Route path="/pet" element={<KuzkPetView />} />
 
-        {/* MÓDULO DE CURSOS / ACADEMIA STEAM */}
+        {/* MÓDULO DE CURSOS / ACADEMIA STEAM (Legacy route) */}
         <Route path="/cursos" element={<CoursesView />} />
 
         {/* MÓDULO DE BLOG / BITÁCORA & GUÍAS */}
