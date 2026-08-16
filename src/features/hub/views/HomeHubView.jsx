@@ -164,6 +164,13 @@ export function HomeHubView() {
                     />
                   </div>
                 </div>
+                
+                {/* ANNOTATION */}
+                <div className="mt-6 text-right lg:pr-4">
+                  <p className="text-[10px] sm:text-xs text-[var(--text-main)]/50 font-mono italic">
+                    * Fotos tomadas en una de nuestras sesiones hechas en la Universidad de Lima, Perú.
+                  </p>
+                </div>
               </div>
 
             </div>
