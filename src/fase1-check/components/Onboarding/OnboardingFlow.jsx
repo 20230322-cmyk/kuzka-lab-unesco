@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence, useMotionValue, useTransform } from 'framer-motion'
 import { Button } from '../ui/Button'
-import { Biohazard, Smartphone, Tv, MessageCircle, ShieldAlert, ShieldCheck } from 'lucide-react'
+import { Bug, Smartphone, Tv, MessageCircle, ShieldAlert, ShieldCheck } from 'lucide-react'
 
 // --- Sub-componentes para pasos interactivos ---
 
@@ -13,7 +13,7 @@ const StepHook = ({ onNext }) => (
       transition={{ type: 'spring', bounce: 0.5 }}
       className="text-[var(--color-rojo-alerta)] mb-4"
     >
-      <Biohazard size={64} strokeWidth={1} />
+      <Bug size={64} strokeWidth={1.5} />
     </motion.div>
     <div className="flex flex-col gap-6 items-center mt-4">
       <h2 className="font-logo text-6xl tracking-tight text-[var(--text-main)] leading-[0.95]">
@@ -46,7 +46,7 @@ const StepHabits = ({ onSelect }) => {
           <button 
             key={opt.id}
             onClick={() => onSelect('source', opt.id)}
-            className="w-full bg-white border-minimal p-4 rounded-xl flex items-center gap-4 hover:bg-[#F9F9F8] transition-colors text-left"
+            className="w-full bg-white border-minimal outline-fondo p-4 rounded-xl flex items-center gap-4 hover:bg-[#FDF6E3] hover:border-[var(--color-amarillo-radar)] transition-colors text-left"
           >
             <div className="p-3 bg-[var(--bg-crema)] rounded-lg text-[var(--text-main)]">
               {opt.icon}
@@ -79,7 +79,7 @@ const StepConfidence = ({ onSelect }) => {
           <button 
             key={opt.id}
             onClick={() => onSelect('confidence', opt.id)}
-            className="w-full bg-white border-minimal p-4 rounded-xl flex items-center justify-between hover:bg-[#F9F9F8] transition-colors"
+            className="w-full bg-white border-minimal outline-fondo p-4 rounded-xl flex items-center justify-between hover:bg-[#FDF6E3] hover:border-[var(--color-amarillo-radar)] transition-colors"
           >
             <div className="flex flex-col text-left">
               <span className="font-bold text-sm text-[var(--text-main)]">{opt.label}</span>
@@ -101,7 +101,7 @@ const StepCalibrating = ({ onNext }) => {
 
   return (
     <div className="flex-1 flex flex-col items-center justify-center text-center gap-8 w-full h-full">
-       <div className="relative w-20 h-20 rounded-full border-minimal flex items-center justify-center bg-white overflow-hidden">
+       <div className="relative w-20 h-20 rounded-full outline-fondo flex items-center justify-center bg-white overflow-hidden">
         <motion.div 
           className="absolute w-[50%] h-full bg-[var(--color-amarillo-radar)] opacity-40 origin-right"
           animate={{ rotate: 360 }}
@@ -124,7 +124,7 @@ const StepTutorial = ({ onNext }) => {
   const opacity = useTransform(x, [-150, -100, 0, 100, 150], [0, 1, 1, 1, 0])
   
   const handleDragEnd = (e, { offset }) => {
-    if (Math.abs(offset.x) > 100) {
+    if (Math.abs(offset.x) > 50) {
       onNext()
     }
   }
@@ -137,7 +137,7 @@ const StepTutorial = ({ onNext }) => {
       
       <div className="relative w-full aspect-square max-w-[260px]">
         <motion.div
-          className="absolute inset-0 bg-white border-minimal rounded-2xl flex flex-col items-center justify-center p-6 touch-none cursor-grab active:cursor-grabbing z-20"
+          className="absolute inset-0 bg-white border-minimal outline-fondo rounded-2xl flex flex-col items-center justify-center p-6 touch-none cursor-grab active:cursor-grabbing z-20"
           style={{ x, rotate, opacity }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
@@ -163,9 +163,17 @@ const StepTutorial = ({ onNext }) => {
         </div>
       </div>
 
-      <p className="text-xs text-[#787774] mt-8 tracking-wide font-medium">
-        DESLIZA PARA EMPEZAR EL TEST
-      </p>
+      <div className="mt-8 flex flex-col items-center gap-2">
+        <p className="text-xs text-[#787774] tracking-wide font-medium">
+          DESLIZA PARA EMPEZAR EL TEST
+        </p>
+        <button 
+          onClick={onNext}
+          className="text-[10px] font-bold text-[var(--color-naranja-kuska)] uppercase tracking-widest hover:underline"
+        >
+          O toca aquí para empezar
+        </button>
+      </div>
     </div>
   )
 }
@@ -195,7 +203,7 @@ export function OnboardingFlow({ onComplete, updateProfile }) {
 
   return (
     <motion.div 
-      className="absolute inset-0 w-full h-full bg-[var(--bg-crema)] border-minimal rounded-2xl flex flex-col p-8 z-20 overflow-hidden"
+      className="absolute inset-0 w-full h-full bg-[var(--bg-crema)] rounded-2xl flex flex-col p-8 z-20 overflow-hidden"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.95, filter: 'blur(10px)' }}

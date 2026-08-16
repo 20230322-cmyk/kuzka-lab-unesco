@@ -12,15 +12,15 @@ export function Button({
   const baseStyles = "inline-flex items-center justify-center font-main rounded-md transition-transform duration-200 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
   
   const variants = {
-    primary: "bg-[var(--text-main)] text-white hover:bg-[#333333]",
-    secondary: "bg-[var(--bg-crema)] text-[var(--text-main)] border-minimal hover:bg-white",
+    primary: "bg-[var(--color-naranja-kuska)] text-white",
+    secondary: "bg-white text-[var(--text-main)] border-minimal hover:bg-[var(--bg-crema)]",
     danger: "bg-[var(--color-rojo-alerta)] text-white"
   }
 
   const sizes = {
-    sm: "px-4 py-2 text-xs font-medium",
-    md: "px-6 py-3 text-sm font-medium",
-    lg: "px-8 py-4 text-base font-medium w-full"
+    sm: "px-4 py-2 text-xs font-bold",
+    md: "px-6 py-3 text-sm font-bold",
+    lg: "px-8 py-4 text-base font-bold w-full"
   }
 
   return (

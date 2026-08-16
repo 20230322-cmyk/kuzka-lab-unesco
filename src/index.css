@@ -1,33 +1,28 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
 
 @theme {
-  --font-logo: 'Playfair Display', 'Lyon Text', 'Newsreader', serif;
-  --font-main: 'Montserrat', 'SF Pro Display', 'Geist Sans', sans-serif;
+  --font-logo: 'Gill Sans MT Ext Condensed Bold', 'Bebas Neue', 'Oswald', sans-serif;
+  --font-main: 'Montserrat', sans-serif;
 
-  /* Minimalist Color Palette */
+  /* Paleta Estricta design.md */
   --color-bg-crema: #FBF9F5;
   --color-text-main: #111111;
-  --color-text-muted: #787774;
-  
-  --color-border-subtle: #EAEAEA;
-  --color-border-dark: rgba(0,0,0,0.06);
-
-  /* Acentos desaturados (Pasteles / Cozy) */
-  --color-naranja-kuska: #E88C5A; /* Naranja más suave */
-  --color-amarillo-radar: #E7CE7B; /* Miel suave */
-  --color-rojo-alerta: #D96041; /* Rojo más pastel */
-  --color-azul-tech: #6B9BE8; /* Azul lavado */
+  --color-naranja-kuska: #DE711E;
+  --color-rojo-alerta: #CA3606;
+  --color-amarillo-radar: #E7CE7B;
+  --color-azul-tech: #1D6CFF;
+  --color-azul-oscuro: #2058CC;
 }
 
 :root {
   --bg-crema: #FBF9F5;
   --text-main: #111111;
-  --color-muted-border: #EAEAEA;
-  --color-naranja-kuska: #E88C5A;
+  --color-naranja-kuska: #DE711E;
+  --color-rojo-alerta: #CA3606;
   --color-amarillo-radar: #E7CE7B;
-  --color-rojo-alerta: #D96041;
-  --color-azul-tech: #6B9BE8;
+  --color-azul-tech: #1D6CFF;
+  --color-azul-oscuro: #2058CC;
 }
 
 html, body {
@@ -43,13 +38,20 @@ html, body {
 
 h1, h2, h3, h4, h5, h6, .font-logo {
   font-family: var(--font-logo);
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em; /* Ligero espacio para legibilidad condensada */
   line-height: 1.1;
+  text-transform: uppercase;
 }
 
-/* Minimalist Utilities */
+/* UI Elements - "Separaciones con outline blanco/fondo o borde fino" */
 .border-minimal {
-  border: 1px solid var(--color-muted-border);
+  border: 1px solid rgba(17, 17, 17, 0.08); /* Borde finísimo moderno */
+}
+
+/* Clase para dar la vibra moderna de "borde del color del fondo" (útil para solapamientos o botones) */
+.outline-fondo {
+  outline: 4px solid var(--bg-crema);
+  outline-offset: -2px;
 }
 
 .shadow-minimal {

@@ -15,7 +15,15 @@
 
 ## 2. IDENTIDAD DE MARCA GLOBAL (LA ESENCIA DE KUZKA LAB)
 
-### 2.1. Naming y Arquitectura de Marca
+### 2.1. Valores Fundamentales y Esencia Visual
+Para garantizar que todos los recursos gráficos y componentes de UI transmitan el mensaje correcto, KUZKA LAB se rige bajo los siguientes pilares de diseño:
+* **Family-Friendly & Empático:** El diseño debe ser acogedor para todas las edades. Evitamos la estética corporativa aburrida o la estética "hacker oscura" intimidante.
+* **Integridad Institucional:** Aunque es lúdico, nunca pierde la seriedad de su misión (alfabetización mediática). Representa la verdad, la transparencia y la educación.
+* **Moderno y "Eye-Friendly":** Interfaces limpias, tipografías amplias y espacios de respiración masivos. El diseño debe descansar la vista, no sobrecargarla.
+* **Frescura y Calidez Cromática:** Los colores base (Blanco Hueso) y los acentos (Naranja, Amarillo) irradian calidez, calma y esperanza, contrarrestando la ansiedad de la desinformación.
+* **Pureza de Forma (Cero Outlines):** Los elementos UI (botones, tarjetas, íconos) se construyen con colores enteros (Flat Design sólido). **Queda estrictamente prohibido el uso de outlines o bordes negros duros** que rompan la frescura o den un aspecto de "cómic" o brutalismo pesado.
+
+### 2.2. Naming y Arquitectura de Marca
 El ecosistema evoluciona bajo la marca maestra **KUZKA** (con "Z"), manteniendo la raíz conceptual quechua *"Juntos"*. La marca proyecta unión intergeneracional y empoderamiento comunitario.
 
 * **Marca Paraguas:** `KUZKA LAB`

@@ -46,9 +46,11 @@ export function KuskaCheckView() {
           animate={{ opacity: 1, y: 0 }} 
           className="flex w-full justify-between items-center"
         >
-          <h1 className="font-logo text-3xl uppercase tracking-tighter text-[var(--text-main)]">
-            KUSKA<span className="text-[#787774] ml-1">TEST</span>
-          </h1>
+          <img 
+            src="/LOGOTIPO KUZKA CHECK.png" 
+            alt="Kuzka Check Logo" 
+            className="h-10 object-contain"
+          />
           {!completed && !showOnboarding && (
             <div className="flex gap-1 text-[11px] font-mono font-bold tracking-[0.2em] text-[#787774] items-center">
               <span className="text-[var(--text-main)]">{currentIndex + 1}</span> / <span>5</span>
