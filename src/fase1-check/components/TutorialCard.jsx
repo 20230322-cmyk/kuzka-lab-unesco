@@ -2,7 +2,7 @@ import React from 'react'
 import { motion, useMotionValue, useTransform } from 'framer-motion'
 import { Hand, ArrowLeft, ArrowRight, ShieldAlert, ShieldCheck } from 'lucide-react'
 
-export function TutorialCard({ level, onComplete }) {
+export function TutorialCard({ level, onComplete, progress }) {
   const x = useMotionValue(0)
   
   const rotate = useTransform(x, [-200, 200], [-8, 8])
@@ -31,27 +31,20 @@ export function TutorialCard({ level, onComplete }) {
       transition={{ duration: 0.4 }}
       className="absolute inset-0 w-full h-full bg-[var(--bg-crema)] z-40 overflow-y-auto no-scrollbar flex flex-col"
     >
-      {/* Barra de Progreso (Fluida en la parte superior del scroll) */}
+      {/* Barra de Progreso Lineal (Estilo Layout) */}
       <motion.div 
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="flex flex-col items-center justify-center w-full gap-2 shrink-0 pt-6 pb-2"
+        className="w-full flex flex-col items-center justify-center shrink-0 pt-6 pb-2 px-8 lg:px-12"
       >
-        <div className="flex gap-2">
-          {[1, 2, 3, 4, 5].map((stepIdx) => (
-            <div 
-              key={stepIdx} 
-              className={`h-1.5 rounded-full transition-all duration-500 w-6 lg:w-8 ${
-                stepIdx === 5 
-                  ? 'bg-[var(--color-azul-tech)]' 
-                  : 'bg-[var(--color-naranja-kuska)]'
-              }`}
-            />
-          ))}
+        <div className="w-full h-[4px] bg-[#EAEAEA] rounded-full overflow-hidden border border-[var(--text-main)]/10">
+          <motion.div 
+            className="h-full bg-[var(--text-main)]"
+            initial={{ width: 0 }}
+            animate={{ width: `${progress}%` }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          />
         </div>
-        <span className="font-mono text-[9px] tracking-[0.2em] font-bold text-[#787774] uppercase">
-          Entrenamiento Práctico
-        </span>
       </motion.div>
 
       {/* Contenedor principal estilo SwipeCard */}
@@ -70,7 +63,7 @@ export function TutorialCard({ level, onComplete }) {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="font-logo text-5xl lg:text-7xl font-bold tracking-tighter text-[var(--text-main)] leading-[0.9]"
+            className="font-logo text-4xl lg:text-5xl font-bold tracking-tighter text-[var(--text-main)] leading-[0.9]"
           >
             MECÁNICA<br/>DE AUDITORÍA
           </motion.h2>
@@ -85,7 +78,7 @@ export function TutorialCard({ level, onComplete }) {
         </div>
 
         {/* Área interactiva (Derecha en Desktop) */}
-        <div className="relative w-full lg:w-auto max-w-[260px] lg:max-w-[320px] flex flex-col items-center justify-center shrink-0">
+        <div className="relative w-full lg:w-auto max-w-[280px] lg:max-w-[360px] flex flex-col items-center justify-center shrink-0">
           
           {/* Indicadores Laterales Fantasmas */}
           <div className="absolute inset-0 flex items-center justify-between px-[-20px] lg:px-[-30px] pointer-events-none z-0">

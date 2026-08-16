@@ -73,7 +73,7 @@ export function KuskaCheckView() {
               className="h-10 lg:h-12 object-contain"
             />
           </motion.div>
-          {!completed && !showOnboarding && !showTransition && (
+          {!completed && !showOnboarding && !showTransition && !showLevelTutorial && (
             <div className="w-full h-[4px] bg-[#EAEAEA] rounded-full overflow-hidden mt-1 border border-[var(--text-main)]/10">
               <motion.div 
                 className="h-full bg-[var(--text-main)]"
@@ -86,7 +86,7 @@ export function KuskaCheckView() {
         </div>
       }
       footer={
-        !completed && !showOnboarding && !showTransition && <RadarTimer />
+        !completed && !showOnboarding && !showTransition && !showLevelTutorial && <RadarTimer />
       }
     >
       <div className="relative w-full h-full flex flex-col items-center justify-start">
@@ -108,6 +108,7 @@ export function KuskaCheckView() {
               key={`tut-${currentLevel}`}
               level={currentLevel}
               onComplete={() => setShowLevelTutorial(false)}
+              progress={(currentIndex / MOCK_QUESTIONS.length) * 100}
             />
           ) : !completed ? (
             <React.Fragment key={MOCK_QUESTIONS[currentIndex].id}>
