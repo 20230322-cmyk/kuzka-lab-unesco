@@ -1,5 +1,5 @@
 # KUSKA LAB: FIGITAL CUSTOMER JOURNEY MAP
-## Ecosistema de Resiliencia Cognitiva y Alfabetización Activa contra la "PandemAIc"
+## Ecosistema de Resiliencia Cognitiva y Alfabetización Activa contra la "PandemIA"
 **Propuesta de Diseño de Experiencia de Usuario (UX) para el UNESCO Youth Hackathon 2026** [910, 926]
 **Eje de Desafío Principal:** *AI and Media Information Literacy* [910, 926]
 **Lema de la Convocatoria:** *“Play Your Part: Youth Designing the Future of Media and Information Literacy”* [910, 926]
@@ -55,7 +55,7 @@ A continuación, se desglosa el Customer Journey Map a lo largo de las tres fase
 **Objetivo de la Fase:** Evaluar el instinto de forma rápida, gamificada y no invasiva, inoculando sutilmente al usuario frente a las primeras amenazas del entorno peruano [911, 913].
 
 ```
-  TOUCHPOINT FÍSICO / DIGITAL              SITUACIÓN (KUSKA CHECK)               DIAGNÓSTICO
+  TOUCHPOINT FÍSICO / DIGITAL              SITUACIÓN (KUSKA TEST / CHECK)               DIAGNÓSTICO
 ┌─────────────────────────────┐         ┌───────────────────────────────┐     ┌──────────────┐
 │  Manga de Vaso de Café QR   ├────────►│ Swipe Táctil (Real/Falso-IA)  ├────►│ Arquetipo de │
 │  o Riddle Visual en Paradero│         │ 5 Casos de Inoculación Rápida │     │ Inmunidad    │
@@ -82,11 +82,11 @@ A continuación, se desglosa el Customer Journey Map a lo largo de las tres fase
 *   **Mitigación KUSKA:** KUSKA Check es una **Web-App (PWA) ultra ligera de carga instantánea sin registros obligatorios** [913, 916]. El test se limita a solo 5 preguntas rápidas y dinámicas resueltas por swipe en menos de un minuto [744, 917].
 
 #### E. El Output de Diagnóstico
-Al completar el swipe, el algoritmo calcula el "perfil de salud cognitiva" del usuario y genera una **tarjeta Cozy-Minimalist lista para ser guardada y compartida** en Instagram o TikTok bajo tres arquetipos (Navegante Vulnerable, Explorador en Alerta o Guardián Inmune) [919, 920]. Junto a ella, se despliega de forma muy empática la **"Receta Médica Digital"** [921]. Esta receta explica de forma constructiva sus aciertos y debilidades, motivándolos a recoger o descargar su **Kuska Deck** de primeros auxilios de forma gratuita para "sanar" su inmunidad digital [921].
+Al completar el swipe, el algoritmo calcula el "perfil de salud cognitiva" del usuario y genera una **tarjeta Cozy-Minimalist lista para ser guardada y compartida** en Instagram o TikTok bajo tres arquetipos (Navegante Vulnerable, Explorador en Alerta o Guardián Inmune) [919, 920]. Junto a ella, se despliega de forma muy empática la **"Receta Médica Digital"** [921]. Esta receta explica de forma constructiva sus aciertos y debilidades, motivándolos a recoger o descargar su **Kuska Kit** de primeros auxilios de forma gratuita para "sanar" su inmunidad digital [921].
 
 ---
 
-### ESTADIO II: EL BOTIQUÍN COOPERATIVO (Fase 2 - KUSKA Deck / Box)
+### ESTADIO II: EL BOTIQUÍN COOPERATIVO (Fase 2 - KUSKA Kit / Box)
 **Objetivo de la Fase:** Trasladar la alfabetización individual a la interacción humana colaborativa. Enseña a deconstruir, proteger datos y crear contenido ético mediante el debate de roles y el encaje físico de cartas [702, 703].
 
 ```
@@ -100,7 +100,7 @@ Al completar el swipe, el algoritmo calcula el "perfil de salud cognitiva" del u
 #### A. Acciones y Puntos de Contacto (Touchpoints)
 *   **Doña Rosa (Taller Comunitario):** Recibe el kit impreso gratuito en formato **Print-and-Play** en la Casa del Adulto Mayor de Chorrillos, facilitado por Sofía como voluntaria escolar [693, 938]. Se sientan alrededor del **Blueprint Desplegable** de Kraft [939].
 *   **Sofía (Colegio / Curso DPCC):** El docente de Desarrollo Personal, Ciudadanía y Cívica (DPCC) inicia la clase desdoblando la planimetría de KUSKA en el centro del aula [709]. Los alumnos se dividen en grupos de 4 y abren sus mazos de cartas físicos [709, 939].
-*   **Mateo (Estudio Individual):** Utiliza su smartphone para jugar la versión digital del kit [939]. Su pantalla dividida Cozy-Minimalist le muestra al **Kusgotchi** reaccionando en tiempo real en la parte superior [944], mientras que abajo desliza mediante **Drag-and-Drop** las cartas miel y blanco hueso sobre el síntoma central [932].
+*   **Mateo (Estudio Individual):** Utiliza su smartphone para jugar la versión digital del kit [939]. Su pantalla dividida Cozy-Minimalist le muestra al **KuskiPet** reaccionando en tiempo real en la parte superior [944], mientras que abajo desliza mediante **Drag-and-Drop** las cartas miel y blanco hueso sobre el síntoma central [932].
 
 #### B. Estado Cognitivo y Afectivo
 *   **Emociones intermedias:** Conexión intergeneracional, empoderamiento cívico, sensación de "estar aprendiendo un truco tecnológico", calma reflexiva, asombro táctil [740, 931].
@@ -117,39 +117,39 @@ Al completar el swipe, el algoritmo calcula el "perfil de salud cognitiva" del u
 *   **Mitigación KUSKA:** Se elimina el uso de manuales de texto [746]. Las cartas se auto-verifican mediante la **Cripto-Retícula de Encaje (Crypto-Grid)** [746]. Las cartas poseen líneas geométricas vectoriales continuas impresas en brillo UV en sus márgenes laterales [746]. La única forma de validar físicamente que la secuencia Síntoma ➔ Herramienta ➔ Acción es la correcta de resiliencia es si los patrones de los márgenes coinciden milimétricamente en la mesa, completando el **Kuska Loop** [746].
 
 #### E. El Output de Interconexión Figital
-La última carta de Acción Blanco Hueso del Kuska Loop contiene un **código QR coleccionable único** [749, 930]. Al escanear este código con la cámara de su smartphone en la web-app, se transfiere la "energía de resiliencia" de la partida comunitaria analógica para sanar y alimentar a la mascota virtual **Kusgotchi** en la nube, uniendo permanentemente ambos mundos [752, 755].
+La última carta de Acción Blanco Hueso del Kuska Loop contiene un **código QR coleccionable único** [749, 930]. Al escanear este código con la cámara de su smartphone en la web-app, se transfiere la "energía de resiliencia" de la partida comunitaria analógica para sanar y alimentar a la mascota virtual **KuskiPet** en la nube, uniendo permanentemente ambos mundos [752, 755].
 
 ---
 
-### ESTADIO III: EL ESCUDO EN MI BOLSILLO (Fase 3 - Kusgotchi)
-**Objetivo de la Fase:** Consolidar el aprendizaje a largo plazo de forma individual y lúdica. El usuario se "lleva a casa" al Kusgotchi para aplicar activamente la resiliencia en su vida cotidiana [691, 710].
+### ESTADIO III: EL ESCUDO EN MI BOLSILLO (Fase 3 - KuskiPet)
+**Objetivo de la Fase:** Consolidar el aprendizaje a largo plazo de forma individual y lúdica. El usuario se "lleva a casa" al KuskiPet para aplicar activamente la resiliencia en su vida cotidiana [691, 710].
 
 ```
        KUSKA LOOP RESUELTO                RETENCIÓN EN EL TELEFONO              BOOSTER SHOTS
 ┌───────────────────────────────┐     ┌───────────────────────────────┐     ┌──────────────────┐
-│ Escaneo de QR Coleccionable   ├────►│ Kusgotchi en tu Bolsillo (PWA)├────►│ Notificación 15d │
+│ Escaneo de QR Coleccionable   ├────►│ KuskiPet en tu Bolsillo (PWA)├────►│ Notificación 15d │
 │  Enlace del Progreso Figital  │     │ Ajuste de feed y misiones IA  │     │ Desafío de 30seg │
 └───────────────────────────────┘     └───────────────────────────────┘     └──────────────────┘
 ```
 
 #### A. Acciones y Puntos de Contacto (Touchpoints)
-*   **Mateo (Vida Cotidiana):** Tiene al Kusgotchi instalado en su pantalla de inicio como una Web-App progresiva (PWA) de carga ultra ligera [946]. Durante su viaje de regreso en el Metropolitano, abre la app para ajustar de forma lúdica las perillas de la "Dieta Mediática" de su feed virtual simulado [947].
-*   **Sofía (Hogar / Escuela):** Recibe una sutil notificación push cada 15 días [948]. Al hacer clic, se abre una interfaz de 30 segundos: un **Booster Shot** que le muestra un dilema real rápido (un comunicado sensacionalista alarmista de WhatsApp) [720, 948]. Al identificar el sesgo correctamente, reactiva las destrezas asimiladas y su Kusgotchi gana vitalidad [720, 948].
-*   **Doña Rosa (Entorno Familiar):** Juega con sus nietos en la sala de su hogar, mostrándoles la escultura dinámica miel del Kusgotchi sano [690, 710]. Al recibir una llamada real sospechosa de extorsión, Doña Rosa aplica con naturalidad su "pregunta secreta analógica familiar", neutralizando el deepfake y enseñando con orgullo a su familia [686, 707].
+*   **Mateo (Vida Cotidiana):** Tiene al KuskiPet instalado en su pantalla de inicio como una Web-App progresiva (PWA) de carga ultra ligera [946]. Durante su viaje de regreso en el Metropolitano, abre la app para ajustar de forma lúdica las perillas de la "Dieta Mediática" de su feed virtual simulado [947].
+*   **Sofía (Hogar / Escuela):** Recibe una sutil notificación push cada 15 días [948]. Al hacer clic, se abre una interfaz de 30 segundos: un **Booster Shot** que le muestra un dilema real rápido (un comunicado sensacionalista alarmista de WhatsApp) [720, 948]. Al identificar el sesgo correctamente, reactiva las destrezas asimiladas y su KuskiPet gana vitalidad [720, 948].
+*   **Doña Rosa (Entorno Familiar):** Juega con sus nietos en la sala de su hogar, mostrándoles la escultura dinámica miel del KuskiPet sano [690, 710]. Al recibir una llamada real sospechosa de extorsión, Doña Rosa aplica con naturalidad su "pregunta secreta analógica familiar", neutralizando el deepfake y enseñando con orgullo a su familia [686, 707].
 
 #### B. Estado Cognitivo y Afectivo
 *   **Emociones a largo plazo:** Responsabilidad, empatía hacia el avatar, seguridad cívica personal, sentido de juego recurrente sin ansiedad, orgullo comunitario [673, 710].
-*   **Pensamientos del usuario:** *“Tengo el escudo de protección digital en mi bolsillo de por vida”*, *“Cuidar la dieta de mi Kusgotchi me hace ver lo tóxico que es consumir solo indignación en redes”* [673, 713].
+*   **Pensamientos del usuario:** *“Tengo el escudo de protección digital en mi bolsillo de por vida”*, *“Cuidar la dieta de mi KuskiPet me hace ver lo tóxico que es consumir solo indignación en redes”* [673, 713].
 
 #### C. Competencias MIL de la UNESCO Practicadas (Saber Convivir y Trascender)
-*   **Participación y desmentido proactivo frente al algoritmo:** El usuario opera las perillas del feed interactivo (Sensacionalismo, Lectura Lateral, Indignación) [947]. Experimenta de forma lúdica cómo la indignación para ganar popularidad artificial estresa visualmente al Kusgotchi (quien cambia a texturas glitch cereza oscuro) [947]. En el **Modo Creador (Misiones de IA)**, Mateo guía al Kusgotchi a resolver misiones académicas utilizando la estructura socrática de prompts, penalizando el modelo de "muleta cognitiva" (copiar/pegar) y premiando la soberanía intelectual [947].
+*   **Participación y desmentido proactivo frente al algoritmo:** El usuario opera las perillas del feed interactivo (Sensacionalismo, Lectura Lateral, Indignación) [947]. Experimenta de forma lúdica cómo la indignación para ganar popularidad artificial estresa visualmente al KuskiPet (quien cambia a texturas glitch cereza oscuro) [947]. En el **Modo Creador (Misiones de IA)**, Mateo guía al KuskiPet a resolver misiones académicas utilizando la estructura socrática de prompts, penalizando el modelo de "muleta cognitiva" (copiar/pegar) y premiando la soberanía intelectual [947].
 
 #### D. Barreras de Experiencia (Frictions) y Mitigación de KUSKA
 *   **Fricción (Efecto Olvido):** La resistencia e inmunidad cognitiva de los juegos de alfabetización decaen bruscamente a las dos semanas debido a la degradación natural de la memoria [715].
-*   **Mitigación KUSKA:** El **Booster Shot Engine** del Kusgotchi envía micro-retos de 30 segundos cada quincena directamente al móvil [948]. Al reactivar de forma lúdica la memoria técnica sobre los patrones de manipulación, se contrarresta de por vida la curva del olvido de Ebbinghaus, consolidando un hábito reflexivo duradero [715, 716].
+*   **Mitigación KUSKA:** El **Booster Shot Engine** del KuskiPet envía micro-retos de 30 segundos cada quincena directamente al móvil [948]. Al reactivar de forma lúdica la memoria técnica sobre los patrones de manipulación, se contrarresta de por vida la curva del olvido de Ebbinghaus, consolidando un hábito reflexivo duradero [715, 716].
 
 #### E. El Output de Trascendencia Social
-A medida que Sofía, Mateo y Doña Rosa cuidan de su Kusgotchi, sus estadísticas de salud cognitiva se consolidan de manera anónima y colectiva a nivel de su colegio o junta vecinal [709]. Esto promueve un andamiaje intergeneracional y una sana rivalidad escolar que visibiliza a Lima Metropolitana como una comunidad activa y resiliente en el mapa global de alfabetización digital de la UNESCO [709, 843].
+A medida que Sofía, Mateo y Doña Rosa cuidan de su KuskiPet, sus estadísticas de salud cognitiva se consolidan de manera anónima y colectiva a nivel de su colegio o junta vecinal [709]. Esto promueve un andamiaje intergeneracional y una sana rivalidad escolar que visibiliza a Lima Metropolitana como una comunidad activa y resiliente en el mapa global de alfabetización digital de la UNESCO [709, 843].
 
 ---
 
@@ -157,14 +157,14 @@ A medida que Sofía, Mateo y Doña Rosa cuidan de su Kusgotchi, sus estadística
 
 La siguiente tabla consolida de manera sintética cómo interactúan los tres arquetipos en cada etapa del Customer Journey, detallando los touchpoints y la deconstrucción metodológica:
 
-| Canal / Dimensión | FASE 1: KUSKA CHECK (Radar de Instinto) [910] | FASE 2: KUSKA KIT (El Botiquín Figital) [926] | FASE 3: KUSGOTCHI (El Escudo Móvil) [946] |
+| Canal / Dimensión | FASE 1: KUSKA TEST / CHECK (Radar de Instinto) [910] | FASE 2: KUSKA KIT (El Botiquín Figital) [926] | FASE 3: KUSKIPET (El Escudo Móvil) [946] |
 | :--- | :--- | :--- | :--- |
 | **Touchpoint Principal** | Mangas de café universitarias, afiches de misterio urbanos y tendencias en WebAR [914, 915]. | Blueprint Desplegable de Kraft en aulas (DPCC) y Casas del Adulto Mayor [709, 938, 939]. | Aplicación Web Progresiva (PWA) de bajísimo esfuerzo de datos instalada en el móvil [946]. |
 | **Acción Clave del Usuario** | Responder 5 preguntas de Swipe táctil rápido (estilo Tinder) [917]. | Debatir y negociar roles socráticos; conectar físicamente las cartas mediante la cripto-retícula [746, 751]. | Operar perillas algorítmicas, guiar misiones de IA socrática y resolver Booster Shots [947, 948]. |
 | **Estado Emocional** | Curiosidad, interés por el autodescubrimiento lúdico [912]. | Cooperación activa, asombro táctil, aprendizaje entre pares (andamiaje) [931, 937]. | Cariño hacia la mascota, seguridad de por vida contra fraudes de IA, empoderamiento [710]. |
 | **Mecanismo de Validación** | Algoritmo rápido de swipe con barrido de radar visual color miel [917]. | **Cripto-Retícula de Encaje:** Las líneas de brillo UV de los bordes laterales deben coincidir milimétricamente [746]. | **Booster Shot Engine:** Micro-desafíos interactivos quincenales de 30 segundos en pantalla [948]. |
 | **Dolor Peruano Resuelto** | Exposición inicial sutil y deconstrucción de falsos Yapes y phishing local [744]. | Práctica de anonimización de datos "Zero-Data" de micro-negocios y prompts de redacción [708, 749]. | Inoculación de por vida ante clonaciones de voz mediante preguntas secretas analógicas familiares [686, 707]. |
-| **Paso de Salida / Puente** | La **Receta Médica Digital** y Arquetipo generados actúan como el pase figital a la Fase 2 [921]. | El **código QR coleccionable** de la carta de Acción Blanco Hueso se escanea para alimentar al Kusgotchi [749, 943]. | Consolidación colectiva de estadísticas escolares y juntas vecinales para la Copa KUSKA [709]. |
+| **Paso de Salida / Puente** | La **Receta Médica Digital** y Arquetipo generados actúan como el pase figital a la Fase 2 [921]. | El **código QR coleccionable** de la carta de Acción Blanco Hueso se escanea para alimentar al KuskiPet [749, 943]. | Consolidación colectiva de estadísticas escolares y juntas vecinales para la Copa KUSKA [709]. |
 
 ---
 
@@ -174,16 +174,16 @@ Para garantizar la solidez y coherencia metodológica de la postulación técnic
 
 1.  **Inmunización Cognitiva (Teoría de la Inoculación):**
     *   *Fundamento:* William McGuire y Sander van der Linden (Cambridge) [718].
-    *   *Journey Map:* En la Fase 1 (*Kuska Check*) y Fase 2 (*Kuska Deck*), los usuarios no reciben instrucciones abstractas pasivas de ciberseguridad, sino que se enfrentan activamente a dosis controladas y simuladas de manipulación técnica cotidiana (los Síntomas Cereza) [718]. Al deconstruir activamente el funcionamiento técnico del engaño, se inyectan "mental antibodies" cívicos de amplio espectro para neutralizar virus de IA reales antes de que los expongan a fraudes en la red [718, 912].
+    *   *Journey Map:* En la Fase 1 (*Kuska Test / Check*) y Fase 2 (*Kuska Kit*), los usuarios no reciben instrucciones abstractas pasivas de ciberseguridad, sino que se enfrentan activamente a dosis controladas y simuladas de manipulación técnica cotidiana (los Síntomas Cereza) [718]. Al deconstruir activamente el funcionamiento técnico del engaño, se inyectan "mental antibodies" cívicos de amplio espectro para neutralizar virus de IA reales antes de que los expongan a fraudes en la red [718, 912].
 2.  **Ciclo de Aprendizaje Experiencial de David Kolb:**
     *   *Fundamento:* El conocimiento se transforma y asimila a través del paso por un ciclo estructurado de cuatro estadios [719].
-    *   *Journey Map:* El Customer Journey es una transposición del ciclo de Kolb: la evaluación de swipe es la *Experiencia Concreta*; el debate colaborativo alrededor de la mesa con el mazo es la *Observación Reflexiva*; el Blueprint Desplegable Kraft con las fórmulas de prompting estructurado es la *Conceptualización Abstracta*; y el cuidado del *Kusgotchi* en el smartphone es la *Experimentación Activa* [719].
+    *   *Journey Map:* El Customer Journey es una transposición del ciclo de Kolb: la evaluación de swipe es la *Experiencia Concreta*; el debate colaborativo alrededor de la mesa con el mazo es la *Observación Reflexiva*; el Blueprint Desplegable Kraft con las fórmulas de prompting estructurado es la *Conceptualización Abstracta*; y el cuidado del *KuskiPet* en el smartphone es la *Experimentación Activa* [719].
 3.  **Combate Eficaz al Olvido (Memory Booster Shots de Oxford):**
     *   *Fundamento:* Rakoen Maertens (Oxford, Nature 2025) demostró que el decaimiento de la inmunidad al engaño se debe al olvido técnico de los patrones de manipulación a las pocas semanas [720]. Los recordatorios puramente motivacionales son inútiles; se requieren recordatorios quincenales breves de las técnicas de deconstrucción para restaurar la inmunidad al 100% [720].
-    *   *Journey Map:* El Kusgotchi inyecta de por vida el **Booster Shot Engine** [720]. Las notificaciones sutiles cada quincena plantean desafíos de deconstrucción interactivos rápidos de 30 segundos, reactivando la memoria técnica a largo plazo e inmunizando socialmente al usuario de por vida [720].
+    *   *Journey Map:* El KuskiPet inyecta de por vida el **Booster Shot Engine** [720]. Las notificaciones sutiles cada quincena plantean desafíos de deconstrucción interactivos rápidos de 30 segundos, reactivando la memoria técnica a largo plazo e inmunizando socialmente al usuario de por vida [720].
 4.  **Socio-constructivismo y Andamiaje Social de Lev Vygotsky:**
     *   *Fundamento:* Aprendizaje social cara a cara dentro de la Zona de Desarrollo Próximo (ZPD) guiado por un par más capacitado (MKO) [719].
-    *   *Journey Map:* En la Fase 2 (*Kuska Deck*), los jóvenes de educación y comunicación universitaria de Lima actúan como facilitadores comunitarios (MKO), proveyendo el andamiaje directo a los adultos mayores de las Juntas Vecinales en el Blueprint [693, 709]. La tangibilidad física de las cartas cooperativas obliga a la discusión interpersonal y argumentación socrática cara a cara, cerrando de forma inclusiva la brecha generacional del Perú [693, 719].
+    *   *Journey Map:* En la Fase 2 (*Kuska Kit*), los jóvenes de educación y comunicación universitaria de Lima actúan como facilitadores comunitarios (MKO), proveyendo el andamiaje directo a los adultos mayores de las Juntas Vecinales en el Blueprint [693, 709]. La tangibilidad física de las cartas cooperativas obliga a la discusión interpersonal y argumentación socrática cara a cara, cerrando de forma inclusiva la brecha generacional del Perú [693, 719].
 
 ---
 *Customer Journey Map de KUSKA Lab estructurado con rigor por el equipo de diseño de experiencia e investigación de KUSKA Lab para la postulación al certamen de la UNESCO 2026 en Salónica, Grecia.* [910] Attributed by Gemini Notebook. [Authorship Attribution Policy]

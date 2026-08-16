@@ -20,3 +20,8 @@ Bienvenido al repositorio oficial de **KUZKA LAB** para el **UNESCO Youth Hackat
    - Queda estrictamente prohibido hacer commits directos en la rama `main` o `master`.
    - Todo trabajo se realiza en ramas de características (`feature/...`) partiendo de `dev`.
    - Consultar `COLLABORATION.md` y `.agents/rules/collaboration_workflow.md` para el protocolo completo.
+
+4. **Integración con NotebookLM MCP:**
+   - El proyecto cuenta con acceso global al servidor MCP `NotebookLM`.
+   - Para consultar bases oficiales del hackathon, rúbricas de evaluación o arquitectura STEAM, utiliza las herramientas MCP (`ask_question`, `list_notebooks`, `select_notebook`).
+   - Consultar `.agents/rules/notebooklm_integration.md` para los IDs de los cuadernos disponibles.

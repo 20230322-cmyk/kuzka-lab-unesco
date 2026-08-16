@@ -1,4 +1,4 @@
-# FASE 1: KUSKA CHECK (Radar de Instinto)
+# FASE 1: KUSKA TEST / CHECK (Radar de Instinto)
 ## Diseño, Implementación, Evaluación y Sinergia Figital del Simulador de Supervivencia
 **Propuesta Técnica Detallada para el UNESCO Youth Hackathon 2026** [645, 794]
 **Eje de Desafío Principal:** *AI and Media Information Literacy* [645, 798]
@@ -6,7 +6,7 @@
 
 ---
 
-## 1. Enfoque Estratégico de Campaña: "The PandemAIc"
+## 1. Enfoque Estratégico de Campaña: "The PandemIA"
 
 La primera fase de **KUSKA Lab** se articula bajo la campaña interactiva **"¿SOBREVIVIRÍAS LA PANDEMIA?"** (en español) y **"CAN YOU CONTAIN THE SPREAD?"** (en inglés), jugando tipográficamente con las siglas **AI** (*Artificial Intelligence*) en todas las piezas gráficas para evocar una epidemia de desorden cognitivo en la era de la inteligencia artificial generativa [288, 704]. 
 
@@ -81,7 +81,7 @@ Las 5 pruebas del test están estrictamente contextualizadas en la coyuntura del
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────┐
-│ KUSKA CHECK (Radar de Instinto) - 5 Casos de la Coyuntura Peruana                │
+│ KUSKA TEST / CHECK (Radar de Instinto) - 5 Casos de la Coyuntura Peruana                │
 ├──────────────────────────────────────────────────────────────────────────────────┤
 │ Caso 1: Chat de Redacción (Uso de IA / Privacidad "Zero-Data")                   │
 │         ➔ Evalúa si el usuario filtra datos confidenciales (DNI, nombres) en LLMs │
@@ -137,7 +137,7 @@ Las 5 pruebas del test están estrictamente contextualizadas en la coyuntura del
 Al finalizar la quinta prueba de Swipe, el sistema no entrega una calificación fría o un "desaprobado" escolar tradicional que desmotive al participante [300]. En su lugar, el algoritmo procesa las respuestas del usuario y genera un **Diagnóstico de Salud Inmunológica Digital** en una tarjeta estética Cozy-Minimalist lista para ser guardada en el dispositivo o compartida directamente en historias de redes sociales [300]:
 
 ```
-      [ PANTALLA DE RESULTADOS DE KUSKA CHECK ]
+      [ PANTALLA DE RESULTADOS DE KUSKA TEST / CHECK ]
 ┌─────────────────────────────────────────────────┐
 │              TU DIAGNÓSTICO DIGITAL             │
 │                                                 │
@@ -145,7 +145,7 @@ Al finalizar la quinta prueba de Swipe, el sistema no entrega una calificación 
 │                                                 │
 │       ARQUETIPO: NAVEGANTE VULNERABLE           │
 │                                                 │
-│  "La PandemAIc ha comprometido severamente tus  │
+│  "La PandemIA ha comprometido severamente tus  │
 │   defensas. Eres un blanco fácil para las       │
 │   estafas y desinformaciones en internet."      │
 │                                                 │
@@ -154,21 +154,21 @@ Al finalizar la quinta prueba de Swipe, el sistema no entrega una calificación 
 ```
 
 El algoritmo clasifica al usuario dentro de uno de los tres **Arquetipos de Resiliencia Digital** [300]:
-1.  **Navegante Vulnerable (0 a 2 aciertos):** *“La PandemAIc ha comprometido severamente tus defensas digitales. Eres un blanco fácil para las estafas y desinformaciones en internet. Necesitas de inmediato un botiquín de primeros auxilios cognitivos”* [300].
+1.  **Navegante Vulnerable (0 a 2 aciertos):** *“La PandemIA ha comprometido severamente tus defensas digitales. Eres un blanco fácil para las estafas y desinformaciones en internet. Necesitas de inmediato un botiquín de primeros auxilios cognitivos”* [300].
 2.  **Explorador en Alerta (3 a 4 aciertos):** *“Tu instinto digital está alerta, pero tus defensas necesitan afilar sus herramientas técnicas de deconstrucción antes de que el virus de la IA mute”* [300].
-3.  **Guardián Inmune (5 aciertos):** *“¡Máxima resiliencia cognitiva! Estás inmunizado frente a la PandemAIc y listo para ser el facilitador que cure a su comunidad”* [300].
+3.  **Guardián Inmune (5 aciertos):** *“¡Máxima resiliencia cognitiva! Estás inmunizado frente a la PandemIA y listo para ser el facilitador que cure a su comunidad”* [300].
 
 ### La "Receta Médica Digital"
 Al hacer clic en el botón de salida, el sistema genera una **"Receta Médica Digital"** de primeros auxilios [301]. Esta receta no se limita a criticar al usuario, sino que le explica de forma constructiva cuáles de sus respuestas fallaron, cuáles emociones fueron explotadas por los estímulos de la prueba y cómo puede subir de nivel para proteger a su familia de estafas reales [301]. Esta receta es el **onboarding y gancho de enganche natural hacia la Fase 2** [301].
 
 ---
 
-## 6. Sinergia Figital con la Fase 2 (KUSKA Deck)
+## 6. Sinergia Figital con la Fase 2 (KUSKA Kit)
 
-KUSKA Check actúa como la puerta de enlace física y digital (figital) hacia el **Kuska Deck** (el botiquín físico de cartas) [301]:
+KUSKA Check actúa como la puerta de enlace física y digital (figital) hacia el **Kuska Kit** (el botiquín físico de cartas) [301]:
 
 ```
-  [ FASE 1: KUSKA CHECK ]
+  [ FASE 1: KUSKA TEST / CHECK ]
              │
              ▼ Genera Diagnóstico / Receta Médica Digital
   [ LA LLAVE DE ACCESO HÍBRIDA ]
@@ -182,7 +182,7 @@ web-app.         armar en la escuela.
     │                 │
     └────────┬────────┘
              ▼
-  [ FASE 2: KUSKA DECK ]
+  [ FASE 2: KUSKA KIT ]
   Juego cooperativo del Botiquín
 ```
 

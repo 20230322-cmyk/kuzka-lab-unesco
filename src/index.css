@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-crema: #FBF9F5;
+  --color-text-main: #111111;
+  --color-naranja-exito: #DE711E;
+  --color-rojo-alerta: #CA3606;
+  --color-amarillo-radar: #E7CE7B;
+  --color-azul-tech: #1D6CFF;
+  --color-azul-blueprint: #2058CC;
+  --color-muted-border: #EAEAEA;
+  
+  --font-logo: 'Gill Sans MT Ext Condensed Bold', 'Arial Narrow', sans-serif;
+  --font-body: 'Montserrat', 'SF Pro Display', 'Geist Sans', sans-serif;
+}
+
+/* TOKENS DE DISEÑO KUZKA LAB (SIN MARRÓN) */
+:root {
+  /* Fondo y Texto Base */
+  --bg-crema: #FBF9F5;
+  --text-main: #111111; /* Negro Carbón Neutro Puro */
+  
+  /* Colores de Acción y Marca */
+  --naranja-exito: #DE711E;
+  --rojo-alerta: #CA3606;
+  --amarillo-radar: #E7CE7B;
+  --azul-tech: #1D6CFF;
+  --azul-blueprint: #2058CC;
+  
+  /* Tipografía */
+  --font-logo: 'Gill Sans MT Ext Condensed Bold', 'Arial Narrow', sans-serif;
+  --font-body: 'Montserrat', 'SF Pro Display', sans-serif;
+}
+
+/* Base Styles (Minimalist & Editorial UI) */
+html, body {
+  background-color: var(--bg-crema);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-logo {
+  font-family: var(--font-logo);
+  letter-spacing: -0.02em;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Minimalist Utilities */
+.border-minimal {
+  border: 1px solid var(--color-muted-border);
+}
+
+.shadow-minimal {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.03);
+}
+
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+}

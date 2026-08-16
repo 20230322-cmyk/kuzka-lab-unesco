@@ -191,7 +191,7 @@ Alrededor de una mesa en la **Casa del Adulto Mayor de Chorrillos**, tres jugado
 1.  **Rosa (65 años):** Juega con el rol de **El Arquitecto** (Mazo de Roles) [710].
 2.  **Mateo (19 años):** Juega con el rol de **El Forense** (Mazo de Roles) [708].
 3.  **Sofía (15 años):** Juega con el rol de **El Auditor** (Mazo de Roles) [708].
-En el centro de la mesa se encuentra el **Blueprint Desplegable** de Kraft [287, 422]. El teléfono móvil de Mateo tiene abierta la web-app de KUSKA con su avatar **Kusgotchi** flotando en la pantalla, en estado neutral [284, 529].
+En el centro de la mesa se encuentra el **Blueprint Desplegable** de Kraft [287, 422]. El teléfono móvil de Mateo tiene abierta la web-app de KUSKA con su avatar **KuskiPet** flotando en la pantalla, en estado neutral [284, 529].
 
 ```
                      [ TABLERO BLUEPRINT ]
@@ -224,21 +224,21 @@ Ahora, el equipo debe elegir la mejor acción para educar a su círculo y resolv
 Para confirmar el puntaje obtenido de forma autónoma, el equipo busca el código alfanumérico en la esquina inferior izquierda de las cartas colocadas: **S-02 + H-02 + A-02** [770].
 *   Rosa busca la combinación en la **Matriz de Control** impresa en el Kraft: *"¡Es un Perfect Match! [770]. El tablero nos felicita por priorizar la contención y la seguridad familiar por encima del pánico" [287].*
 
-### Paso 5: El Puente Figital al Kusgotchi
+### Paso 5: El Puente Figital al KuskiPet
 Mateo toma su teléfono móvil, apunta con la cámara al código QR coleccionable impreso en la esquina inferior derecha de la carta de Acción **A-02** y lo escanea [284].
-*   **La Web-App de KUSKA reacciona al instante:** Un haz de luz color miel cruza los bordes de las cartas digitales en pantalla de forma animada [284]. Se emite un sonido armónico sutil, y el avatar del **Kusgotchi** en pantalla se ilumina y brilla en color miel [284, 529].
-*   **Incremento de estadísticas:** El Kusgotchi gana **150 puntos de Pensamiento Crítico** y su medidor de **Ansiedad Cognitiva cae un 30%**, sanando su salud digital de forma interactiva y premiando el esfuerzo del taller comunitario de Rosa, Mateo y Sofía [283, 770].
+*   **La Web-App de KUSKA reacciona al instante:** Un haz de luz color miel cruza los bordes de las cartas digitales en pantalla de forma animada [284]. Se emite un sonido armónico sutil, y el avatar del **KuskiPet** en pantalla se ilumina y brilla en color miel [284, 529].
+*   **Incremento de estadísticas:** El KuskiPet gana **150 puntos de Pensamiento Crítico** y su medidor de **Ansiedad Cognitiva cae un 30%**, sanando su salud digital de forma interactiva y premiando el esfuerzo del taller comunitario de Rosa, Mateo y Sofía [283, 770].
 
 ---
 
-## 4. El Ciclo de Vida del Kusgotchi: El "Botiquín" que te Llevas a Casa
+## 4. El Ciclo de Vida del KuskiPet: El "Botiquín" que te Llevas a Casa
 
 Una de las debilidades metodológicas más preocupantes identificadas en las propuestas de alfabetización tradicionales es el **efecto de decaimiento cognitivo a corto plazo**: los usuarios asimilan las destrezas de verificación de forma entusiasta durante una clase de un día, pero al cabo de dos semanas se olvidan por completo de las técnicas y vuelven a caer en trampas algorítmicas [33, 34].
 
-Para combatir la curva del olvido de Ebbinghaus y garantizar una resiliencia permanente, **KUSKA** diseña un bucle de retención a largo plazo a través de la mascota virtual **Kusgotchi** [34, 39, 43]:
+Para combatir la curva del olvido de Ebbinghaus y garantizar una resiliencia permanente, **KUSKA** diseña un bucle de retención a largo plazo a través de la mascota virtual **KuskiPet** [34, 39, 43]:
 
 ```
-[ TALLER PRESENCIAL KUSKA ]  ➔  [ ESCANEO PORTAL QR ]  ➔  [ APP MÓVIL KUSGOTCHI ]
+[ TALLER PRESENCIAL KUSKA ]  ➔  [ ESCANEO PORTAL QR ]  ➔  [ APP MÓVIL KUSKIPET ]
   Uso de cartas y Blueprint       Fin de la sesión presencial      El botiquín en tu bolsillo
                                                                           │
    ┌──────────────────────────────────────────────────────────────────────┘
@@ -248,24 +248,24 @@ Para combatir la curva del olvido de Ebbinghaus y garantizar una resiliencia per
  └─► Booster Shots Quincenales (Micro-desafíos de 30 segundos) ➔ Reactiva memoria MIL
 ```
 
-### A. ¿Cómo y Cuándo se Adquiere el Kusgotchi? (Onboarding)
-El Kusgotchi no es una herramienta para usarse en el aula escolar o durante la sesión del centro vecinal de manera paralela; **es el premio y recurso de retención individual que te llevas a casa una vez terminado el taller presencial de KUSKA** [725].
+### A. ¿Cómo y Cuándo se Adquiere el KuskiPet? (Onboarding)
+El KuskiPet no es una herramienta para usarse en el aula escolar o durante la sesión del centro vecinal de manera paralela; **es el premio y recurso de retención individual que te llevas a casa una vez terminado el taller presencial de KUSKA** [725].
 
 1.  **El Portal QR Final:** Al concluir la sesión de juego de cartas y la debriefing socrática en la escuela, el Blueprint de Kraft muestra un gran "Portal QR" en el centro [284].
-2.  **Activación de la Mascota:** Los participantes escanean este QR final con su smartphone personal [284]. La web-app detecta los códigos de Acción ganados en el taller y genera al instante su avatar **Kusgotchi** en la pantalla del celular [284].
-3.  **Tecnología sin Fricción:** El Kusgotchi vive en una aplicación web progresiva (PWA) ultraligera de carga instantánea que no requiere que los jóvenes descarguen de tiendas oficiales, protegiendo la conectividad y guardando su progreso de nivel en el almacenamiento local del teléfono [275, 408].
+2.  **Activación de la Mascota:** Los participantes escanean este QR final con su smartphone personal [284]. La web-app detecta los códigos de Acción ganados en el taller y genera al instante su avatar **KuskiPet** en la pantalla del celular [284].
+3.  **Tecnología sin Fricción:** El KuskiPet vive en una aplicación web progresiva (PWA) ultraligera de carga instantánea que no requiere que los jóvenes descarguen de tiendas oficiales, protegiendo la conectividad y guardando su progreso de nivel en el almacenamiento local del teléfono [275, 408].
 
-### B. El Kusgotchi como un Simulador Activo para Aplicar lo Aprendido
-El usuario ahora tiene a su Kusgotchi en su bolsillo cotidiano (ej. durante su viaje en el Metropolitano) y debe aplicar activamente las lecciones del manual socrático para mantener la salud digital de la mascota en verde [284, 529]:
+### B. El KuskiPet como un Simulador Activo para Aplicar lo Aprendido
+El usuario ahora tiene a su KuskiPet en su bolsillo cotidiano (ej. durante su viaje en el Metropolitano) y debe aplicar activamente las lecciones del manual socrático para mantener la salud digital de la mascota en verde [284, 529]:
 
-*   **La Gestión de la Dieta Informativa (Modo Consumo):** El Kusgotchi se "alimenta" de la información que el usuario filtra en su feed virtual de redes sociales. Si el usuario configura las perillas para consumir noticias sensacionalistas para ganar seguidores virtuales fáciles y rápidos, el Kusgotchi se deforma con texturas glitch color cereza oscuro, mostrando picos severos de ansiedad cognitiva [10, 13]. Para curarlo, el usuario debe aplicar las "Pausas Cognitivas" asimiladas en las cartas físicas [19, 62].
-*   **La Gestión del Trabajo Autónomo (Modo Creador):** El Kusgotchi se enfrenta a tareas (como redactar una tarea universitaria) [25, 61]. Si el usuario utiliza la IA generativa como una "muleta cognitiva" (copiando y pegando sin leer ni anonimizar datos) [48, 61], el Kusgotchi pierde nivel y credibilidad de forma drástica [48]. Si el usuario guía a la IA de manera socrática usando la estructura de prompt socrática de la planimetría de KUSKA [43, 48], el Kusgotchi brilla en color miel e incrementa sus estadísticas de Pensamiento Crítico [48, 61].
+*   **La Gestión de la Dieta Informativa (Modo Consumo):** El KuskiPet se "alimenta" de la información que el usuario filtra en su feed virtual de redes sociales. Si el usuario configura las perillas para consumir noticias sensacionalistas para ganar seguidores virtuales fáciles y rápidos, el KuskiPet se deforma con texturas glitch color cereza oscuro, mostrando picos severos de ansiedad cognitiva [10, 13]. Para curarlo, el usuario debe aplicar las "Pausas Cognitivas" asimiladas en las cartas físicas [19, 62].
+*   **La Gestión del Trabajo Autónomo (Modo Creador):** El KuskiPet se enfrenta a tareas (como redactar una tarea universitaria) [25, 61]. Si el usuario utiliza la IA generativa como una "muleta cognitiva" (copiando y pegando sin leer ni anonimizar datos) [48, 61], el KuskiPet pierde nivel y credibilidad de forma drástica [48]. Si el usuario guía a la IA de manera socrática usando la estructura de prompt socrática de la planimetría de KUSKA [43, 48], el KuskiPet brilla en color miel e incrementa sus estadísticas de Pensamiento Crítico [48, 61].
 
 ### C. La Ciencia del Combate al Olvido: Booster Shots de Memoria (Nature, 2025)
-Para asegurar que las destrezas MIL permanezcan activas de por vida, el Kusgotchi funciona bajo el modelo de **Booster Shots de Memoria** de Rakoen Maertens (Oxford, 2025) [34, 35, 39]:
+Para asegurar que las destrezas MIL permanezcan activas de por vida, el KuskiPet funciona bajo el modelo de **Booster Shots de Memoria** de Rakoen Maertens (Oxford, 2025) [34, 35, 39]:
 *   Estudios demuestran que las advertencias abstractas motivacionales son inútiles a largo plazo; la única forma de retener la inmunidad al 100% es reactivar periódicamente la memoria técnica de deconstrucción del engaño [39].
 *   Cada 15 días, la web-app de KUSKA envía una sutil notificación push al teléfono celular con un **micro-desafío de 30 segundos** [6].
-*   Se presenta un estímulo rápido de la vida real (ej. un titular sensacionalista en un chat). Si el usuario identifica correctamente qué técnica o anomalía técnica está operando en la imagen o texto antes de que termine el temporizador circular miel, la memoria del patrón cognitivo de deconstrucción se reactiva a largo plazo en sus neuronas, y su Kusgotchi recibe puntos de vitalidad inmediata [6, 21]. El botiquín cívico se queda contigo, garantizando una sociedad inmunizada ante la desinformación [24, 87].
+*   Se presenta un estímulo rápido de la vida real (ej. un titular sensacionalista en un chat). Si el usuario identifica correctamente qué técnica o anomalía técnica está operando en la imagen o texto antes de que termine el temporizador circular miel, la memoria del patrón cognitivo de deconstrucción se reactiva a largo plazo en sus neuronas, y su KuskiPet recibe puntos de vitalidad inmediata [6, 21]. El botiquín cívico se queda contigo, garantizando una sociedad inmunizada ante la desinformación [24, 87].
 
 ---
 *Diseño y modelado técnico de KUSKA Lab alineado con los criterios de evaluación, consistencia, innovación, viabilidad técnica e inclusión intergeneracional para la postulación al certamen de la UNESCO 2026.* [72, 85] Attributed by Gemini Notebook. [Authorship Attribution Policy]

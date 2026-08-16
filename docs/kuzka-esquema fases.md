@@ -14,7 +14,7 @@
 ---
 
 ### 2. Planteamiento del Problema (Problem Statement)
-El ecosistema digital del Perú se encuentra en un estado crítico de infodemia y degradación de la confianza colectiva debido a la rápida difusión de narrativas manipuladoras y estafas financieras virtuales potenciadas por Inteligencia Artificial [658, 663]. Esta alarmante crisis cognitiva digital, conceptualizada como la **"PandemAIc"** (o epidemia de desorden cognitivo impulsado por IA), sobrepasa las metodologías tradicionales de alfabetización por cuatro razones estructurales de la coyuntura nacional peruana [658]:
+El ecosistema digital del Perú se encuentra en un estado crítico de infodemia y degradación de la confianza colectiva debido a la rápida difusión de narrativas manipuladoras y estafas financieras virtuales potenciadas por Inteligencia Artificial [658, 663]. Esta alarmante crisis cognitiva digital, conceptualizada como la **"PandemIA"** (o epidemia de desorden cognitivo impulsado por IA), sobrepasa las metodologías tradicionales de alfabetización por cuatro razones estructurales de la coyuntura nacional peruana [658]:
 
 1.  **Vulnerabilidad Económica y Social Directa:** Las pequeñas marcas, micro-emprendedores (como en los talleres de Gamarra o mercados locales de Lima) y familias de Juntas Vecinales sufren de primera mano estafas mediante comprobantes de pago alterados digitalmente (falsos comprobantes de Yape o Plin) y suplantaciones de identidad sutiles que comprometen su patrimonio económico familiar sin que existan defensas cívicas preparadas [663, 665].
 2.  **Uso Inconsciente de Asistentes Generativos (Fuga de Datos):** El uso de herramientas de IA conversacional (como ChatGPT o Gemini) ha crecido aceleradamente para tareas de productividad laboral o académica [739, 740]. No obstante, los usuarios interactúan con estas tecnologías utilizándolas como una "muleta cognitiva" que atrofia el criterio propio y expone de forma directa datos personales, comerciales y contraseñas confidenciales (*data leakage*), desconociendo que todo contenido introducido entrena al modelo público y pierde privacidad [542, 665, 682].
@@ -44,26 +44,26 @@ El universo visual de KUSKA rechaza de forma absoluta los tonos de alarma estres
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────┐
-│     Fase 1: KUSKA CHECK (Evaluación del Instinto)       │
+│     Fase 1: KUSKA TEST / CHECK (Evaluación del Instinto)       │
 │  ¿Sobrevivirías la pandemIA? / Can you contain spread?  │
 └────────────────────────┬────────────────────────────────┘
                          │ Receta Médica / Diagnóstico
                          ▼
 ┌─────────────────────────────────────────────────────────┐
-│      Fase 2: KUSKA DECK (El Botiquín Figital)           │
+│      Fase 2: KUSKA KIT (El Botiquín Figital)           │
 │   Juego de Cartas Co-op y Blueprint con Cripto-Retícula  │
 └────────────────────────┬────────────────────────────────┘
                          │ Códigos QR Coleccionables
                          ▼
 ┌─────────────────────────────────────────────────────────┐
-│      Fase 3: KUSGOTCHI (Simulador Algorítmico)          │
+│      Fase 3: KUSKIPET (Simulador Algorítmico)          │
 │   Alimentación e Inmunidad Digital de Mascota Activa    │
 └─────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-#### Fase 1: KUSKA CHECK (Radar de Instinto)
+#### Fase 1: KUSKA TEST / CHECK (Radar de Instinto)
 ##### A. Concepto y Estrategia de Captación sin Fricción
 Para evitar la apatía y garantizar una captación completamente voluntaria, orgánica y libre de *cringe* institucional, la evaluación se presenta al público como una campaña de misterio basada en la curiosidad y el instinto personal bajo la pregunta directa: **"¿SOBREVIVIRÍAS LA PANDEMIA?"** y en inglés **"CAN YOU CONTAIN THE SPREAD?"** [535, 721, 722]. 
 
@@ -80,11 +80,11 @@ Al escanear el código QR, se abre instantáneamente una web-app ultra ligera re
 4.  **Prueba 4 (Procedencia y Verificación / C2PA):** Fotografía de prensa legítima que incluye en la esquina superior el pequeño isotipo criptográfico invisible del estándar de autenticidad Content Credentials (CR) [67, 723]. *(El usuario debe deslizar a la derecha/Seguro, demostrando destrezas en lectura de procedencia)* [723].
 5.  **Prueba 5 (Escepticismo y Pausa Cognitiva):** Un texto alarmante compartido de forma masiva en grupos de WhatsApp de vecinos alertando sobre un inminente corte de agua de 5 días en Lima sin hipervínculos oficiales [683, 723]. *(El usuario debe deslizar a la izquierda/Inseguro, demostrando la necesidad de aplicar una pausa cognitiva antes de compartir)* [683].
 
-**El Diagnóstico:** Al finalizar el *swipe*, el usuario recibe su arquetipo estético de resiliencia digital listo para compartir en historias de redes sociales (ej. **"Navegante Vulnerable: Tu instinto está al 40%"**) y un llamado directo a la acción: reclamar o imprimir de forma gratuita su **Kuska Deck** de primeros auxilios cognitivos para sobrevivir [667, 724].
+**El Diagnóstico:** Al finalizar el *swipe*, el usuario recibe su arquetipo estético de resiliencia digital listo para compartir en historias de redes sociales (ej. **"Navegante Vulnerable: Tu instinto está al 40%"**) y un llamado directo a la acción: reclamar o imprimir de forma gratuita su **Kuska Kit** de primeros auxilios cognitivos para sobrevivir [667, 724].
 
 ---
 
-#### Fase 2: KUSKA DECK (El Botiquín Figital)
+#### Fase 2: KUSKA KIT (El Botiquín Figital)
 Esta fase materializa las competencias MIL de la UNESCO de **usar, deconstruir y crear contenido ético** de forma colaborativa [541, 542]. El kit funciona de forma híbrida: como juego físico *Print-and-Play* (en Juntas Vecinales o Casas del Adulto Mayor) y como aplicación web interactiva de arrastrar y soltar [684, 685].
 
 ##### A. La Cripto-Retícula de Encaje (Bordes Coincidentes)
@@ -129,17 +129,17 @@ El kit físico incluye una gran planimetría en papel Kraft que actúa como el t
     *   *A-03 (El Desmentido Responsable):* "Crea una historia de Instagram desmintiendo el bulo. Usa tipografía de alta legibilidad, cita la fuente oficial, pero no vuelvas a difundir la imagen original falsa para evitar propagar el error" [688, 783].
 
 ##### D. Dinámicas Operativas
-*   **Dinámica Física:** Se juega de **2 a 4 personas** de manera cooperativa asignando roles socráticos (*El Auditor* identifica las emociones explotadas por la amenaza [339], *El Forense* propone la herramienta idónea [684], *El Arquitecto* propone la acción ética [684]). Si colocan la tríada y los márgenes de la cripto-retícula acoplan visualmente completando el circuito, superan el "Brote" [685]. La carta de Acción ganada tiene un **código QR integrado** que se escanea en la web-app para transferir la energía y dar comida al **Kusgotchi** digital [685, 782].
+*   **Dinámica Física:** Se juega de **2 a 4 personas** de manera cooperativa asignando roles socráticos (*El Auditor* identifica las emociones explotadas por la amenaza [339], *El Forense* propone la herramienta idónea [684], *El Arquitecto* propone la acción ética [684]). Si colocan la tríada y los márgenes de la cripto-retícula acoplan visualmente completando el circuito, superan el "Brote" [685]. La carta de Acción ganada tiene un **código QR integrado** que se escanea en la web-app para transferir la energía y dar comida al **KuskiPet** digital [685, 782].
 *   **Dinámica Digital (Web-App):** En la interfaz responsiva, el usuario experimenta una mecánica de **Drag-and-Drop (arrastrar y soltar)** [685, 782]. Arrastra primero la carta Miel y luego la Blanco Hueso sobre la ranura central [685, 782]. Un algoritmo simula el acoplamiento físico deslizando las cartas de forma animada hasta pegarse [782]. Si es correcto, un haz de luz color miel cruza los márgenes de las cartas digitales, emite un sonido armónico y sana a la mascota virtual [685, 782]. Si es incorrecto, un glitch cereza oscuro distorsiona la interfaz y las cartas rebotan a la mano [685, 782].
 
 ---
 
-#### Fase 3: KUSGOTCHI (El Simulador Algorítmico)
+#### Fase 3: KUSKIPET (El Simulador Algorítmico)
 La tercera fase traslada el aprendizaje de las sesiones comunitarias al largo plazo del individuo a través de un lazo emocional interactivo [673, 695].
 
 ##### A. Características y Estadísticas de la Mascota Digital
-**Kusgotchi** es una escultura tridimensional digital abstracta y geométrica que vive en la web-app, eludiendo representaciones infantiles para mantener la sofisticación formal de la marca [690, 730]. Su morfología varía dinámicamente según la dieta informativa del usuario [690]:
-*   **Geometría Suave, Fluida y Color Miel:** Indica que el Kusgotchi tiene una salud cognitiva equilibrada y pensamiento crítico óptimo [690, 731].
+**KuskiPet** es una escultura tridimensional digital abstracta y geométrica que vive en la web-app, eludiendo representaciones infantiles para mantener la sofisticación formal de la marca [690, 730]. Su morfología varía dinámicamente según la dieta informativa del usuario [690]:
+*   **Geometría Suave, Fluida y Color Miel:** Indica que el KuskiPet tiene una salud cognitiva equilibrada y pensamiento crítico óptimo [690, 731].
 *   **Bordes Dentados, Textura Glitch y Color Cereza Oscuro:** Representa "infoxicación", estrés por Reenviados compulsivos o atrofia cognitiva por el uso irresponsable de herramientas de IA [690, 731].
 *   **Métricas Visibles en Pantalla (Stats):**
     1.  *Pensamiento Crítico (Critical Thinking):* Sube al aplicar lectura lateral de fuentes y verificar autenticidad [691, 731].
@@ -147,12 +147,12 @@ La tercera fase traslada el aprendizaje de las sesiones comunitarias al largo pl
     3.  *Integridad de Creación (Creative Ethics):* Sube al interactuar éticamente con la IA y estructurar prompts con políticas "Zero-Data" [691, 731].
 
 ##### B. Mecánicas de Alimentación y Modos de Juego Activo
-*   **Modo Consumo (Algorithmic Diet):** El usuario maneja mediante perillas deslizantes las variables del feed simulado de su Kusgotchi: *Sensacionalismo*, *Filtros Burbuja*, *Lectura Lateral* e *Indignación Algorítmica* [692]. Si eleva la indignación para ganar seguidores rápidos, el Kusgotchi se deforma en color cereza con texturas de glitch [693]. Para sanarlo, debe arrastrar cartas color miel de "Pausa Cognitiva" [693].
-*   **Modo Creador (Misiones de Prompting Seguro):** La app plantea misiones donde el usuario ayuda a su Kusgotchi a realizar tareas (ej. escribir un ensayo) [694]. Si el usuario delega todo el pensamiento a la máquina como una "muleta cognitiva" (copiando y pegando directamente), el Kusgotchi pierde integridad por alucinaciones lógicas [694]. Si estructura un prompt socrático de la baraja Blanco Hueso usándolo como tutor, la escultura brilla en color miel y sube de nivel [694].
+*   **Modo Consumo (Algorithmic Diet):** El usuario maneja mediante perillas deslizantes las variables del feed simulado de su KuskiPet: *Sensacionalismo*, *Filtros Burbuja*, *Lectura Lateral* e *Indignación Algorítmica* [692]. Si eleva la indignación para ganar seguidores rápidos, el KuskiPet se deforma en color cereza con texturas de glitch [693]. Para sanarlo, debe arrastrar cartas color miel de "Pausa Cognitiva" [693].
+*   **Modo Creador (Misiones de Prompting Seguro):** La app plantea misiones donde el usuario ayuda a su KuskiPet a realizar tareas (ej. escribir un ensayo) [694]. Si el usuario delega todo el pensamiento a la máquina como una "muleta cognitiva" (copiando y pegando directamente), el KuskiPet pierde integridad por alucinaciones lógicas [694]. Si estructura un prompt socrático de la baraja Blanco Hueso usándolo como tutor, la escultura brilla en color miel y sube de nivel [694].
 
 ##### C. Estrategia de Retención para Evitar el Abandono (The Booster Shots)
 Estudios longitudinales prueban que la capacidad de discernimiento decae drásticamente a las pocas semanas debido al olvido de los patrones de manipulación técnica aprendidos [64]. Para derrotar la curva de olvido y mantener la interacción de forma recurrente, KUSKA integra dos mecánicas conductuales de retención [695, 733]:
-1.  **Motor de "Booster Shots" (Vacunas de Refuerzo de Memoria):** Cada quince días, la plataforma escolar o la web-app envía una notificación sutil al teléfono con un micro-desafío de 30 segundos [6, 696]. Se le presenta al usuario un estímulo de actualidad rápido (ej. un titular sensacionalista de WhatsApp) [52, 53]. Al resolverlo de forma táctil e interactiva, se reactiva la memoria técnica a largo plazo del patrón de deconstrucción del engaño y el Kusgotchi recibe puntos de vitalidad inmediata [36, 38, 734].
+1.  **Motor de "Booster Shots" (Vacunas de Refuerzo de Memoria):** Cada quince días, la plataforma escolar o la web-app envía una notificación sutil al teléfono con un micro-desafío de 30 segundos [6, 696]. Se le presenta al usuario un estímulo de actualidad rápido (ej. un titular sensacionalista de WhatsApp) [52, 53]. Al resolverlo de forma táctil e interactiva, se reactiva la memoria técnica a largo plazo del patrón de deconstrucción del engaño y el KuskiPet recibe puntos de vitalidad inmediata [36, 38, 734].
 2.  **Conexión de Recompensas Híbridas (Cross-Media):** Para curar de caídas de salud críticas a la mascota digital o desbloquear cosméticos estéticos, la web-app requiere escanear los códigos QR coleccionables impresos en las cartas físicas de Acción de la Fase 2 ganadas en los talleres del aula escolar, forzando un hábito interactivo permanente entre el juego presencial y la app digital [47, 49, 733].
 
 ---
@@ -170,10 +170,10 @@ Para asegurar el rigor analítico de la postulación técnica, KUSKA se fundamen
 
 | Pilar Estratégico | Fundamento Teórico / Científico | Aplicación Operativa en KUSKA |
 | :--- | :--- | :--- |
-| **Inmunización Cognitiva** [735] | Teoría de la Inoculación (Prebunking) de William McGuire, Jon Roozenbeek y Sander van der Linden (Cambridge) [735, 743]. | *Kuska Check* (Swipe) y *Kuska Deck* exponen a los usuarios a dosis controladas de manipulación técnica cotidiana para generar "anticuerpos cognitivos" antes de enfrentarse al desorden real en internet [698, 735]. |
-| **Aprendizaje Experiencial** [735] | Ciclo de Aprendizaje de David Kolb y Socio-constructivismo de Vygotsky [79, 81, 735]. | El taller transita por las fases completas del ciclo de Kolb: la experiencia táctil de *Kuska Check* (Concreta), el debate y negociación cooperativa en la mesa (Observación Reflexiva), el blueprint (Conceptualización) y la app con el *Kusgotchi* (Experimentación Activa) [768, 769, 787]. |
-| **Combate al Olvido** [735] | Booster Shots de Memoria de Rakoen Maertens (Oxford) publicados en Nature Communications [60, 735]. | El Booster Shot Engine del *Kusgotchi* envía micro-retos interactivos de 30 segundos cada quincena, reactivando la memoria técnica a largo plazo del patrón de deconstrucción del engaño, derrotando la curva de olvido de Ebbinghaus [64, 734]. |
-| **Soberanía Intelectual** [735] | Paradoja de Dependencia de la IA del MIT Media Lab [61, 735]. | El tablero de prompting y el simulador de *Kusgotchi* penalizan el uso de la IA como muleta cognitiva (que atrofia el juicio) y recompensan el uso de la IA como entrenador socrático, evitando la dependencia intelectual [735, 785]. |
+| **Inmunización Cognitiva** [735] | Teoría de la Inoculación (Prebunking) de William McGuire, Jon Roozenbeek y Sander van der Linden (Cambridge) [735, 743]. | *Kuska Test / Check* (Swipe) y *Kuska Kit* exponen a los usuarios a dosis controladas de manipulación técnica cotidiana para generar "anticuerpos cognitivos" antes de enfrentarse al desorden real en internet [698, 735]. |
+| **Aprendizaje Experiencial** [735] | Ciclo de Aprendizaje de David Kolb y Socio-constructivismo de Vygotsky [79, 81, 735]. | El taller transita por las fases completas del ciclo de Kolb: la experiencia táctil de *Kuska Test / Check* (Concreta), el debate y negociación cooperativa en la mesa (Observación Reflexiva), el blueprint (Conceptualización) y la app con el *KuskiPet* (Experimentación Activa) [768, 769, 787]. |
+| **Combate al Olvido** [735] | Booster Shots de Memoria de Rakoen Maertens (Oxford) publicados en Nature Communications [60, 735]. | El Booster Shot Engine del *KuskiPet* envía micro-retos interactivos de 30 segundos cada quincena, reactivando la memoria técnica a largo plazo del patrón de deconstrucción del engaño, derrotando la curva de olvido de Ebbinghaus [64, 734]. |
+| **Soberanía Intelectual** [735] | Paradoja de Dependencia de la IA del MIT Media Lab [61, 735]. | El tablero de prompting y el simulador de *KuskiPet* penalizan el uso de la IA como muleta cognitiva (que atrofia el juicio) y recompensan el uso de la IA como entrenador socrático, evitando la dependencia intelectual [735, 785]. |
 
 ---
 **KUSKA Lab: Juntos rediseñando la resiliencia y el pensamiento crítico de las comunidades para el futuro digital.** [700]

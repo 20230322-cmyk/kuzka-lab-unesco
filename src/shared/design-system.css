@@ -1,0 +1,35 @@
+/* TOKENS DE DISEÑO KUZKA LAB (SIN MARRÓN) */
+:root {
+  /* Fondo y Texto Base */
+  --bg-crema: #FBF9F5;
+  --text-main: #111111; /* Negro Carbón Neutro Puro */
+  
+  /* Colores de Acción y Marca */
+  --naranja-exito: #DE711E;
+  --rojo-alerta: #CA3606;
+  --amarillo-radar: #E7CE7B;
+  --azul-tech: #1D6CFF;
+  --azul-blueprint: #2058CC;
+  
+  /* Tipografía */
+  --font-logo: 'Gill Sans MT Ext Condensed Bold', 'Arial Narrow', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+/* Base Styles */
+html, body {
+  background-color: var(--bg-crema);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, .font-logo {
+  font-family: var(--font-logo);
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}

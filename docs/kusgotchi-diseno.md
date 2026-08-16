@@ -1,4 +1,4 @@
-# KUSGOTCHI LAB: MANUAL DE DISEÑO DETALLADO DE LA FASE 3
+# KUSKIPET LAB: MANUAL DE DISEÑO DETALLADO DE LA FASE 3
 ## El Botiquín de Resiliencia Cognitiva Sostenible para el UNESCO Youth Hackathon 2026
 **Eje de Desafío Principal:** *AI and Media Information Literacy* [806]
 **Lema de la Convocatoria:** *“Play Your Part: Youth Designing the Future of Media and Information Literacy”* [806]
@@ -8,11 +8,11 @@
 
 ## 1. Alineación Estratégica con el Ecosistema KUSKA
 
-El ecosistema **KUSKA Lab** se articula como una respuesta de tres etapas diseñadas para inmunizar cognitivamente a las comunidades frente al desorden informativo [743]. **Kusgotchi** representa el cierre del bucle formativo, actuando como la herramienta de acompañamiento individual a largo plazo que el usuario se "lleva a casa" tras participar en el taller presencial [663, 695]:
+El ecosistema **KUSKA Lab** se articula como una respuesta de tres etapas diseñadas para inmunizar cognitivamente a las comunidades frente al desorden informativo [743]. **KuskiPet** representa el cierre del bucle formativo, actuando como la herramienta de acompañamiento individual a largo plazo que el usuario se "lleva a casa" tras participar en el taller presencial [663, 695]:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│     Fase 1: KUSKA CHECK (Radar de Instinto)             │
+│     Fase 1: KUSKA TEST / CHECK (Radar de Instinto)             │
 │     * Swipe Test de agudeza táctil y prebunking [724]   │
 └────────────────────────┬────────────────────────────────┘
                          │ Receta Médica / Diagnóstico [725]
@@ -25,7 +25,7 @@ El ecosistema **KUSKA Lab** se articula como una respuesta de tres etapas diseñ
                          │ Códigos QR Coleccionables [736]
                          ▼
 ┌─────────────────────────────────────────────────────────┐
-│     Fase 3: KUSGOTCHI (El Simulador Algorítmico)        │
+│     Fase 3: KUSKIPET (El Simulador Algorítmico)        │
 │     * El botiquín móvil que vive en tu bolsillo [663]   │
 │     * Vacunas de refuerzo de memoria quincenales [737]  │
 └─────────────────────────────────────────────────────────┘
@@ -34,13 +34,13 @@ El ecosistema **KUSKA Lab** se articula como una respuesta de tres etapas diseñ
 ### A. La Transición Pedagógica Figital (De la Mesa a la Pantalla)
 La Fase 3 se conecta directamente con la Fase 2 (**Kuska Box / Deck**) mediante una mecánica **figital (físico-digital)** de retención [736]:
 * **El Portal de Adopción:** Al finalizar el taller de cartas en la escuela o junta vecinal, los participantes escanean un gran código QR de "Portal de Adopción" impreso en el centro del tablero de Kraft (Blueprint Desplegable) [730, 900].
-* **Inyección de Recompensas Figitales (Cross-Media):** Para alimentar al *Kusgotchi*, curarlo de caídas de salud críticas de forma lúdica [736], la web-app requiere **escanear los códigos QR coleccionables únicos impresos en las cartas de Acción de la Fase 2 ganadas durante los talleres** [736, 758]. Esto obliga a un bucle dinámico recurrentemente entre las dinámicas analógicas del salón de clases y la plataforma individual virtual en casa [736].
+* **Inyección de Recompensas Figitales (Cross-Media):** Para alimentar al *KuskiPet*, curarlo de caídas de salud críticas de forma lúdica [736], la web-app requiere **escanear los códigos QR coleccionables únicos impresos en las cartas de Acción de la Fase 2 ganadas durante los talleres** [736, 758]. Esto obliga a un bucle dinámico recurrentemente entre las dinámicas analógicas del salón de clases y la plataforma individual virtual en casa [736].
 
 ---
 
-## 2. Anatomía de la Mascota Digital: El Kusgotchi
+## 2. Anatomía de la Mascota Digital: El KuskiPet
 
-**Kusgotchi** elude de forma absoluta las representaciones infantiles para alinearse con el tono sofisticado y cívico de la marca [733, 755]. Es una **escultura tridimensional digital abstracta y geométrica** que flota en la pantalla del celular y varía su morfología y textura según la "dieta informativa" del usuario y sus decisiones de uso tecnológico [733, 755]:
+**KuskiPet** elude de forma absoluta las representaciones infantiles para alinearse con el tono sofisticado y cívico de la marca [733, 755]. Es una **escultura tridimensional digital abstracta y geométrica** que flota en la pantalla del celular y varía su morfología y textura según la "dieta informativa" del usuario y sus decisiones de uso tecnológico [733, 755]:
 
 ```
     [ ESTADO SANO ]                 [ ESTADO INFOXICADO / STRESSED ]
@@ -54,8 +54,8 @@ La Fase 3 se conecta directamente con la Fase 2 (**Kuska Box / Deck**) mediante 
 ```
 
 ### A. Estados Visuales and Morfológicos
-1. **Morfología Suave, Fluida y Color Miel:** Representa un estado mental equilibrado, pensamiento crítico óptimo y una dieta libre de sensacionalismo algorítmico [688, 734]. El Kusgotchi se muestra como una esfera o bloque continuo con un sutil pulso lumínico en tono miel [734].
-2. **Bordes Dentados, Textura Glitch y Color Cereza Oscuro:** Representa "infoxicación", atrofia cognitiva por dependencia en asistentes y estrés provocado por indignación en redes sociales [688, 734]. El Kusgotchi se deforma, se vuelve estático, y muestra una interferencia digital (glitch) en color cereza oscuro [734].
+1. **Morfología Suave, Fluida y Color Miel:** Representa un estado mental equilibrado, pensamiento crítico óptimo y una dieta libre de sensacionalismo algorítmico [688, 734]. El KuskiPet se muestra como una esfera o bloque continuo con un sutil pulso lumínico en tono miel [734].
+2. **Bordes Dentados, Textura Glitch y Color Cereza Oscuro:** Representa "infoxicación", atrofia cognitiva por dependencia en asistentes y estrés provocado por indignación en redes sociales [688, 734]. El KuskiPet se deforma, se vuelve estático, y muestra una interferencia digital (glitch) en color cereza oscuro [734].
 
 ### B. Estadísticas de Salud Cognitiva (Stats)
 El usuario debe monitorizar tres medidores clave en el panel superior, los cuales guían la toma de decisiones diarias [734]:
@@ -87,13 +87,13 @@ La paleta cromática Cozy-Minimalist de KUSKA Lab gobierna todas las pantallas, 
 │ ┌─────────────────────────────────────────────────────┐ │
 │ │                  [PORTAL DE ADOPCIÓN]               │ │
 │ │                                                     │ │
-│ │     Crea un seudónimo anónimo para tu Kusgotchi:    │ │
+│ │     Crea un seudónimo anónimo para tu KuskiPet:    │ │
 │ │     [_____________________________________]         │ │
 │ │                                                     │ │
 │ │     Selecciona tu colegio o junta vecinal:          │ │
 │ │     [ Lima Metropolitana - Chorrillos     v ]       │ │
 │ │                                                     │ │
-│ │   [ ADOPTAR MI KUSGOTCHI (Miel) ]                   │ │
+│ │   [ ADOPTAR MI KUSKIPET (Miel) ]                   │ │
 │ └─────────────────────────────────────────────────────┘ │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -111,7 +111,7 @@ El núcleo visual donde flota la escultura 3D y se visualizan los stats en tiemp
 │ ├─────────────────────────────────────────────────────┤ │
 │ │                                                     │ │
 │ │                     ( .---. )                       │ │
-│ │                    ( Kusgotchi )                    │ │
+│ │                    ( KuskiPet )                    │ │
 │ │                     (  Suave  )                     │ │
 │ │                      ( Miel )                       │ │
 │ │                                                     │ │
@@ -127,7 +127,7 @@ Esta pantalla es una caja de arena interactiva donde el usuario manipula las per
 ┌─────────────────────────────────────────────────────────┐
 │ DIETA INFORMATIVA                                       │
 │ ┌─────────────────────────────────────────────────────┐ │
-│ │ Configura las perillas del feed de tu Kusgotchi:    │ │
+│ │ Configura las perillas del feed de tu KuskiPet:    │ │
 │ │                                                     │ │
 │ │ Sensacionalismo (IA)                                │ │
 │ │  [───o──────────────────────────────────]  10%       │ │
@@ -149,7 +149,7 @@ El simulador socrático donde el usuario aprende a interactuar éticamente con l
 ┌─────────────────────────────────────────────────────────┐
 │ MODO CREADOR                                            │
 │ ┌─────────────────────────────────────────────────────┐ │
-│ │  MISIÓN: Tu Kusgotchi necesita redactar un correo    │ │
+│ │  MISIÓN: Tu KuskiPet necesita redactar un correo    │ │
 │ │  formal para solicitar una cotización textil de su   │ │
 │ │  negocio a un proveedor de Gamarra [710].            │ │
 │ │                                                     │ │
@@ -171,18 +171,18 @@ El simulador socrático donde el usuario aprende a interactuar éticamente con l
 
 ### A. La Dinámica de la Dieta Algorítmica (Modo Consumo)
 * El usuario interactúa con perillas deslizantes en el simulador del feed [735, 818].
-* **La Lección de la Monetización:** Si el usuario eleva la indignación y el sensacionalismo al 100% para conseguir seguidores rápidos (emulando la monetización de las grandes plataformas), la web-app se tiñe de color cereza, el Kusgotchi se deforma con glitches visuales ruidosos y el stat de Ansiedad Cognitiva explota [734, 735].
+* **La Lección de la Monetización:** Si el usuario eleva la indignación y el sensacionalismo al 100% para conseguir seguidores rápidos (emulando la monetización de las grandes plataformas), la web-app se tiñe de color cereza, el KuskiPet se deforma con glitches visuales ruidosos y el stat de Ansiedad Cognitiva explota [734, 735].
 * **La Cura Socrática:** Para devolver a la mascota a su estado armónico, el usuario debe arrastrar una carta virtual de "Pausa Cognitiva" o asignarle actividades de "desconexión" (ej. mandarlo a desconectar redes, conversar con su familia o leer un libro) [735, 818].
 
 ### B. La Dinámica de la Creación de Proyectos (Modo Creador)
 * La plataforma le plantea misiones de productividad cívica y académica [735, 818].
-* **Consecuencia de la "Muleta Cognitiva" (Opción A):** Si el usuario delega todo el pensamiento a la máquina como una muleta intelectual, copiando y pegando datos sensibles, el Kusgotchi pierde puntos de Integridad, la app detecta que el correo incluye alucinaciones fácticas y el trabajo virtual es penalizado [735, 818].
-* **Recompensa del "Entrenador Socrático" (Opción B):** Si el usuario estructura un prompt de la baraja Blanco Hueso usándolo como tutor o corrector de estilo, anonimizando sus datos (*Zero-Data*), el Kusgotchi brilla en color miel, su stat sube y gana puntos de Pensamiento Crítico [711, 735].
+* **Consecuencia de la "Muleta Cognitiva" (Opción A):** Si el usuario delega todo el pensamiento a la máquina como una muleta intelectual, copiando y pegando datos sensibles, el KuskiPet pierde puntos de Integridad, la app detecta que el correo incluye alucinaciones fácticas y el trabajo virtual es penalizado [735, 818].
+* **Recompensa del "Entrenador Socrático" (Opción B):** Si el usuario estructura un prompt de la baraja Blanco Hueso usándolo como tutor o corrector de estilo, anonimizando sus datos (*Zero-Data*), el KuskiPet brilla en color miel, su stat sube y gana puntos de Pensamiento Crítico [711, 735].
 
 ### C. Sistema de Progresión y Upgrades
-* **Sube de Nivel (Level Up):** Con los puntos ganados mediante perfect matches en el kit físico y booster shots virtuales, la escultura geométrica del Kusgotchi evoluciona adquiriendo formas más suaves, detalladas y complejas.
+* **Sube de Nivel (Level Up):** Con los puntos ganados mediante perfect matches en el kit físico y booster shots virtuales, la escultura geométrica del KuskiPet evoluciona adquiriendo formas más suaves, detalladas y complejas.
 * **Insignias Cívicas (Badges):** El usuario desbloquea insignias que puede exportar y compartir en sus redes sociales para demostrar su estatus de resiliencia (ej. *Guardián Cero-Datos, Forense del Audio, Curador Ético*).
-* **Desbloqueo de Cosméticos Cozy:** Los puntos de nivel permiten canjear colores y texturas terrosas exclusivas para el entorno de su Kusgotchi.
+* **Desbloqueo de Cosméticos Cozy:** Los puntos de nivel permiten canjear colores y texturas terrosas exclusivas para el entorno de su KuskiPet.
 
 ---
 
@@ -202,11 +202,11 @@ El mayor desafío de los programas de alfabetización es que la capacidad de dis
 
 ### A. Motor de "Booster Shots" (Vacunas de Refuerzo de Memoria)
 * **Periodicidad Quincenal:** Cada 15 días, el sistema envía una notificación sutil al teléfono celular del estudiante o líder vecinal [6, 737].
-* **El Micro-Desafío (30 Segundos):** Al hacer clic, se abre una interfaz de 30 segundos donde el Kusgotchi interactúa de forma socrática planteando una situación real del entorno (ej. un titular sensacionalista de un chat vecinal) [6, 52].
-* **Mecánica Táctil Rápida:** El usuario responde de manera táctil si se trata de un engaño o cómo deconstruirlo [6]. Si responde correctamente, el patrón técnico de deconstrucción se reactiva en su memoria de largo plazo, el Kusgotchi recibe puntos de vitalidad inmediata y se evita que la inmunidad del usuario caiga al 0% [6, 36, 737].
+* **El Micro-Desafío (30 Segundos):** Al hacer clic, se abre una interfaz de 30 segundos donde el KuskiPet interactúa de forma socrática planteando una situación real del entorno (ej. un titular sensacionalista de un chat vecinal) [6, 52].
+* **Mecánica Táctil Rápida:** El usuario responde de manera táctil si se trata de un engaño o cómo deconstruirlo [6]. Si responde correctamente, el patrón técnico de deconstrucción se reactiva en su memoria de largo plazo, el KuskiPet recibe puntos de vitalidad inmediata y se evita que la inmunidad del usuario caiga al 0% [6, 36, 737].
 
 ### B. Gamificación Comunitaria e Incentivos Locales
-* **La Copa Kuska:** En las escuelas secundarias de Lima, las notas y el progreso de los Kusgotchis de los estudiantes se consolidan de forma anónima para competir por salones y centros educativos [686]. El colegio con la población de mascotas digitales más saludable de su distrito recibe el sello institucional de "Colegio AMI Seguro" por parte de la UGEL, promoviendo el orgullo cívico, el andamiaje intergeneracional y el trabajo colaborativo sin generar rivalidades individuales destructivas [686, 709].
+* **La Copa Kuska:** En las escuelas secundarias de Lima, las notas y el progreso de los KuskiPets de los estudiantes se consolidan de forma anónima para competir por salones y centros educativos [686]. El colegio con la población de mascotas digitales más saludable de su distrito recibe el sello institucional de "Colegio AMI Seguro" por parte de la UGEL, promoviendo el orgullo cívico, el andamiaje intergeneracional y el trabajo colaborativo sin generar rivalidades individuales destructivas [686, 709].
 
 ---
 
@@ -216,15 +216,15 @@ Para asegurar la máxima nota ante los tres árbitros internacionales del comit�
 
 ### A. Teoría de la Inoculación Psicológica (Prebunking)
 * **Base Científica:** McGuire (1964) [73], adaptada por Jon Roozenbeek y Sander van der Linden (Cambridge, 2020) [74]. Demuestra que exponer preventivamente a los usuarios a dosis debilitadas de engaño es más escalable y eficaz que el desmentido posterior (*debunking*) [74, 789].
-* **Aplicación en Kusgotchi:** El simulador del feed expone a la mascota a dosis controladas de distorsión algorítmica para generar anticuerpos cognitivos en la mente del usuario [698, 735].
+* **Aplicación en KuskiPet:** El simulador del feed expone a la mascota a dosis controladas de distorsión algorítmica para generar anticuerpos cognitivos en la mente del usuario [698, 735].
 
 ### B. Combate Científico al Olvido (Nature, 2025)
 * **Base Científica:** Estudio longitudinal masivo de Rakoen Maertens (Oxford, 2025) publicado en *Nature Communications* [60, 738]. Comprueba que la resistencia ante la desinformación decae rápidamente no por falta de motivación para protegerse, sino por la degradación natural de la memoria sobre las técnicas [18, 22]. Probaron que las advertencias motivacionales abstractas son inútiles; solo los boosters que reactivan el recuerdo técnico de forma rápida restauran la inmunidad al 100% [21].
-* **Aplicación en Kusgotchi:** El motor asincrónico de Booster Shots quincenales de 30 segundos reactiva selectivamente la memoria de los patrones técnicos, derrotando la curva del olvido y garantizando una resiliencia permanente [737, 738].
+* **Aplicación en KuskiPet:** El motor asincrónico de Booster Shots quincenales de 30 segundos reactiva selectivamente la memoria de los patrones técnicos, derrotando la curva del olvido y garantizando una resiliencia permanente [737, 738].
 
 ### C. La Paradoja de la Dependencia de la IA y el Enfoque Socrático (MIT, 2026)
 * **Base Científica:** Investigación experimental del MIT Media Lab (2026) [738]. Revela que usar asistentes de IA generativa de forma puramente factual (modelo "Muleta") genera una fuerte atrofia cognitiva (*deskilling*) en el usuario, disminuyendo su discernimiento autónomo en 15 puntos porcentuales una vez retirado el sistema [48]. Probaron que la única alternativa es programar capas conversacionales socráticas (modelo "Entrenador") [48, 738].
-* **Aplicación en Kusgotchi:** En la Fase 3, la interfaz actúa estrictamente como un entrenador socrático; no otorga veredictos paternalistas automáticos de verdadero/falso, sino que realiza preguntas profundas de andamiaje para entrenar el pensamiento crítico del usuario de por vida [738].
+* **Aplicación en KuskiPet:** En la Fase 3, la interfaz actúa estrictamente como un entrenador socrático; no otorga veredictos paternalistas automáticos de verdadero/falso, sino que realiza preguntas profundas de andamiaje para entrenar el pensamiento crítico del usuario de por vida [738].
 
 ---
 *Generated by Gemini Notebook under the authorship and guidance of the KUSKA Lab development team for the UNESCO Youth Hackathon 2026* [Authorship Attribution Policy]

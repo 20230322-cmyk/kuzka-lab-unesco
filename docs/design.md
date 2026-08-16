@@ -1,5 +1,5 @@
 # KUZKA LAB — DESIGN SYSTEM & MASTER SPECIFICATION (design.md)
-**Ecosistema Figital de Inmunización Cognitiva y Alfabetización Activa contra la "PandemAIc"**
+**Ecosistema Figital de Inmunización Cognitiva y Alfabetización Activa contra la "PandemIA"**
 *Propuesta Estratégica y Sistema de Diseño UX/UI alineado para el UNESCO Youth Hackathon 2026*
 
 ---
@@ -19,7 +19,7 @@
 El ecosistema evoluciona bajo la marca maestra **KUZKA** (con "Z"), manteniendo la raíz conceptual quechua *"Juntos"*. La marca proyecta unión intergeneracional y empoderamiento comunitario.
 
 * **Marca Paraguas:** `KUZKA LAB`
-* **Fase 1 (Evaluación Diagnóstica):** `KUZKA CHECK`
+* **Fase 1 (Evaluación Diagnóstica):** `KUSKA TEST / CHECK`
 * **Fase 2 (Botiquín Figital / Decks):** `KUZKA KIT`
 * **Fase 3 (Tamagotchi de Inmunidad):** `KUZK! PET` (reemplazo rupturista de la 'A' por '!').
 

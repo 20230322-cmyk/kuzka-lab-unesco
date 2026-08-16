@@ -1,5 +1,5 @@
 # KUSKA LAB: PROPUESTA ESTRATÉGICA GENERAL (MASTER PROPOSAL)
-## Ecosistema Figital de Inmunización Cognitiva y Alfabetización Activa contra la "PandemAIc"
+## Ecosistema Figital de Inmunización Cognitiva y Alfabetización Activa contra la "PandemIA"
 **Propuesta Maestra de Innovación Social para el UNESCO Youth Hackathon 2026** [530, 682]
 **Eje de Desafío Principal:** *AI and Media Information Literacy* [530, 682]
 **Lema de la Convocatoria:** *“Play Your Part: Youth Designing the Future of Media and Information Literacy”* [530, 682]
@@ -7,11 +7,11 @@
 
 ---
 
-## 1. El Concepto Central: "IA contra IA para detener la PandemAIc"
+## 1. El Concepto Central: "IA contra IA para detener la PandemIA"
 
 **KUSKA Lab** (que significa *"juntos"* en quechua) es un programa híbrido descentralizado y de código abierto diseñado para cerrar la brecha de Alfabetización Mediática e Informacional (MIL) frente a la proliferación de contenidos sintéticos generados por IA, estafas virtuales de consumo y dinámicas algorítmicas nocivas [589]. 
 
-En la era del auge exponencial de la inteligencia artificial generativa, la desinformación se fabrica con un nivel de realismo y personalización que desborda las capacidades de los métodos de verificación tradicionales [17]. Ante esta coyuntura crítica, conceptualizada como la **"PandemAIc"** [513], KUSKA Lab propone un enfoque innovador: **utilizar la Inteligencia Artificial como un motor de aprendizaje crítico para combatir y neutralizar las amenazas de la misma Inteligencia Artificial** [40].
+En la era del auge exponencial de la inteligencia artificial generativa, la desinformación se fabrica con un nivel de realismo y personalización que desborda las capacidades de los métodos de verificación tradicionales [17]. Ante esta coyuntura crítica, conceptualizada como la **"PandemIA"** [513], KUSKA Lab propone un enfoque innovador: **utilizar la Inteligencia Artificial como un motor de aprendizaje crítico para combatir y neutralizar las amenazas de la misma Inteligencia Artificial** [40].
 
 En lugar de crear un filtro de automatización cerrado o un verificador de caja negra —lo cual actúa como una "muleta cognitiva" que desincentiva el ejercicio de la indagación crítica independiente y atrofia las capacidades de discernimiento autónomo en un 15% (deskilling) [140]—, **KUSKA Lab reprograma la IA bajo el modelo de un "Entrenador Socrático" (Coach Model)** [140]. El sistema utiliza la tecnología generativa para guiar de manera dialógica al usuario a descubrir las inconsistencias físicas de un deepfake o la lógica detrás de la desinformación [140], inyectando "anticuerpos cognitivos" de amplio espectro antes de que se enfrenten al desorden real en internet [295, 552].
 
@@ -35,7 +35,7 @@ Diseñar, implementar y evaluar un **ecosistema figital e intergeneracional de i
 ### B. Objetivos Específicos
 1.  **Inocular cognitivamente a un mínimo de 10,000 usuarios en Lima Metropolitana en el primer año** mediante el test de triaje ágil *KUSKA Check*, disminuyendo su susceptibilidad inicial ante estafas de clonación de voz y comprobantes financieros alterados por IA [522, 533].
 2.  **Desarrollar y distribuir un kit didáctico figital descentralizado (KUSKA Box / Deck)** en formato de código abierto *Print-and-Play* [540, 602] para integrarse como una unidad de aprendizaje obligatoria de 3 semanas en el curso formal de Desarrollo Personal, Ciudadanía y Cívica (DPCC) de secundaria [602], enseñando la lógica de prompting estructurado y análisis forense comunitario [544].
-3.  **Mitigar el efecto de decaimiento del aprendizaje de largo plazo** mediante el motor de *Booster Shots* (vacunas de refuerzo de memoria) de la Progressive Web App *Kusgotchi* [601], reactivando de forma quincenal la memoria técnica de los patrones de manipulación algorítmica en menos de 30 segundos [601, 739].
+3.  **Mitigar el efecto de decaimiento del aprendizaje de largo plazo** mediante el motor de *Booster Shots* (vacunas de refuerzo de memoria) de la Progressive Web App *KuskiPet* [601], reactivando de forma quincenal la memoria técnica de los patrones de manipulación algorítmica en menos de 30 segundos [601, 739].
 4.  **Promover la cohesión comunitaria y el liderazgo juvenil intergeneracional** estableciendo un voluntariado de convalidación académica universitaria [602], donde estudiantes de educación superior capaciten presencialmente a adultos mayores de juntas vecinales y Casas del Adulto Mayor [602].
 
 ---
@@ -46,7 +46,7 @@ El universo visual de KUSKA Lab se rige bajo una estética **Cozy-Minimalist** q
 
 ```
 ┌────────────────────────────────────────────────────────┐
-│     Fase 1: KUSKA CHECK (Radar de Instinto)            │
+│     Fase 1: KUSKA TEST / CHECK (Radar de Instinto)            │
 │  - Campaña de misterio: "¿Sobrevivirías la pandemIA?"  │ ──► Onboarding sin fricción
 │  - Triaje táctil de 5 preguntas estilo Tinder (Swipe)  │     (Mangas de café, QR urbano) [595]
 └────────────────────────┬───────────────────────────────┘
@@ -60,24 +60,24 @@ El universo visual de KUSKA Lab se rige bajo una estética **Cozy-Minimalist** q
                          │ Códigos QR Coleccionables [601]
                          ▼
 ┌────────────────────────────────────────────────────────┐
-│     Fase 3: KUSGOTCHI (El Simulador Algorítmico)       │
+│     Fase 3: KUSKIPET (El Simulador Algorítmico)       │
 │  - Adopción de Mascota Digital Geométrica 3D           │ ──► Escudo en tu bolsillo
 │  - Dieta Mediática (Feed) e Integridad de Prompts     │     (Booster Shots quincenales) [601]
 └────────────────────────────────────────────────────────┘
 ```
 
-### Fase 1: KUSKA CHECK (Radar de Instinto) [533, 744]
+### Fase 1: KUSKA TEST / CHECK (Radar de Instinto) [533, 744]
 *   **Implementación:** Campaña de misterio de bajo esfuerzo y alta curiosidad bajo la premisa **"¿SOBREVIVIRÍAS LA PANDEMIA?"** (o *"CAN YOU CONTAIN THE SPREAD?"*) [594]. La captación es voluntaria y orgánica mediante códigos QR en mangas de vasos de café de cafeterías universitarias, afiches urbanos con acertijos visuales en paraderos del Metropolitano y tendencias con filtros de WebAR en redes sociales [595].
 *   **Contenido de Evaluación:** Una web-app progresiva (PWA) ultra ligera abre un simulador táctil estilo *Swipe* [596]. El usuario responde en 60 segundos deslizando a la derecha (Real/Seguro) o a la izquierda (Inseguro/IA) ante 5 estímulos de la coyuntura del Perú (clonación de voz, Plin falso, phishing académico, prompt sin privacidad, cadena alarmista) [574, 642].
 *   **Output:** Genera un diagnóstico estético para compartir y una **"Receta Médica Digital"** empática que actúa como el pase figital para adquirir el kit de la Fase 2 [575].
 
-### Fase 2: KUSKA BOX / KUSKA DECK (El Botiquín Figital) [540, 575]
+### Fase 2: KUSKA BOX / KUSKA KIT (El Botiquín Figital) [540, 575]
 *   **Implementación:** Un recurso de aprendizaje cooperativo figital distribuido como caja física y versión web interactiva de arrastrar y soltar [540, 597]. Los alumnos asumen roles (Auditor, Forense, Arquitecto) para resolver "Brotes" de desinformación sobre la mesa [540, 580].
 *   **Mecánica de Validación:** Se descartan manuales aburridos de texto [624]. Se utiliza la **Cripto-Retícula de Encaje (Crypto-Grid)** [540]: las cartas poseen patrones de líneas vectoriales continuas en brillo UV en sus márgenes laterales [540]. Solo cuando se debate y se logra armar la tríada pedagógica idónea (**Síntoma ➔ Herramienta ➔ Acción**), las líneas se alinean milimétricamente formando un patrón cerrado continuo denominado el "Kuska Loop" [540].
 *   **Planimetría Desplegable:** El manual es el mismo tablero de Kraft desplegado [579], dividido en 4 cuadrantes (*Prompt Lab* para aprender a usar, *Forense Lab* para aprender a dudar, *Privacidad Lab* para aprender a protegerse y *Creator Lab* para aprender a convivir) [579].
 
-### Fase 3: KUSGOTCHI (El Simulador Algorítmico) [546, 581]
-*   **Implementación:** El usuario escanea el código QR coleccionable de su carta física de Acción ganada, cargándolo a su Progressive Web App [601, 768]. Adopta un **Kusgotchi**, una escultura geométrica abstracta tridimensional que vive en su bolsillo cotidiano [546, 581].
+### Fase 3: KUSKIPET (El Simulador Algorítmico) [546, 581]
+*   **Implementación:** El usuario escanea el código QR coleccionable de su carta física de Acción ganada, cargándolo a su Progressive Web App [601, 768]. Adopta un **KuskiPet**, una escultura geométrica abstracta tridimensional que vive en su bolsillo cotidiano [546, 581].
 *   **Dinámica Activa:** Mantiene sana a su mascota gestionando su "Dieta Mediática" (feed simulado con perillas algorítmicas de Sensacionalismo e Indignación) [548, 583] y resolviendo misiones de creación formal (Mode Creador), donde es penalizado si usa la IA como una "muleta cognitiva" (atofia cognitiva por copiar y pegar) y es recompensado con vitalidad color miel si la utiliza socráticamente [549, 583].
 
 ---
@@ -86,7 +86,7 @@ El universo visual de KUSKA Lab se rige bajo una estética **Cozy-Minimalist** q
 
 La viabilidad técnica e inclusiva de KUSKA Lab está garantizada gracias a una arquitectura tecnológica de bajísima fricción y un enfoque de diseño universal adaptado a las condiciones de conectividad en el Perú [602, 734]:
 
-1.  **Tecnología Web Progresiva (PWA):** Tanto el triaje de *Kuska Check* como la aplicación de *Kusgotchi* operan bajo formato PWA [734, 756]. Esto elimina la fricción de descargar aplicaciones pesadas de tiendas comerciales (Google Play o App Store), consumiendo un espacio de almacenamiento ínfimo en el dispositivo del usuario y permitiendo un acceso ultra ligero desde cualquier smartphone con conectividad inestable [734].
+1.  **Tecnología Web Progresiva (PWA):** Tanto el triaje de *Kuska Test / Check* como la aplicación de *KuskiPet* operan bajo formato PWA [734, 756]. Esto elimina la fricción de descargar aplicaciones pesadas de tiendas comerciales (Google Play o App Store), consumiendo un espacio de almacenamiento ínfimo en el dispositivo del usuario y permitiendo un acceso ultra ligero desde cualquier smartphone con conectividad inestable [734].
 2.  **Privacidad "Zero-Data" por Diseño:** Para garantizar la absoluta confianza de las familias, el ecosistema utiliza un proceso de registro completamente anónimo [734]. No se solicitan correos, contraseñas, nombres reales ni DNI, evitando de origen la fuga de información sensible (*data leakage*) [734, 751].
 3.  **Ergonomía Inclusiva para el Adulto Mayor:** El kit físico y el manual desplegable de Kraft utilizan tipografías de gran formato (*Inter* de alta legibilidad), iconografía abstracta muy clara y un código de contraste cromático estricto (marrón sobre blanco hueso), asegurando que las personas mayores de Juntas Vecinales con disminución visual puedan participar de manera autónoma sin sentirse excluidas por interfaces digitales inaccesibles [570, 631].
 
@@ -106,8 +106,8 @@ Para que el proyecto no sea una iniciativa efímera que muera tras la evaluació
 
 KUSKA Lab cuenta con un diseño modular flexible concebido para escalar de manera orgánica desde un aula piloto en Lima Metropolitana hacia cualquier rincón del Perú y el Sur Global sin requerir costosas adaptaciones tecnológicas [15, 602]:
 
-1.  **La Copa KUSKA (Escalabilidad Colectiva Escolar):** Para masificar el programa en los colegios de secundaria, el sistema implementa la *Copa KUSKA* [545]. Los puntajes e inmunidad acumulada por los *Kusgotchis* individuales de los alumnos se consolidan de manera anónima a nivel del salón de clases [545]. Las aulas compiten de manera colectiva y cooperativa a nivel distrital por incentivos cívicos y cosméticos premium *cozy* para sus avatares, estimulando una sana competencia comunitaria que expande la base de usuarios de manera viral y voluntaria [545, 551].
-2.  **Sincronización Cross-Media Activa:** Para curar de picos críticos de salud cognitiva a su mascota virtual o desbloquear nuevos modos del simulador algorítmico, **el Kusgotchi requiere que el usuario escanee los códigos QR de las cartas físicas de Acción de la Fase 2 ganadas en los talleres presenciales** [601]. Esta dependencia sistémica híbrida obliga a una interacción y réplica continua entre el juego presencial de mesa y el cuidado del avatar individual digital en casa, asegurando una retención recurrente de por vida [601].
+1.  **La Copa KUSKA (Escalabilidad Colectiva Escolar):** Para masificar el programa en los colegios de secundaria, el sistema implementa la *Copa KUSKA* [545]. Los puntajes e inmunidad acumulada por los *KuskiPets* individuales de los alumnos se consolidan de manera anónima a nivel del salón de clases [545]. Las aulas compiten de manera colectiva y cooperativa a nivel distrital por incentivos cívicos y cosméticos premium *cozy* para sus avatares, estimulando una sana competencia comunitaria que expande la base de usuarios de manera viral y voluntaria [545, 551].
+2.  **Sincronización Cross-Media Activa:** Para curar de picos críticos de salud cognitiva a su mascota virtual o desbloquear nuevos modos del simulador algorítmico, **el KuskiPet requiere que el usuario escanee los códigos QR de las cartas físicas de Acción de la Fase 2 ganadas en los talleres presenciales** [601]. Esta dependencia sistémica híbrida obliga a una interacción y réplica continua entre el juego presencial de mesa y el cuidado del avatar individual digital en casa, asegurando una retención recurrente de por vida [601].
 3.  **La Cepa de Inoculación de Técnicas (Adaptabilidad Global):** Al centrar las cartas de Síntoma en las **técnicas estructurales de manipulación de la era de la IA** (emotividad extrema, descontextualización visual, alucinaciones factuales, filtración de privacidad) en lugar de temas políticos coyunturales que caducan rápido, el ecosistema adquiere inmunidad de amplio espectro [629]. La estructura de juego permanece 100% vigente e imperturbable frente a nuevas cepas de fake news que los delincuentes o propagandistas inventen en el futuro en cualquier idioma o región geográfica [629].
 
 ---
@@ -118,10 +118,10 @@ Para asegurar la rigurosidad y solidez analítica de la postulación técnica an
 
 | Pilar Estratégico | Fundamento Teórico / Científico | Aplicación Operativa en KUSKA |
 | :--- | :--- | :--- |
-| **Inmunización Cognitiva** [603] | **Teoría de la Inoculación (Prebunking)** de William McGuire, Jon Roozenbeek y Sander van der Linden (Universidad de Cambridge) [603, 608]. | *Kuska Check* (Swipe) [574] y *Kuska Box* (Deck) [575] exponen preventivamente a los usuarios a dosis controladas y simuladas de manipulación técnica cotidiana (los Síntomas Cereza) [603]. Al deconstruir activamente el funcionamiento técnico del engaño, se inyectan anticuerpos cognitivos de amplio espectro para neutralizar virus de IA reales antes de que los expongan a fraudes en la red [552, 603]. |
-| **Aprendizaje Experiencial** [603] | **Ciclo de Aprendizaje de David Kolb** y **Socio-constructivismo de Lev Vygotsky** [53, 55, 603]. | El taller transita por las fases completas del ciclo de Kolb: la experiencia táctil de *Kuska Check* (Concreta) [574]; el debate y negociación cooperativa en la mesa (Observación Reflexiva) [540]; el manual desplegable tipo blueprint (Conceptualización Abstracta) [579]; y la simulación interactiva individual con el *Kusgotchi* en el smartphone (Experimentación Activa) [583, 603]. El andamiaje social se modela a través de roles socráticos cara a cara en la Zona de Desarrollo Próximo (ZPD) [132, 133]. |
-| **Combate al Olvido** [603] | **Booster Shots de Memoria** de Rakoen Maertens (Universidad de Oxford) publicados en *Nature Communications* (2025) [603, 626]. | La ciencia comprueba que la resistencia ante la mentira decae severamente a las pocas semanas debido a la degradación natural de la memoria técnica sobre las técnicas aprendidas [626]. Los recordatorios motivacionales de amenaza son inútiles [626]; solo los boosters de memoria quincenales restauran la inmunidad al 100% [626]. El *Booster Shot Engine* del Kusgotchi envía micro-retos de 30 segundos cada quincena directamente al móvil, reactivando la memoria de largo plazo [584, 603]. |
-| **Soberanía Intelectual** [603] | **Paradoja de Dependencia de la IA** del MIT Media Lab (2026) [603, 742]. | Delegar la verificación en chatbots de IA conversacional como muletas genera atrofia cognitiva (*deskilling*), disminuyendo un 15% el discernimiento humano autónomo una vez que el soporte de la máquina es desconectado [742]. El manual desplegable y el simulador de *Kusgotchi* penalizan el uso de la IA como muleta y recompensan su uso socrático guiado (Coach Model), asegurando la autonomía de juicio del ciudadano [554, 603]. |
+| **Inmunización Cognitiva** [603] | **Teoría de la Inoculación (Prebunking)** de William McGuire, Jon Roozenbeek y Sander van der Linden (Universidad de Cambridge) [603, 608]. | *Kuska Test / Check* (Swipe) [574] y *Kuska Box* (Deck) [575] exponen preventivamente a los usuarios a dosis controladas y simuladas de manipulación técnica cotidiana (los Síntomas Cereza) [603]. Al deconstruir activamente el funcionamiento técnico del engaño, se inyectan anticuerpos cognitivos de amplio espectro para neutralizar virus de IA reales antes de que los expongan a fraudes en la red [552, 603]. |
+| **Aprendizaje Experiencial** [603] | **Ciclo de Aprendizaje de David Kolb** y **Socio-constructivismo de Lev Vygotsky** [53, 55, 603]. | El taller transita por las fases completas del ciclo de Kolb: la experiencia táctil de *Kuska Test / Check* (Concreta) [574]; el debate y negociación cooperativa en la mesa (Observación Reflexiva) [540]; el manual desplegable tipo blueprint (Conceptualización Abstracta) [579]; y la simulación interactiva individual con el *KuskiPet* en el smartphone (Experimentación Activa) [583, 603]. El andamiaje social se modela a través de roles socráticos cara a cara en la Zona de Desarrollo Próximo (ZPD) [132, 133]. |
+| **Combate al Olvido** [603] | **Booster Shots de Memoria** de Rakoen Maertens (Universidad de Oxford) publicados en *Nature Communications* (2025) [603, 626]. | La ciencia comprueba que la resistencia ante la mentira decae severamente a las pocas semanas debido a la degradación natural de la memoria técnica sobre las técnicas aprendidas [626]. Los recordatorios motivacionales de amenaza son inútiles [626]; solo los boosters de memoria quincenales restauran la inmunidad al 100% [626]. El *Booster Shot Engine* del KuskiPet envía micro-retos de 30 segundos cada quincena directamente al móvil, reactivando la memoria de largo plazo [584, 603]. |
+| **Soberanía Intelectual** [603] | **Paradoja de Dependencia de la IA** del MIT Media Lab (2026) [603, 742]. | Delegar la verificación en chatbots de IA conversacional como muletas genera atrofia cognitiva (*deskilling*), disminuyendo un 15% el discernimiento humano autónomo una vez que el soporte de la máquina es desconectado [742]. El manual desplegable y el simulador de *KuskiPet* penalizan el uso de la IA como muleta y recompensan su uso socrático guiado (Coach Model), asegurando la autonomía de juicio del ciudadano [554, 603]. |
 
 ---
 *Generated by Gemini Notebook under the authorship and guidance of the KUSKA Lab development team for the UNESCO Youth Hackathon 2026* [Authorship Attribution Policy]
