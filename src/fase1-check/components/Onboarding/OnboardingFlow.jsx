@@ -108,30 +108,32 @@ const StepHabits = ({ onSelect }) => {
 
 const StepConfidence = ({ onSelect }) => {
   const options = [
-    { id: 'expert', label: 'Soy un Experto', desc: 'Nunca caigo en Fake News', color: 'bg-[var(--color-azul-tech)]' },
-    { id: 'average', label: 'Promedio', desc: 'A veces dudo de lo que leo', color: 'bg-[var(--text-main)]' },
-    { id: 'vulnerable', label: 'Vulnerable', desc: 'Me cuesta distinguir la verdad', color: 'bg-[var(--color-rojo-alerta)]' }
+    { id: 'vulnerable', label: 'Un poco', desc: 'Me cuesta distinguir la verdad', color: 'bg-[var(--color-rojo-alerta)]' },
+    { id: 'average', label: 'Más o menos', desc: 'A veces dudo de lo que veo', color: 'bg-[var(--text-main)]' },
+    { id: 'expert', label: 'Muy bueno', desc: 'Casi nunca me engañan', color: 'bg-[var(--color-azul-tech)]' }
   ]
 
   return (
-    <div className="flex-1 flex flex-col items-center justify-center text-center gap-8 w-full h-full">
-      <h3 className="font-logo text-4xl tracking-tight text-[var(--text-main)] leading-[1.1]">
-        ¿Qué tan bueno eres<br/><span className="text-[var(--color-naranja-kuska)]">detectando estafas?</span>
-      </h3>
-      <div className="flex flex-col gap-3 w-full mt-4">
-        {options.map((opt) => (
-          <button 
-            key={opt.id}
-            onClick={() => onSelect('confidence', opt.id)}
-            className="w-full bg-white border-minimal outline-fondo p-4 rounded-xl flex items-center justify-between hover:bg-[#FDF6E3] hover:border-[var(--color-amarillo-radar)] transition-colors"
-          >
-            <div className="flex flex-col text-left">
-              <span className="font-bold text-sm text-[var(--text-main)]">{opt.label}</span>
-              <span className="text-xs text-[#787774]">{opt.desc}</span>
-            </div>
-            <div className={`w-3 h-3 rounded-full ${opt.color}`} />
-          </button>
-        ))}
+    <div className="w-full h-full overflow-y-auto flex flex-col pb-6">
+      <div className="my-auto flex flex-col items-center text-center gap-8 w-full pt-4">
+        <h3 className="font-main font-semibold text-2xl lg:text-3xl tracking-tight text-[var(--text-main)] leading-snug px-4">
+          ¿Qué tan bueno eres detectando<br/><span className="text-[var(--color-naranja-kuska)]">I.A. en tu día a día?</span>
+        </h3>
+        <div className="flex flex-col lg:flex-row justify-center gap-4 w-full max-w-[320px] lg:max-w-4xl mt-2 px-4 lg:px-0">
+          {options.map((opt) => (
+            <button 
+              key={opt.id}
+              onClick={() => onSelect('confidence', opt.id)}
+              className="flex-1 w-full bg-white border-minimal outline-fondo p-5 lg:p-6 rounded-xl flex flex-col items-center justify-center gap-3 lg:gap-4 hover:bg-[#FDF6E3] hover:border-[var(--color-amarillo-radar)] transition-all hover:-translate-y-1 text-center group"
+            >
+              <div className={`w-4 h-4 rounded-full mb-1 ${opt.color} group-hover:scale-125 transition-transform duration-300`} />
+              <div className="flex flex-col items-center">
+                <span className="font-bold text-base text-[var(--text-main)]">{opt.label}</span>
+                <span className="text-xs text-[#787774] mt-1">{opt.desc}</span>
+              </div>
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   )
