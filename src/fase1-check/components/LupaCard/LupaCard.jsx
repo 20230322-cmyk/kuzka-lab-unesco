@@ -12,25 +12,21 @@ export function LupaCard({ data, onComplete }) {
   }
 
   return (
-    <motion.div 
-      initial={{ opacity: 0, scale: 0.95, y: 20 }}
-      animate={{ opacity: 1, scale: 1, y: 0 }}
-      exit={{ opacity: 0, scale: 0.9, y: -20, filter: 'blur(10px)' }}
-      className="absolute inset-0 w-full h-full flex flex-col lg:flex-row items-center justify-center lg:justify-evenly p-6 lg:p-12 gap-8 overflow-y-auto"
-    >
-      <div className="w-full max-w-[320px] lg:max-w-[450px] text-center lg:text-left mb-2 lg:mb-0 flex flex-col items-center lg:items-start gap-4 lg:gap-8">
-        <div className="inline-flex w-fit bg-[var(--color-azul-tech)]/10 px-3 lg:px-4 py-1.5 lg:py-2 rounded-full items-center gap-2 border-minimal">
-          <Search size={16} className="text-[var(--color-azul-tech)]" />
-          <span className="text-[10px] lg:text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-azul-tech)]">
-            Laboratorio Forense
-          </span>
+    <div className="absolute inset-0 w-full h-full flex flex-col z-10 overflow-y-auto no-scrollbar">
+      <div className="flex-1 w-full lg:max-w-5xl mx-auto flex flex-col lg:flex-row items-center justify-center px-6 lg:px-0 pt-24 lg:pt-16 pb-4 gap-8 lg:gap-10 my-auto">
+      
+        <div className="w-full max-w-[320px] lg:max-w-[400px] text-center lg:text-left mb-4 lg:mb-0 flex flex-col items-center lg:items-start gap-5 shrink-0">
+          <p className="font-main text-xl lg:text-3xl font-medium leading-[1.4] text-[var(--text-main)] tracking-tight">
+            "{data.content}"
+          </p>
+          <div className="hidden lg:block mt-2">
+            <h3 className="text-[11px] tracking-[0.2em] font-mono uppercase text-[#1D6CFF] font-bold bg-[#1D6CFF]/10 inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-[#1D6CFF]/20">
+              {data.type || "Laboratorio Forense"}
+            </h3>
+          </div>
         </div>
-        <p className="text-sm md:text-xl lg:text-2xl leading-relaxed text-[var(--text-main)] font-medium font-mono">
-          {data.content}
-        </p>
-      </div>
 
-      <div className="w-full lg:w-auto max-w-[300px] lg:max-w-[420px] flex flex-col items-center justify-center">
+        <div className="relative w-full lg:w-[280px] max-w-[260px] lg:max-w-[280px] flex flex-col items-center justify-center shrink-0">
         <div 
           className="w-full aspect-[4/5] rounded-[24px] shadow-minimal border-minimal bg-white flex flex-col items-center justify-center p-0 cursor-crosshair relative overflow-hidden group transition-all"
           onMouseEnter={handleReveal}
@@ -79,7 +75,14 @@ export function LupaCard({ data, onComplete }) {
             Es Real
           </button>
         </div>
+          {/* Etiqueta Móvil */}
+          <div className="w-full text-center mt-8 lg:hidden">
+            <h3 className="text-[10px] tracking-[0.2em] font-mono uppercase text-[#1D6CFF] font-bold bg-[#1D6CFF]/10 inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-[#1D6CFF]/20">
+              {data.type || "Laboratorio Forense"}
+            </h3>
+          </div>
+        </div>
       </div>
-    </motion.div>
+    </div>
   )
 }

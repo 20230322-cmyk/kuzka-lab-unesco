@@ -35,9 +35,9 @@ export function TutorialCard({ level, onComplete, progress }) {
       <motion.div 
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="w-full flex flex-col items-center justify-center shrink-0 pt-6 pb-2 px-8 lg:px-12"
+        className="w-full flex flex-col items-center justify-center shrink-0 pt-6 pb-2 px-6"
       >
-        <div className="w-full h-[4px] bg-[#EAEAEA] rounded-full overflow-hidden border border-[var(--text-main)]/10">
+        <div className="w-full lg:max-w-5xl mx-auto h-[4px] bg-[#EAEAEA] rounded-full overflow-hidden border border-[var(--text-main)]/10">
           <motion.div 
             className="h-full bg-[var(--text-main)]"
             initial={{ width: 0 }}
@@ -48,10 +48,10 @@ export function TutorialCard({ level, onComplete, progress }) {
       </motion.div>
 
       {/* Contenedor principal estilo SwipeCard */}
-      <div className="flex-1 w-full flex flex-col lg:flex-row items-center justify-center lg:justify-evenly p-6 lg:p-12 gap-8 my-auto">
+      <div className="flex-1 w-full lg:max-w-5xl mx-auto flex flex-col lg:flex-row items-center justify-center px-6 lg:px-0 pt-24 lg:pt-16 pb-4 gap-8 lg:gap-10 my-auto">
         
         {/* Texto explicativo (Izquierda en Desktop) */}
-        <div className="w-full max-w-[320px] lg:max-w-[450px] text-center lg:text-left mb-2 lg:mb-0 flex flex-col items-center lg:items-start gap-4 lg:gap-6 shrink-0">
+        <div className="w-full max-w-[320px] lg:max-w-[400px] text-center lg:text-left mb-4 lg:mb-0 flex flex-col items-center lg:items-start gap-4 lg:gap-5 shrink-0">
           <motion.h4 
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -65,7 +65,7 @@ export function TutorialCard({ level, onComplete, progress }) {
             transition={{ delay: 0.1 }}
             className="font-logo text-4xl lg:text-5xl font-bold tracking-tighter text-[var(--text-main)] leading-[0.9]"
           >
-            MECÁNICA<br/>DE AUDITORÍA
+            Desliza para<br/>responder.
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -78,7 +78,7 @@ export function TutorialCard({ level, onComplete, progress }) {
         </div>
 
         {/* Área interactiva (Derecha en Desktop) */}
-        <div className="relative w-full lg:w-auto max-w-[320px] lg:max-w-[420px] flex flex-col items-center justify-center shrink-0">
+        <div className="relative w-full lg:w-[280px] max-w-[260px] lg:max-w-[280px] flex flex-col items-center justify-center shrink-0">
           
           {/* Indicadores Laterales Fantasmas */}
           <div className="absolute inset-0 flex items-center justify-between px-[-20px] lg:px-[-30px] pointer-events-none z-0">
