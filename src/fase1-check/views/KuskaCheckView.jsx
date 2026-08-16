@@ -66,7 +66,7 @@ export function KuskaCheckView() {
             <img 
               src="/LOGOTIPO KUZKA CHECK.png" 
               alt="Kuzka Check Logo" 
-              className="h-8 object-contain"
+              className="h-10 lg:h-12 object-contain"
             />
           </motion.div>
           {!completed && !showOnboarding && !showTransition && (
