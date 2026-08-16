@@ -131,7 +131,7 @@ export function HomeHubView() {
                     <div className="w-12 h-12 rounded-full border-2 border-white bg-[var(--color-amarillo-radar)] flex items-center justify-center text-[var(--text-main)]"><Bot className="w-5 h-5"/></div>
                   </div>
                   <div className="text-xs font-mono font-bold text-[var(--text-main)]/60 uppercase">
-                    +500 Mentes<br/>Inoculadas
+                    +150 Mentes<br/>Inoculadas
                   </div>
                 </div>
               </div>
