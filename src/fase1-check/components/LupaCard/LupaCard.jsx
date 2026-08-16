@@ -5,10 +5,7 @@ import { Search } from 'lucide-react'
 export function LupaCard({ data, onComplete }) {
   const [isRevealed, setIsRevealed] = useState(false)
 
-  const handleReveal = () => {
-    setIsRevealed(true)
-  }
-
+  const handleReveal = () => setIsRevealed(true)
   const handleDecision = (decision) => {
     const correct = (decision === 'SAFE' && data.isSafe) || (decision === 'FAKE' && !data.isSafe)
     onComplete(correct)
@@ -19,59 +16,68 @@ export function LupaCard({ data, onComplete }) {
       initial={{ opacity: 0, scale: 0.95, y: 20 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.9, y: -20, filter: 'blur(10px)' }}
-      className="absolute inset-0 w-full h-full bg-white rounded-3xl flex flex-col p-6 border border-minimal shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
+      className="absolute inset-0 w-full h-full flex flex-col items-center justify-between py-6"
     >
-      <div className="flex justify-center items-center mb-6">
-        <div className="bg-[var(--bg-crema)] px-4 py-2 rounded-full flex items-center gap-2">
-          <Search size={16} className="text-[var(--color-azul-tech)]" />
-          <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-[var(--color-azul-tech)]">
+      <div className="w-full max-w-[320px] text-center mb-6 flex flex-col items-center gap-4">
+        <div className="inline-flex w-fit bg-[var(--color-azul-tech)]/10 px-3 py-1.5 rounded-full items-center gap-2 border-minimal">
+          <Search size={14} className="text-[var(--color-azul-tech)]" />
+          <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-[var(--color-azul-tech)]">
             Laboratorio Forense
           </span>
         </div>
+        <p className="text-sm md:text-base leading-relaxed text-[var(--text-main)] font-medium font-mono">
+          {data.content}
+        </p>
       </div>
-      
-      <p className="text-lg leading-relaxed font-bold text-[var(--text-main)] mb-6 text-center px-2">
-        {data.content}
-      </p>
 
-      <div 
-        className="flex-1 bg-[var(--bg-crema)] rounded-2xl flex flex-col items-center justify-center p-6 cursor-crosshair border-2 border-dashed border-[var(--color-azul-tech)] relative overflow-hidden group transition-all"
-        onMouseEnter={handleReveal}
-        onTouchStart={handleReveal}
-      >
-        {!isRevealed ? (
-          <div className="flex flex-col items-center gap-3 text-center">
-            <Search size={32} className="text-[var(--color-azul-tech)] opacity-50 group-hover:scale-110 transition-transform" />
-            <span className="text-sm text-[var(--color-azul-tech)] font-bold">MANTÉN PRESIONADO<br/>PARA USAR LUPA</span>
-          </div>
-        ) : (
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="flex flex-col items-center gap-3"
-          >
-            <div className="w-12 h-12 rounded-full bg-[var(--color-rojo-alerta)]/10 flex items-center justify-center">
-              <Search size={24} className="text-[var(--color-rojo-alerta)]" />
+      <div className="flex-1 w-full max-w-[300px] flex flex-col items-center justify-center">
+        <div 
+          className="w-full aspect-[4/5] rounded-[24px] shadow-minimal border-minimal bg-white flex flex-col items-center justify-center p-0 cursor-crosshair relative overflow-hidden group transition-all"
+          onMouseEnter={handleReveal}
+          onTouchStart={handleReveal}
+        >
+          {data.image && (
+            <img src={data.image} alt="Evidencia" className="absolute inset-0 w-full h-full object-cover z-0" />
+          )}
+          
+          <div className="absolute inset-0 bg-[var(--text-main)]/30 z-10 transition-opacity group-hover:opacity-70" />
+
+          {!isRevealed ? (
+            <div className="flex flex-col items-center gap-2 text-center z-20">
+              <Search size={32} className="text-white opacity-90 group-hover:scale-110 transition-transform drop-shadow-md" />
+              <span className="text-[10px] text-white font-bold tracking-widest drop-shadow-md font-mono uppercase">Lupa</span>
             </div>
-            <p className="text-sm text-[var(--color-rojo-alerta)] font-bold text-center leading-relaxed">
-              Pista: {data.clue}
-            </p>
-          </motion.div>
-        )}
+          ) : (
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="flex flex-col items-center gap-3 z-20 p-4 w-full"
+            >
+              <div className="w-12 h-12 rounded-full bg-[var(--color-rojo-alerta)] flex items-center justify-center shadow-lg">
+                <Search size={24} className="text-white" />
+              </div>
+              <div className="bg-white/95 backdrop-blur-sm p-4 w-11/12 rounded-xl shadow-lg border-minimal">
+                <p className="text-[11px] text-[var(--text-main)] font-bold text-center leading-relaxed font-mono">
+                  Pista: {data.clue}
+                </p>
+              </div>
+            </motion.div>
+          )}
+        </div>
       </div>
 
-      <div className="flex flex-col gap-3 mt-6">
+      <div className="w-full max-w-[300px] flex gap-3 mt-8">
         <button 
           onClick={() => handleDecision('FAKE')}
-          className="w-full py-4 rounded-2xl font-bold text-sm bg-[var(--color-rojo-alerta)] text-white hover:opacity-90 active:scale-[0.98] transition-all"
+          className="flex-1 py-4 rounded-2xl font-bold text-[11px] uppercase tracking-wider bg-[var(--color-rojo-alerta)] text-white hover:opacity-90 active:scale-[0.98] transition-all shadow-sm font-mono"
         >
-          MARCAR COMO IA / FALSO
+          Falso / IA
         </button>
         <button 
           onClick={() => handleDecision('SAFE')}
-          className="w-full py-4 rounded-2xl font-bold text-sm bg-white border-2 border-[var(--text-main)] text-[var(--text-main)] hover:bg-[var(--bg-crema)] active:scale-[0.98] transition-all"
+          className="flex-1 py-4 rounded-2xl font-bold text-[11px] uppercase tracking-wider bg-white border-minimal text-[var(--text-main)] hover:bg-[var(--bg-crema)] active:scale-[0.98] transition-all font-mono"
         >
-          ES REAL
+          Es Real
         </button>
       </div>
     </motion.div>

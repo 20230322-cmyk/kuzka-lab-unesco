@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
+  <rect width="300" height="150" fill="#1e1e1e" rx="10"/>
+  <!-- SMS App Header -->
+  <rect x="0" y="0" width="300" height="30" fill="#2d2d2d" rx="10"/>
+  <text x="15" y="20" fill="#fff" font-family="sans-serif" font-size="12" font-weight="bold">Messages</text>
+  <!-- Message Bubble -->
+  <rect x="20" y="50" width="260" height="70" fill="#0b84ff" rx="15"/>
+  <text x="35" y="75" fill="#fff" font-family="sans-serif" font-size="14">Tu cuenta Yape ha sido bloqu...</text>
+  <text x="35" y="95" fill="#fff" font-family="sans-serif" font-size="14">Reactiva aquí: <tspan text-decoration="underline" fill="#a0d8ff">yape-seguro.xyz</tspan></text>
+</svg>

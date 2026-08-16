@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <rect width="300" height="400" fill="#f3f4f6" rx="10"/>
+  <rect x="20" y="20" width="260" height="360" fill="#fff" rx="15" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))"/>
+  
+  <circle cx="150" cy="70" r="30" fill="#00d8a1"/>
+  <text x="135" y="78" fill="#fff" font-family="sans-serif" font-weight="bold" font-size="20">Plin</text>
+  
+  <text x="150" y="130" fill="#333" font-family="sans-serif" font-size="14" text-anchor="middle">Transferencia exitosa</text>
+  
+  <!-- The artifact / fraud indication -->
+  <!-- We put a slightly miscolored bounding box and different font for the number -->
+  <rect x="95" y="145" width="110" height="40" fill="#fcfcfc" stroke="#eee" stroke-width="1" stroke-dasharray="2 2"/>
+  <text x="150" y="175" fill="#111" font-family="serif" font-size="32" font-weight="bold" text-anchor="middle">S/ 250.00</text>
+  
+  <line x1="40" y1="210" x2="260" y2="210" stroke="#eee" stroke-width="2" stroke-dasharray="5 5"/>
+  
+  <text x="40" y="240" fill="#888" font-family="sans-serif" font-size="12">Destino:</text>
+  <text x="260" y="240" fill="#333" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="end">Tienda Kuzka</text>
+  
+  <text x="40" y="270" fill="#888" font-family="sans-serif" font-size="12">Fecha:</text>
+  <text x="260" y="270" fill="#333" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="end">15 Ago 2026</text>
+  
+  <rect x="40" y="320" width="220" height="40" fill="#00d8a1" rx="20"/>
+  <text x="150" y="345" fill="#fff" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Compartir constancia</text>
+</svg>

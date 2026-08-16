@@ -56,28 +56,35 @@ export function KuskaCheckView() {
   return (
     <KuskaCheckLayout 
       header={
-        <motion.div 
-          initial={{ opacity: 0, y: -10 }} 
-          animate={{ opacity: 1, y: 0 }} 
-          className="flex w-full justify-between items-center"
-        >
-          <img 
-            src="/LOGOTIPO KUZKA CHECK.png" 
-            alt="Kuzka Check Logo" 
-            className="h-10 object-contain"
-          />
+        <div className="w-full flex flex-col gap-2">
+          <motion.div 
+            initial={{ opacity: 0, y: -10 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            className="flex w-full justify-center items-center"
+          >
+            <img 
+              src="/LOGOTIPO KUZKA CHECK.png" 
+              alt="Kuzka Check Logo" 
+              className="h-8 object-contain"
+            />
+          </motion.div>
           {!completed && !showOnboarding && !showTransition && (
-            <div className="flex gap-1 text-[11px] font-mono font-bold tracking-[0.2em] text-[#787774] items-center">
-              <span className="text-[var(--text-main)]">{currentIndex + 1}</span> / <span>15</span>
+            <div className="w-full h-[4px] bg-[#EAEAEA] rounded-full overflow-hidden mt-1 border border-[var(--text-main)]/10">
+              <motion.div 
+                className="h-full bg-[var(--text-main)]"
+                initial={{ width: 0 }}
+                animate={{ width: `${(currentIndex / MOCK_QUESTIONS.length) * 100}%` }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+              />
             </div>
           )}
-        </motion.div>
+        </div>
       }
       footer={
         !completed && !showOnboarding && !showTransition && <RadarTimer />
       }
     >
-      <div className="relative w-full max-w-sm aspect-[3/4] flex items-center justify-center">
+      <div className="relative w-full h-full flex flex-col items-center justify-start">
         <AnimatePresence mode="popLayout">
           {showOnboarding ? (
             <OnboardingFlow 
