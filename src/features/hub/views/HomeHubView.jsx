@@ -97,6 +97,79 @@ export function HomeHubView() {
           </div>
         </section>
 
+        {/* ABOUT US / WORKSHOP GALLERY SECTION */}
+        <section className="py-20 lg:py-32 bg-white border-b border-[var(--text-main)]/10">
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+              
+              {/* TEXT CONTENT */}
+              <div className="w-full lg:w-1/2 space-y-8">
+                <div>
+                  <span className="text-xs font-mono font-bold uppercase text-[var(--color-naranja-kuska)] tracking-widest flex items-center gap-2">
+                    <HeartHandshake className="w-4 h-4" />
+                    Sobre Nosotros
+                  </span>
+                  <h2 className="font-logo text-4xl sm:text-6xl font-bold uppercase text-[var(--text-main)] mt-4 leading-none">
+                    Del Aula al<br/>Laboratorio Figital
+                  </h2>
+                </div>
+                
+                <div className="space-y-4 text-sm sm:text-base font-sans text-[var(--text-main)]/80 leading-relaxed border-l-4 border-[var(--color-naranja-kuska)] pl-6">
+                  <p>
+                    Somos un equipo interdisciplinario que nació en los talleres universitarios. Allí nos dimos cuenta de primera mano de los desafíos cognitivos a los que se enfrentan estudiantes y profesionales frente al auge de la IA y la automatización.
+                  </p>
+                  <p>
+                    Kuzka Lab no es solo código; es el resultado de horas de trabajo con estudiantes, experimentando, debatiendo y construyendo herramientas de <strong>alfabetización mediática</strong> que conectan el instinto humano con la resiliencia tecnológica.
+                  </p>
+                </div>
+                
+                <div className="flex items-center gap-4 pt-4">
+                  <div className="flex -space-x-4">
+                    {/* Tiny visual representation of team / impact */}
+                    <div className="w-12 h-12 rounded-full border-2 border-white bg-[var(--color-naranja-kuska)] flex items-center justify-center text-white"><Users className="w-5 h-5"/></div>
+                    <div className="w-12 h-12 rounded-full border-2 border-white bg-[var(--color-azul-tech)] flex items-center justify-center text-white"><Award className="w-5 h-5"/></div>
+                    <div className="w-12 h-12 rounded-full border-2 border-white bg-[var(--color-amarillo-radar)] flex items-center justify-center text-[var(--text-main)]"><Bot className="w-5 h-5"/></div>
+                  </div>
+                  <div className="text-xs font-mono font-bold text-[var(--text-main)]/60 uppercase">
+                    +500 Mentes<br/>Inoculadas
+                  </div>
+                </div>
+              </div>
+
+              {/* PHOTO GALLERY (MASONRY GRID) */}
+              <div className="w-full lg:w-1/2">
+                <div className="grid grid-cols-2 gap-4 sm:gap-6 items-center">
+                  <div className="space-y-4 sm:space-y-6">
+                    <img 
+                      src="/Fotitos/0DEC10DE-6B0F-4F9E-AD91-3AF46222F0AC.JPG" 
+                      alt="Taller de IA 1" 
+                      className="w-full h-auto rounded-3xl object-cover shadow-lg border border-[var(--text-main)]/5 transform transition-transform hover:scale-105 duration-300"
+                    />
+                    <img 
+                      src="/Fotitos/C52955E0-8453-48CB-B1AE-6CF2AEB681C6.JPG" 
+                      alt="Taller de IA 2" 
+                      className="w-full h-auto rounded-3xl object-cover shadow-lg border border-[var(--text-main)]/5 transform transition-transform hover:scale-105 duration-300"
+                    />
+                  </div>
+                  <div className="space-y-4 sm:space-y-6 -mt-12 sm:-mt-20">
+                    <img 
+                      src="/Fotitos/1AAB7974-6744-482A-87AA-6A7C94DF02A3.JPG" 
+                      alt="Equipo Kuzka Lab" 
+                      className="w-full h-auto rounded-3xl object-cover shadow-lg border border-[var(--text-main)]/5 transform transition-transform hover:scale-105 duration-300"
+                    />
+                    <img 
+                      src="/Fotitos/9A20DE9D-120F-43AB-8B8A-BFDD44ED1DA6.JPG" 
+                      alt="Workshop" 
+                      className="w-full h-auto rounded-3xl object-cover shadow-lg border border-[var(--text-main)]/5 transform transition-transform hover:scale-105 duration-300"
+                    />
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
         {/* INTERACTIVE PERSONA MATRICIAL (MOVED FROM HERO) */}
         <section className="py-16 bg-white border-b border-[var(--text-main)]/10">
           <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
