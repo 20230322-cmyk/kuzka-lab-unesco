@@ -11,13 +11,14 @@ import {
   X, 
   ShieldCheck,
   ChevronRight,
-  ChevronDown
+  ChevronDown,
+  Users
 } from 'lucide-react'
 
 export function Navbar() {
   const location = useLocation()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(true)
+  const [openDropdowns, setOpenDropdowns] = useState({})
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -31,6 +32,13 @@ export function Navbar() {
   useEffect(() => {
     setMobileMenuOpen(false)
   }, [location.pathname])
+
+  const toggleDropdown = (name) => {
+    setOpenDropdowns(prev => ({
+      ...prev,
+      [name]: !prev[name]
+    }))
+  }
 
   const navLinks = [
     {
@@ -64,22 +72,31 @@ export function Navbar() {
       ]
     },
     {
-      name: 'Cursos',
+      name: 'Kuzka Hub',
       path: '/cursos',
       icon: BookOpen,
       highlight: false
     },
     {
-      name: 'Blog',
-      path: '/blog',
-      icon: FileText,
-      highlight: false
-    },
-    {
-      name: 'Foro',
-      path: '/foro',
-      icon: MessageSquare,
-      highlight: false
+      name: 'Comunidad',
+      icon: Users,
+      dropdown: [
+        {
+          name: 'Blog',
+          path: '/blog',
+          icon: FileText
+        },
+        {
+          name: 'Foro',
+          path: '/foro',
+          icon: MessageSquare
+        },
+        {
+          name: 'Sobre Nosotros',
+          path: '/about',
+          icon: Users
+        }
+      ]
     }
   ]
 
@@ -226,20 +243,22 @@ export function Navbar() {
           <div className="flex flex-col gap-1">
             {navLinks.map((item) => {
               if (item.dropdown) {
+                const isOpen = openDropdowns[item.name] || false;
+                const GroupIcon = item.icon;
                 return (
                   <div key={item.name} className="flex flex-col gap-1">
                     <button 
-                      onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
+                      onClick={() => toggleDropdown(item.name)}
                       className="flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-bold text-[var(--text-main)] hover:bg-[var(--text-main)]/5 transition-all"
                     >
                       <div className="flex items-center gap-3">
-                        <Sparkles className="w-4 h-4 text-[var(--color-naranja-kuska)]" />
+                        <GroupIcon className="w-4 h-4 text-[var(--color-naranja-kuska)]" />
                         <span>{item.name}</span>
                       </div>
-                      <ChevronDown className={`w-4 h-4 opacity-50 transition-transform ${mobileDropdownOpen ? 'rotate-180' : ''}`} />
+                      <ChevronDown className={`w-4 h-4 opacity-50 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
                     </button>
                     
-                    {mobileDropdownOpen && (
+                    {isOpen && (
                       <div className="flex flex-col gap-1 pl-4 border-l-2 border-[var(--text-main)]/10 ml-5 my-1">
                         {item.dropdown.map(subItem => {
                           const active = isActive(subItem.path)
@@ -310,4 +329,3 @@ export function Navbar() {
     </header>
   )
 }
-
