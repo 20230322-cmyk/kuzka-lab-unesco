@@ -89,7 +89,7 @@ export function HomeHubView() {
                 </Link>
                 
                 <p className="max-w-sm text-sm sm:text-base text-[var(--text-main)]/80 font-sans leading-relaxed border-l-2 border-[var(--color-naranja-kuska)]/30 pl-4">
-                  Ecosistema figital de <strong>Prebunking</strong> y alfabetización socrática para construir resiliencia ética frente a la IA.
+                  Ecosistema figital para construir pensamiento crítico frente a la IA.
                 </p>
               </div>
             </div>
