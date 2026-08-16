@@ -12,7 +12,8 @@ const StepHook = ({ onNext }) => (
       animate={{ 
         scale: [1, 1.06, 1],
         rotate: [0, -3, 3, -1, 0],
-        y: [0, -4, 0]
+        y: [0, -4, 0],
+        opacity: 1
       }}
       transition={{ 
         scale: { duration: 3.5, repeat: Infinity, ease: "easeInOut" },
@@ -33,8 +34,28 @@ const StepHook = ({ onNext }) => (
         Tus defensas cognitivas están a prueba.
       </p>
     </div>
-    <div className="w-full mt-auto pt-8">
-      <Button onClick={onNext}>EVALUAR MIS DEFENSAS</Button>
+    <div className="w-full mt-auto pt-8 flex justify-center">
+      <motion.button
+        whileHover={{ scale: 1.03 }}
+        whileTap={{ scale: 0.97 }}
+        animate={{
+          scale: [1, 1.025, 1],
+          boxShadow: [
+            "0 4px 14px rgba(222, 113, 30, 0.25)",
+            "0 6px 22px rgba(222, 113, 30, 0.5)",
+            "0 4px 14px rgba(222, 113, 30, 0.25)"
+          ]
+        }}
+        transition={{
+          duration: 2.2,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+        onClick={onNext}
+        className="w-full max-w-[320px] py-4 px-8 bg-[var(--color-naranja-kuska)] text-white font-mono font-bold text-sm tracking-wider uppercase rounded-xl cursor-pointer hover:bg-[var(--color-naranja-kuska)]/95 transition-all"
+      >
+        EVALUAR MIS DEFENSAS
+      </motion.button>
     </div>
   </div>
 )
