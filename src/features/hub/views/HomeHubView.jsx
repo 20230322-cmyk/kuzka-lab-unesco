@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { MainLayout } from '../../../shared/components/MainLayout'
+import Velaris from '../../../shared/components/ui/velaris'
 import { 
   Sparkles, 
   ShieldCheck, 
@@ -58,47 +59,35 @@ export function HomeHubView() {
     <MainLayout>
       <div className="w-full">
         
-        {/* HERO SECTION - REFERENCIA PSYCHOWELL ADAPTADO */}
-        <section className="relative w-full min-h-[85vh] flex items-center justify-center overflow-hidden border-b border-[var(--text-main)]/10">
-          <div className="max-w-[1400px] w-full mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center justify-between">
-            
-            {/* LEFT: 3D BRAIN MESH IMAGE */}
-            <div className="w-full lg:w-1/2 flex justify-center lg:justify-start relative z-20">
-              <img 
-                src="/hero-brain.png" 
-                alt="Cognitive Immunity Mesh" 
-                className="w-full max-w-[400px] lg:max-w-[700px] object-contain drop-shadow-2xl mix-blend-multiply scale-110 -translate-y-4 lg:translate-y-0"
-              />
+        {/* HERO SECTION - VELARIS BACKGROUND */}
+        <section className="relative w-full min-h-[85vh] flex items-center justify-center border-b border-[var(--text-main)]/10 p-4 lg:p-8 pt-24 lg:pt-32 bg-[var(--bg-crema)]">
+          <Velaris height="100%" className="rounded-[2.5rem] shadow-sm min-h-[75vh] border border-[var(--text-main)]/10">
+            <div className="flex h-full w-full flex-col items-center justify-center gap-6 px-6 py-12 text-center relative z-20">
               
-              {/* BUTTON FLOATING NEAR IMAGE */}
-              <div className="absolute bottom-10 lg:bottom-20 left-1/2 lg:left-24 -translate-x-1/2 lg:translate-x-0 z-30">
+              <span className="rounded-full border border-[var(--text-main)]/10 bg-white/40 px-5 py-2 text-[10px] sm:text-xs font-mono font-bold uppercase tracking-widest text-[var(--color-naranja-kuska)] backdrop-blur-md shadow-sm">
+                Powered by KUZKA LAB & UNESCO
+              </span>
+              
+              <h1 className="font-logo max-w-5xl mx-auto text-[4.5rem] sm:text-[6rem] lg:text-[8rem] font-black tracking-tighter text-[var(--text-main)] uppercase leading-[0.85] drop-shadow-sm mix-blend-color-burn">
+                INMUNIDAD <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-main)] to-[var(--color-naranja-kuska)]">COGNITIVA</span><br/>CONTRA LA PANDEMIA
+              </h1>
+              
+              <p className="max-w-2xl mx-auto mt-2 text-sm sm:text-base lg:text-lg text-[var(--text-main)]/80 font-sans leading-relaxed">
+                Ecosistema figital de <strong>inoculación psicológica preventiva (Prebunking)</strong> y alfabetización socrática con Inteligencia Artificial. Explora la profundidad de la IA y construye resiliencia ética.
+              </p>
+              
+              <div className="flex flex-wrap items-center justify-center gap-4 mt-6">
                 <Link
                   to="/check"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--text-main)] text-white text-xs sm:text-sm font-mono font-bold uppercase tracking-widest rounded-full hover:bg-[var(--color-naranja-kuska)] transition-colors shadow-2xl"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--text-main)] text-white text-xs sm:text-sm font-mono font-bold uppercase tracking-widest rounded-full hover:bg-[var(--color-naranja-kuska)] transition-colors shadow-2xl hover:scale-105 active:scale-95 duration-200"
                 >
                   <ShieldCheck className="w-4 h-4" />
                   <span>Iniciar Inoculación ↗</span>
                 </Link>
               </div>
-            </div>
 
-            {/* RIGHT: MASSIVE OVERLAPPING TYPOGRAPHY */}
-            <div className="w-full lg:w-[60%] flex flex-col items-center lg:items-end text-center lg:text-right relative z-10 -mt-24 lg:mt-0 lg:-ml-32">
-              <h1 className="font-logo text-[4rem] sm:text-[6rem] lg:text-[9rem] font-black tracking-tighter text-[var(--text-main)] uppercase leading-[0.85] drop-shadow-sm">
-                INMUNIDAD<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--text-main)] to-[var(--text-main)]/40">COGNITIVA</span><br />
-                PANDEMIA
-              </h1>
-              
-              <p className="mt-8 text-sm sm:text-base text-[var(--text-main)]/80 font-sans leading-relaxed max-w-md lg:mr-4">
-                Ecosistema figital de <strong>inoculación psicológica preventiva (Prebunking)</strong> y alfabetización socrática. Explora la profundidad de la IA y construye resiliencia ética.
-              </p>
             </div>
-
-          </div>
-          
-          {/* DECORATIVE NOISE/GRADIENT OVERLAY FOR BLENDING */}
-          <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-transparent to-[var(--bg-crema)]/40 z-0" />
+          </Velaris>
         </section>
 
         {/* INTERACTIVE PERSONA MATRICIAL (MOVED FROM HERO) */}
