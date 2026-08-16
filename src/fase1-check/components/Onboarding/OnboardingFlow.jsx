@@ -9,18 +9,28 @@ const StepHook = ({ onNext }) => (
   <div className="flex-1 flex flex-col items-center justify-center text-center gap-8 w-full h-full">
     <motion.div
       initial={{ scale: 0.8, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ type: 'spring', bounce: 0.5 }}
+      animate={{ 
+        scale: [1, 1.06, 1],
+        rotate: [0, -3, 3, -1, 0],
+        y: [0, -4, 0]
+      }}
+      transition={{ 
+        scale: { duration: 3.5, repeat: Infinity, ease: "easeInOut" },
+        rotate: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+        y: { duration: 3, repeat: Infinity, ease: "easeInOut" },
+        opacity: { duration: 0.4 }
+      }}
       className="text-[var(--color-rojo-alerta)] mb-4"
     >
-      <Bug size={64} strokeWidth={1.5} />
+      <Bug size={68} strokeWidth={1.5} />
     </motion.div>
-    <div className="flex flex-col gap-6 items-center mt-4">
-      <h2 className="font-logo text-6xl tracking-tight text-[var(--text-main)] leading-[0.95]">
+    <div className="flex flex-col gap-5 items-center mt-2">
+      <h2 className="font-logo text-6xl lg:text-7xl tracking-tight text-[var(--text-main)] leading-[0.95]">
         Pandem<span className="text-[var(--color-rojo-alerta)]">IA</span>
       </h2>
-      <p className="text-base font-main font-medium leading-relaxed text-[var(--color-text-muted)] max-w-[280px]">
-        El virus impulsado por IA está infectando la red. Tus defensas cognitivas están a prueba.
+      <p className="text-base font-main font-medium leading-relaxed text-[var(--text-main)]/80 max-w-[300px]">
+        <strong className="text-[var(--color-rojo-alerta)] font-mono tracking-wider font-bold">¿SOBREVIVIRÁS?</strong><br />
+        Tus defensas cognitivas están a prueba.
       </p>
     </div>
     <div className="w-full mt-auto pt-8">
