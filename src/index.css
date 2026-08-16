@@ -1,56 +1,50 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap');
 
 @theme {
-  --color-crema: #FBF9F5;
+  --font-logo: 'Playfair Display', 'Lyon Text', 'Newsreader', serif;
+  --font-main: 'Montserrat', 'SF Pro Display', 'Geist Sans', sans-serif;
+
+  /* Minimalist Color Palette */
+  --color-bg-crema: #FBF9F5;
   --color-text-main: #111111;
-  --color-naranja-exito: #DE711E;
-  --color-rojo-alerta: #CA3606;
-  --color-amarillo-radar: #E7CE7B;
-  --color-azul-tech: #1D6CFF;
-  --color-azul-blueprint: #2058CC;
-  --color-muted-border: #EAEAEA;
+  --color-text-muted: #787774;
   
-  --font-logo: 'Gill Sans MT Ext Condensed Bold', 'Arial Narrow', sans-serif;
-  --font-body: 'Montserrat', 'SF Pro Display', 'Geist Sans', sans-serif;
+  --color-border-subtle: #EAEAEA;
+  --color-border-dark: rgba(0,0,0,0.06);
+
+  /* Acentos desaturados (Pasteles / Cozy) */
+  --color-naranja-kuska: #E88C5A; /* Naranja más suave */
+  --color-amarillo-radar: #E7CE7B; /* Miel suave */
+  --color-rojo-alerta: #D96041; /* Rojo más pastel */
+  --color-azul-tech: #6B9BE8; /* Azul lavado */
 }
 
-/* TOKENS DE DISEÑO KUZKA LAB (SIN MARRÓN) */
 :root {
-  /* Fondo y Texto Base */
   --bg-crema: #FBF9F5;
-  --text-main: #111111; /* Negro Carbón Neutro Puro */
-  
-  /* Colores de Acción y Marca */
-  --naranja-exito: #DE711E;
-  --rojo-alerta: #CA3606;
-  --amarillo-radar: #E7CE7B;
-  --azul-tech: #1D6CFF;
-  --azul-blueprint: #2058CC;
-  
-  /* Tipografía */
-  --font-logo: 'Gill Sans MT Ext Condensed Bold', 'Arial Narrow', sans-serif;
-  --font-body: 'Montserrat', 'SF Pro Display', sans-serif;
+  --text-main: #111111;
+  --color-muted-border: #EAEAEA;
+  --color-naranja-kuska: #E88C5A;
+  --color-amarillo-radar: #E7CE7B;
+  --color-rojo-alerta: #D96041;
+  --color-azul-tech: #6B9BE8;
 }
 
-/* Base Styles (Minimalist & Editorial UI) */
 html, body {
   background-color: var(--bg-crema);
   color: var(--text-main);
-  font-family: var(--font-body);
+  font-family: var(--font-main);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6, .font-logo {
   font-family: var(--font-logo);
   letter-spacing: -0.02em;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
+  line-height: 1.1;
 }
 
 /* Minimalist Utilities */
@@ -60,6 +54,7 @@ h1, h2, h3, h4, h5, h6, .font-logo {
 
 .shadow-minimal {
   box-shadow: 0 4px 24px rgba(0,0,0,0.03);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .bg-noise {

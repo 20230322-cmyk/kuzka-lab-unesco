@@ -23,7 +23,7 @@ export function SwipeCard({ data, onSwipe }) {
 
   return (
     <motion.div
-      className="absolute w-full h-full bg-white border rounded-2xl shadow-minimal flex flex-col p-10 items-center justify-center touch-none cursor-grab active:cursor-grabbing will-change-transform"
+      className="absolute inset-0 w-full h-full bg-white rounded-xl flex flex-col items-center justify-center p-6 border-minimal touch-none cursor-grab active:cursor-grabbing will-change-transform shadow-minimal"
       style={{ x, rotate, opacity, scale, borderColor }}
       drag="x"
       dragConstraints={{ left: 0, right: 0 }}

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export function RadarTimer() {
   return (
-    <div className="relative w-14 h-14 rounded-full border border-[var(--color-muted-border)] flex items-center justify-center overflow-hidden bg-white shadow-minimal">
+    <div className="relative w-14 h-14 rounded-full border-minimal flex items-center justify-center overflow-hidden bg-white shadow-minimal">
       {/* Animación del barrido del radar estilo analógico */}
       <motion.div 
         className="absolute w-[50%] h-full bg-[var(--color-amarillo-radar)] opacity-30 origin-right"

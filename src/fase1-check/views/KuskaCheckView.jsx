@@ -16,9 +16,15 @@ const MOCK_QUESTIONS = [
 
 export function KuskaCheckView() {
   const [showOnboarding, setShowOnboarding] = useState(true)
+  const [userProfile, setUserProfile] = useState({ source: null, confidence: null })
+  
   const [currentIndex, setCurrentIndex] = useState(0)
   const [completed, setCompleted] = useState(false)
   const [score, setScore] = useState(0)
+
+  const updateProfile = (key, value) => {
+    setUserProfile(prev => ({ ...prev, [key]: value }))
+  }
 
   const handleSwipe = (direction) => {
     if (currentIndex < MOCK_QUESTIONS.length - 1) {
@@ -57,7 +63,11 @@ export function KuskaCheckView() {
       <div className="relative w-full max-w-sm aspect-[3/4] flex items-center justify-center">
         <AnimatePresence mode="popLayout">
           {showOnboarding ? (
-            <OnboardingFlow key="onboarding" onComplete={() => setShowOnboarding(false)} />
+            <OnboardingFlow 
+              key="onboarding" 
+              onComplete={() => setShowOnboarding(false)} 
+              updateProfile={updateProfile}
+            />
           ) : !completed ? (
             <SwipeCard 
               key={MOCK_QUESTIONS[currentIndex].id} 
