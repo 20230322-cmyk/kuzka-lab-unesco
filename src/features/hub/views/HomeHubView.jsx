@@ -110,7 +110,7 @@ export function HomeHubView() {
                     Sobre Nosotros
                   </span>
                   <h2 className="font-logo text-4xl sm:text-6xl font-bold uppercase text-[var(--text-main)] mt-4 leading-none">
-                    Del Aula al<br/>Laboratorio Figital
+                    Del Aula al<br/>Laboratorio <span className="bg-[var(--color-naranja-kuska)] text-white px-3 py-1 rounded-xl shadow-sm">FIGITAL</span>
                   </h2>
                 </div>
                 
